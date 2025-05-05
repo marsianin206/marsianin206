@@ -1,13 +1,9 @@
 <p align="center">
-  <img src="https://capsule-render.vercel.app/api?type=wave&color=gradient&height=380§ion=header&text=Погружение%20в%20Кибер-Галактику!&fontSize=70&fontColor=ffffff&animation=twinkling&fontAlignY=45&desc=Код.%20Искры.%20Космос.&descAlignY=65&descFontSize=32&stroke=FF0066&strokeWidth=2" alt="header-banner"/>
+  <img src="https://capsule-render.vercel.app/api?type=wave&color=gradient&height=380&section=header&text=Погружение%20в%20Кибер-Галактику!&fontSize=70&fontColor=ffffff&animation=twinkling&fontAlignY=45&desc=Код.%20Искры.%20Космос.&descAlignY=65&descFontSize=32&stroke=FF0066&strokeWidth=2" alt="header-banner"/>
 </p>
 
-<h1 align="center" style="font-size: 4.5em; margin-bottom: 0.2em; text-shadow: 0 0 15px #ff0066, 0 0 25px #00b4d8;">
-  🌌 Привет, я <span style="color:#ff0066;">Твоё Имя</span>!
-</h1>
-<h3 align="center" style="margin-top: 0.2em; color:#d0d0d0; letter-spacing: 2px; font-style: italic; text-shadow: 0 0 8px #00b4d8;">
-  💾 Python-звёздный маг • 🤖 AI-космонавт • 🎮 Архитектор миров • ⚡️ Властелин автоматизации
-</h3>
+<h1 align="center" style="font-size: 4.5em; margin-bottom: 0.2em; text-shadow: 0 0 15px #ff0066, 0 0 25px #00b4d8;">🌌 Привет, я <span style="color:#ff0066;">Твоё Имя</span>!</h1>
+<h3 align="center" style="margin-top: 0.2em; color:#d0d0d0; letter-spacing: 2px; font-style: italic; text-shadow: 0 0 8px #00b4d8;">💾 Python-звёздный маг • 🤖 AI-космонавт • 🎮 Архитектор миров • ⚡️ Властелин автоматизации</h3>
 
 <p align="center">
   <img src="https://readme-typing-svg.demolab.com?font=Orbitron&size=32&duration=1400&pause=500&color=FF0066&center=true&vCenter=true&width=900&lines=Создаю+цифровые+галактики+с+Python+и+AI;Кую+разумных+ботов+и+легендарные+игры;Автоматизирую+вселенную,+импульс+за+импульсом;Open-source+—+мой+звёздный+путь!" alt="Typing SVG" />
@@ -35,7 +31,7 @@
 ---
 
 <p align="center">
-  <img src="https://capsule-render.vercel.app/api?type=shark&color=gradient&height=180§ion=header&text=Моя%20суть&fontSize=50&fontColor=ffffff&animation=blink&stroke=00B4D8&strokeWidth=1" alt="about-banner"/>
+  <img src="https://capsule-render.vercel.app/api?type=shark&color=gradient&height=180&section=header&text=Моя%20суть&fontSize=50&fontColor=ffffff&animation=blink&stroke=00B4D8&strokeWidth=1" alt="about-banner"/>
 </p>
 
 ## 🌌 Моя суть
@@ -69,7 +65,7 @@
 ---
 
 <p align="center">
-  <img src="https://capsule-render.vercel.app/api?type=shark&color=gradient&height=180§ion=header&text=Космический%20арсенал&fontSize=50&fontColor=ffffff&animation=blink&stroke=00B4D8&strokeWidth=1" alt="tech-banner"/>
+  <img src="https://capsule-render.vercel.app/api?type=shark&color=gradient&height=180&section=header&text=Космический%20арсенал&fontSize=50&fontColor=ffffff&animation=blink&stroke=00B4D8&strokeWidth=1" alt="tech-banner"/>
 </p>
 
 ## 🛠️ Космический арсенал
@@ -85,7 +81,7 @@
 ---
 
 <p align="center">
-  <img src="https://capsule-render.vercel.app/api?type=shark&color=gradient&height=180§ion=header&text=Звёздные%20достижения&fontSize=50&fontColor=ffffff&animation=blink&stroke=00B4D8&strokeWidth=1" alt="achievements-banner"/>
+  <img src="https://capsule-render.vercel.app/api?type=shark&color=gradient&height=180&section=header&text=Звёздные%20достижения&fontSize=50&fontColor=ffffff&animation=blink&stroke=00B4D8&strokeWidth=1" alt="achievements-banner"/>
 </p>
 
 ## 🏆 Звёздные достижения
@@ -101,11 +97,23 @@
 ---
 
 <p align="center">
-  <img src="https://capsule-render.vercel.app/api?type=shark&color=gradient&height=180§ion=header&text=Галактические%20проекты&fontSize=50&fontColor=ffffff&animation=blink&stroke=00B4D8&strokeWidth=1" alt="projects-banner"/>
+  <img src="https://capsule-render.vercel.app/api?type=shark&color=gradient&height=180&section=header&text=Галактические%20проекты&fontSize=50&fontColor=ffffff&animation=blink&stroke=00B4D8&strokeWidth=1" alt="projects-banner"/>
 </p>
 
 ## 🌠 Галактические проекты
 
 <p align="center">
   <a href="ссылка_на_проект1">
-    <img src="https://custom-icon-badges.demolab.com/badge/Neural%20StarBot-AI%20Telegram%20Bot-FF0066?style=flat-square&logo=robot&logoColor
+    <img src="https://img.shields.io/badge/-Проект%201-FF0066?style=for-the-badge&logo=python&logoColor=ffffff" alt="Project 1" />
+  </a>
+  <a href="ссылка_на_проект2">
+    <img src="https://img.shields.io/badge/-Проект%202-00B4D8?style=for-the-badge&logo=python&logoColor=ffffff" alt="Project 2" />
+  </a>
+  <a href="ссылка_на_проект3">
+    <img src="https://img.shields.io/badge/-Проект%203-FFD700?style=for-the-badge&logo=python&logoColor=ffffff" alt="Project 3" />
+  </a>
+</p>
+
+<p align="center">
+  <img src="https://media.giphy.com/media/KuQFvS1eS5okHBrTME/giphy.gif" width="200" alt="Astro Animation" />
+</p>
