@@ -11,6 +11,10 @@
 
 ---
 
+<p align="center">
+  <img src="https://capsule-render.vercel.app/api?type=rect&color=gradient&height=150&section=header&text=Обо%20мне&fontSize=40&fontColor=ffffff&animation=fadeIn" alt="about-banner" />
+</p>
+
 ## 🚀 Обо мне
 
 <p align="center">
@@ -19,6 +23,10 @@
 
 ---
 
+<p align="center">
+  <img src="https://capsule-render.vercel.app/api?type=rect&color=gradient&height=150&section=header&text=Мой%20стек&fontSize=40&fontColor=ffffff&animation=fadeIn" alt="tech-banner"/>
+</p>
+
 ## ⚙️ Мой стек
 
 <p align="center">
@@ -26,6 +34,10 @@
 </p>
 
 ---
+
+<p align="center">
+  <img src="https://capsule-render.vercel.app/api?type=rect&color=gradient&height=150&section=header&text=GitHub%20Статистика&fontSize=40&fontColor=ffffff&animation=fadeIn" alt="stats-banner"/>
+</p>
 
 ## 📊 GitHub Статистика
 
@@ -39,6 +51,10 @@
 </p>
 
 ---
+
+<p align="center">
+  <img src="https://capsule-render.vercel.app/api?type=rect&color=gradient&height=150&section=header&text=Связь&fontSize=40&fontColor=ffffff&animation=fadeIn" alt="contact-banner"/>
+</p>
 
 ## 📬 Связь
 
