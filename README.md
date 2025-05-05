@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=0d9c8b&height=200&section=header&text=Добро%20пожаловать!&fontSize=40&fontColor=ffffff&animation=fadeIn" alt="banner"/>
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&height=250&section=header&text=Добро%20пожаловать!&fontSize=50&fontColor=ffffff&animation=fadeIn" alt="banner"/>
 </p>
 
 <h1 align="center" style="font-size: 3em; margin-bottom: 0.2em;">✨ Привет, я <span style="color:#00ffcc;">marsianin206</span>!</h1>
@@ -12,19 +12,19 @@
 ---
 
 <p align="center">
-  <img src="https://capsule-render.vercel.app/api?type=rect&color=gradient&height=150&section=header&text=Обо%20мне&fontSize=40&fontColor=ffffff&animation=fadeIn" alt="about-banner" />
+  <img src="https://capsule-render.vercel.app/api?type=rect&color=gradient&height=180&section=header&text=Обо%20мне&fontSize=40&fontColor=ffffff&animation=fadeIn" alt="about-banner" />
 </p>
 
 ## 🚀 Обо мне
 
 <p align="center">
-  <img src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=marsianin206&theme=tokyonight" alt="profile-details"/>
+  <img src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=marsianin206&theme=radical" alt="profile-details"/>
 </p>
 
 ---
 
 <p align="center">
-  <img src="https://capsule-render.vercel.app/api?type=rect&color=gradient&height=150&section=header&text=Мой%20стек&fontSize=40&fontColor=ffffff&animation=fadeIn" alt="tech-banner"/>
+  <img src="https://capsule-render.vercel.app/api?type=rect&color=gradient&height=180&section=header&text=Мой%20стек&fontSize=40&fontColor=ffffff&animation=fadeIn" alt="tech-banner"/>
 </p>
 
 ## ⚙️ Мой стек
@@ -36,24 +36,24 @@
 ---
 
 <p align="center">
-  <img src="https://capsule-render.vercel.app/api?type=rect&color=gradient&height=150&section=header&text=GitHub%20Статистика&fontSize=40&fontColor=ffffff&animation=fadeIn" alt="stats-banner"/>
+  <img src="https://capsule-render.vercel.app/api?type=rect&color=gradient&height=180&section=header&text=GitHub%20Статистика&fontSize=40&fontColor=ffffff&animation=fadeIn" alt="stats-banner"/>
 </p>
 
 ## 📊 GitHub Статистика
 
 <p align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=marsianin206&show_icons=true&theme=tokyonight&hide_border=true&include_all_commits=true" width="49%" />
-  <img src="https://github-readme-streak-stats.herokuapp.com/?user=marsianin206&theme=tokyonight&hide_border=true" width="49%" />
+  <img src="https://github-readme-stats.vercel.app/api?username=marsianin206&show_icons=true&theme=radical&hide_border=true&include_all_commits=true" width="49%" />
+  <img src="https://github-readme-streak-stats.herokuapp.com/?user=marsianin206&theme=radical&hide_border=true" width="49%" />
 </p>
 
 <p align="center">
-  <img src="https://github-readme-activity-graph.vercel.app/graph?username=marsianin206&theme=tokyo-night&hide_border=true" />
+  <img src="https://github-readme-activity-graph.vercel.app/graph?username=marsianin206&theme=radical&hide_border=true" />
 </p>
 
 ---
 
 <p align="center">
-  <img src="https://capsule-render.vercel.app/api?type=rect&color=gradient&height=150&section=header&text=Связь&fontSize=40&fontColor=ffffff&animation=fadeIn" alt="contact-banner"/>
+  <img src="https://capsule-render.vercel.app/api?type=rect&color=gradient&height=180&section=header&text=Связь&fontSize=40&fontColor=ffffff&animation=fadeIn" alt="contact-banner"/>
 </p>
 
 ## 📬 Связь
@@ -73,5 +73,5 @@
 </p>
 
 <p align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=0d9c8b&height=120&section=footer"/>
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&height=120&section=footer"/>
 </p>
