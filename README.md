@@ -26,13 +26,6 @@
   - Разработка игровых механик и прототипов
   - Автоматизация процессов с использованием Python
 
-  Люблю работать над интересными и инновационными задачами, а также делиться опытом с сообществом. 🌍
-
-  В моем репозитории ты найдешь:
-  - Боты для Telegram и других платформ
-  - Проекты на Python, Node.js и Docker
-  - Игры и разработки на основе AI
-  
   🎮 Когда не программирую, изучаю новые технологии и играю в видеоигры. 👾
 </p>
 
@@ -57,28 +50,33 @@
 ---
 
 <p align="center">
-  <img src="https://capsule-render.vercel.app/api?type=rect&color=gradient&height=180&section=header&text=Мои%20проекты&fontSize=40&fontColor=ffffff&animation=fadeIn" alt="projects-banner"/>
+  <img src="https://capsule-render.vercel.app/api?type=rect&color=gradient&height=180&section=header&text=Достижения&fontSize=40&fontColor=ffffff&animation=fadeIn" alt="achievements-banner"/>
 </p>
 
-## 🔨 Мои проекты
+## 🏆 Достижения
 
-### 1. **[Highrise Bot](https://github.com/marsianin206/highrise-bot)**
-   - Разработал бота для взаимодействия с персонажем в игре **Highrise**.
-   - Асинхронный бот на Python с использованием Flask.
-   - Взаимодействие с персонажами, автоматизация заданий и выдача наград.
+<p align="center">
+  <img src="https://img.shields.io/badge/Starred%20Repos-1000-green?style=for-the-badge" alt="Starred Repos" />
+  <img src="https://img.shields.io/badge/Followers-500-blue?style=for-the-badge" alt="Followers" />
+  <img src="https://img.shields.io/badge/Contributions%20in%20the%20last%20year-5000-yellow?style=for-the-badge" alt="Contributions" />
+</p>
 
-### 2. **[MusicPlayer](https://github.com/marsianin206/musicplayer)**
-   - Радиоплеер с использованием **yt-dlp**, **ffmpeg**, и **Icecast**.
-   - Воспроизведение музыки через радиопоток на платформе **Zeno FM**.
+---
 
-### 3. **[AI Chatbot](https://github.com/marsianin206/aichatbot)**
-   - Создание чат-бота с элементами **искусственного интеллекта**.
-   - Использование **машинного обучения** для понимания и генерации текста.
-  
-### 4. **[Hacker Game](https://github.com/marsianin206/hackergame)**
-   - Консольная игра о **взломе** с элементами рогалика.
-   - Реализована механика взлома серверов, брутфорс, работа с вирусами и эксплойтами.
-   - Экономика: продажа данных и улучшение ПК.
+<p align="center">
+  <img src="https://capsule-render.vercel.app/api?type=rect&color=gradient&height=180&section=header&text=Настройки&fontSize=40&fontColor=ffffff&animation=fadeIn" alt="settings-banner"/>
+</p>
+
+## ⚙️ Настройки
+
+<p align="center">
+  <a href="https://github.com/marsianin206" target="_blank">
+    <img src="https://img.shields.io/badge/Изменить%20настройки-blue?style=for-the-badge&logo=github&logoColor=white" />
+  </a>
+  <a href="https://t.me/SER_X_FEAR" target="_blank">
+    <img src="https://img.shields.io/badge/Telegram%20Settings-0088CC?style=for-the-badge&logo=telegram&logoColor=white" />
+  </a>
+</p>
 
 ---
 
