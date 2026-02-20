@@ -1,6 +1,6 @@
 <div align="center">
   <!-- Анимированный заголовок (стабильная версия) -->
-  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=700&size=35&pause=1000&color=00FF00&center=true&vCenter=true&width=500&lines=%F0%9F%8C%8D+Hello%2C+I'm+Marsianin206+%F0%9F%8C%8D;%F0%9F%9A%80+Full+Stack+Developer+%F0%9F%9A%80;%F0%9F%92%BB+AI+Enthusiast+%F0%9F%92%BB;%F0%9F%8C%9F+Welcome+to+my+Universe+%F0%9F%8C%9F" alt="Typing SVG" />
+  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=700&size=35&pause=1000&color=00FF00&center=true&vCenter=true&width=500&lines=%F0%9F%8C%8D+Hello%2C+I'm+X.FEAR+%F0%9F%8C%8D;%F0%9F%9A%80+Full+Stack+Developer+%F0%9F%9A%80;%F0%9F%92%BB+AI+Enthusiast+%F0%9F%92%BB;%F0%9F%8C%9F+Welcome+to+my+Universe+%F0%9F%8C%9F" alt="Typing SVG" />
 </div>
 
 <!-- Компактные бейджи -->
@@ -148,3 +148,4 @@
   <br>
   <sub>⭐ Если мой профиль оказался полезным, не забудь поставить звёздочку! ⭐</sub>
 </div>
+
