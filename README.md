@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="https://github.com/marsianin206/marsianin206/blob/main/assets/cyber-banner.png?raw=true" alt="X.FEAR Cyber Banner" width="100%" style="border-radius: 12px; box-shadow: 0 0 30px rgba(0, 255, 0, 0.3);" />
+  <img src="https://capsule-render.vercel.app/api?type=soft&color=00FF00&height=300&section=header&text=X.FEAR&fontSize=80&fontAlignY=50&desc=marsianin206%20%E2%80%A2%20Full%20Stack%20Developer%20%E2%80%A2%20AI%20Enthusiast&descAlignY=70&descSize=25&fontColor=000000" alt="X.FEAR Cyber Banner" width="100%" style="border-radius: 12px; box-shadow: 0 0 40px rgba(0, 255, 0, 0.4);">
 </div>
 
 <div align="center">
@@ -26,7 +26,7 @@
 - 🌐 Исследование децентрализованных технологий
 
 <div align="center">
-  <img src="https://github.com/marsianin206/marsianin206/blob/main/assets/cyber-mood.png?raw=true" alt="Cyberpunk Coding" width="400">
+  <img src="https://user-images.githubusercontent.com/74038190/235224431-e8c8c12e-6826-47a1-89fb-2cdad83b9162.gif" alt="Cyberpunk Coding" width="400">
 </div>
 
 ---
