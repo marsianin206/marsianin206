@@ -116,7 +116,7 @@
 ---
 ## 🎯 Цели на 2026
 - [x] Выпустить мобильное приложение (MVP готов)
-- [ ] Набрать 500+ звёзд на GitHub (текущие 150 ⭐)
+- [ ] Набрать 500+ звёзд на GitHub ⭐⭐⭐
 - [ ] Выступить с докладом на конференции
 - [ ] Написать 10 технических статей (написано 4)
 - [ ] Внести вклад в 5 open-source проектов (сделано 2)
@@ -131,5 +131,6 @@
 <div align="center">
   <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=500&size=20&pause=1000&color=00FF00&center=true&vCenter=true&width=500&lines=Thanks+for+stopping+by!+%F0%9F%98%8A;Let's+create+something+amazing+together!+%F0%9F%9A%80" alt="Typing SVG" />
   <br>
-  <sub>⭐ Если мой профиль оказался полезным — ставь звезду и присоединяйся к матрице! ⭐</sub>
+  <sub>⭐⭐⭐ Если мой профиль оказался полезным — ставь звезду и присоединяйся к матрице! ⭐⭐⭐</sub>
 </div>
+
