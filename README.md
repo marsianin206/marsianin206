@@ -12,30 +12,25 @@
 <!-- ════════════════════ 🛡️ BIO-METRIC IDENTIFICATION 🛡️ ════════════════════ -->
 
 <div align="center">
-  <svg width="600" height="120" viewBox="0 0 600 120" xmlns="http://www.w3.org/2000/svg">
-    <rect width="600" height="120" fill="#0d0d0d" stroke="#ff6b35" stroke-width="2" rx="10"/>
-    <text x="20" y="30" fill="#ff6b35" font-family="monospace" font-size="14" font-weight="bold">SCANNING BIOMETRICS...</text>
-    
-    <!-- DNA / Pulse line -->
-    <path d="M100 80 Q 110 40 120 80 T 140 80 T 160 80 T 180 80 T 200 80" fill="none" stroke="#50c878" stroke-width="2">
-      <animate attributeName="d" values="M100 80 Q 110 40 120 80 T 140 80 T 160 80 T 180 80 T 200 80; M100 80 Q 110 120 120 80 T 140 80 T 160 80 T 180 80 T 200 80; M100 80 Q 110 40 120 80 T 140 80 T 160 80 T 180 80 T 200 80" dur="1s" repeatCount="indefinite" />
-    </path>
-
-    <!-- Scanning Bar -->
-    <rect x="250" y="45" width="300" height="20" fill="none" stroke="#ff6b35" stroke-width="1"/>
-    <rect x="255" y="50" width="0" height="10" fill="#ff6b35">
-      <animate attributeName="width" from="0" to="290" dur="3s" repeatCount="indefinite" />
-    </rect>
-    
-    <text x="400" y="95" fill="#50c878" font-family="monospace" font-size="18" font-weight="bold" text-anchor="middle">
-      <tspan>ACCESS GRANTED: PILOT [marsianin206]</tspan>
-      <animate attributeName="opacity" values="1;0.2;1" dur="1.5s" repeatCount="indefinite" />
-    </text>
-  </svg>
+<svg width="600" height="120" viewBox="0 0 600 120" xmlns="http://www.w3.org/2000/svg">
+<rect width="600" height="120" fill="#0d0d0d" stroke="#ff6b35" stroke-width="2" rx="10"/>
+<text x="20" y="30" fill="#ff6b35" font-family="monospace" font-size="14" font-weight="bold">SCANNING BIOMETRICS...</text>
+<path d="M100 80 Q 110 40 120 80 T 140 80 T 160 80 T 180 80 T 200 80" fill="none" stroke="#50c878" stroke-width="2">
+<animate attributeName="d" values="M100 80 Q 110 40 120 80 T 140 80 T 160 80 T 180 80 T 200 80; M100 80 Q 110 120 120 80 T 140 80 T 160 80 T 180 80 T 200 80; M100 80 Q 110 40 120 80 T 140 80 T 160 80 T 180 80 T 200 80" dur="1s" repeatCount="indefinite" />
+</path>
+<rect x="250" y="45" width="300" height="20" fill="none" stroke="#ff6b35" stroke-width="1"/>
+<rect x="255" y="50" width="0" height="10" fill="#ff6b35">
+<animate attributeName="width" from="0" to="290" dur="3s" repeatCount="indefinite" />
+</rect>
+<text x="400" y="95" fill="#50c878" font-family="monospace" font-size="18" font-weight="bold" text-anchor="middle">
+<tspan>ACCESS GRANTED: PILOT [marsianin206]</tspan>
+<animate attributeName="opacity" values="1;0.2;1" dur="1.5s" repeatCount="indefinite" />
+</text>
+</svg>
 </div>
 
 <div align="center">
-  <img src="https://readme-typing-svg.demolab.com?font=Orbitron&weight=900&size=40&duration=3000&pause=500&color=FF6B35&center=true&vCenter=true&width=1000&height=100&lines=CORE+SYSTEM+ONLINE...;MAGI+VOTING+INITIALIZED...;PATTERN+BLUE+DETECTED" alt="Typing SVG" />
+  <img src="https://readme-typing-svg.demolab.com?font=Orbitron&weight=900&size=40&duration=3000&pause=500&color=FF6B35&center=true&vCenter=true&width=1000&height=100&lines=CORE_SYSTEM_ONLINE...;MAGI_VOTING_INITIALIZED...;PATTERN_BLUE_DETECTED" alt="Typing SVG" />
 </div>
 
 <br/>
@@ -45,41 +40,41 @@
 <h3 align="center">🧠 MAGI SYSTEM DECISION | РЕШЕНИЕ СИСТЕМЫ МАГИ 🧠</h3>
 
 <div align="center">
-  <table border="0">
-    <tr>
-      <td align="center">
-        <svg width="150" height="100" viewBox="0 0 150 100">
-          <rect width="150" height="100" fill="#0d0d0d" stroke="#ff6b35" stroke-width="2"/>
-          <text x="75" y="30" fill="#ff6b35" font-family="monospace" font-size="12" text-anchor="middle">MELCHIOR-1</text>
-          <rect x="25" y="45" width="100" height="30" fill="#50c878">
-            <animate attributeName="opacity" values="1;0.3;1" dur="2s" repeatCount="indefinite" />
-          </rect>
-          <text x="75" y="65" fill="#0d0d0d" font-family="monospace" font-size="16" font-weight="bold" text-anchor="middle">PRIORITY</text>
-        </svg>
-      </td>
-      <td align="center">
-        <svg width="150" height="100" viewBox="0 0 150 100">
-          <rect width="150" height="100" fill="#0d0d0d" stroke="#ff6b35" stroke-width="2"/>
-          <text x="75" y="30" fill="#ff6b35" font-family="monospace" font-size="12" text-anchor="middle">BALTHASAR-2</text>
-          <rect x="25" y="45" width="100" height="30" fill="#50c878">
-            <animate attributeName="opacity" values="1;0.3;1" dur="2.5s" repeatCount="indefinite" />
-          </rect>
-          <text x="75" y="65" fill="#0d0d0d" font-family="monospace" font-size="16" font-weight="bold" text-anchor="middle">YES</text>
-        </svg>
-      </td>
-      <td align="center">
-        <svg width="150" height="100" viewBox="0 0 150 100">
-          <rect width="150" height="100" fill="#0d0d0d" stroke="#ff6b35" stroke-width="2"/>
-          <text x="75" y="30" fill="#ff6b35" font-family="monospace" font-size="12" text-anchor="middle">CASPER-3</text>
-          <rect x="25" y="45" width="100" height="30" fill="#50c878">
-            <animate attributeName="opacity" values="1;0.3;1" dur="1.5s" repeatCount="indefinite" />
-          </rect>
-          <text x="75" y="65" fill="#0d0d0d" font-family="monospace" font-size="16" font-weight="bold" text-anchor="middle">YES</text>
-        </svg>
-      </td>
-    </tr>
-  </table>
-  <img src="https://img.shields.io/badge/MAGI_STATUS-UNANIMOUS_APPROVAL-50c878?style=for-the-badge&labelColor=0d0d0d" />
+<table border="0">
+<tr>
+<td align="center">
+<svg width="150" height="100" viewBox="0 0 150 100" xmlns="http://www.w3.org/2000/svg">
+<rect width="150" height="100" fill="#0d0d0d" stroke="#ff6b35" stroke-width="2"/>
+<text x="75" y="30" fill="#ff6b35" font-family="monospace" font-size="12" text-anchor="middle">MELCHIOR-1</text>
+<rect x="25" y="45" width="100" height="30" fill="#50c878">
+<animate attributeName="opacity" values="1;0.3;1" dur="2s" repeatCount="indefinite" />
+</rect>
+<text x="75" y="65" fill="#0d0d0d" font-family="monospace" font-size="16" font-weight="bold" text-anchor="middle">PRIORITY</text>
+</svg>
+</td>
+<td align="center">
+<svg width="150" height="100" viewBox="0 0 150 100" xmlns="http://www.w3.org/2000/svg">
+<rect width="150" height="100" fill="#0d0d0d" stroke="#ff6b35" stroke-width="2"/>
+<text x="75" y="30" fill="#ff6b35" font-family="monospace" font-size="12" text-anchor="middle">BALTHASAR-2</text>
+<rect x="25" y="45" width="100" height="30" fill="#50c878">
+<animate attributeName="opacity" values="1;0.3;1" dur="2.5s" repeatCount="indefinite" />
+</rect>
+<text x="75" y="65" fill="#0d0d0d" font-family="monospace" font-size="16" font-weight="bold" text-anchor="middle">YES</text>
+</svg>
+</td>
+<td align="center">
+<svg width="150" height="100" viewBox="0 0 150 100" xmlns="http://www.w3.org/2000/svg">
+<rect width="150" height="100" fill="#0d0d0d" stroke="#ff6b35" stroke-width="2"/>
+<text x="75" y="30" fill="#ff6b35" font-family="monospace" font-size="12" text-anchor="middle">CASPER-3</text>
+<rect x="25" y="45" width="100" height="30" fill="#50c878">
+<animate attributeName="opacity" values="1;0.3;1" dur="1.5s" repeatCount="indefinite" />
+</rect>
+<text x="75" y="65" fill="#0d0d0d" font-family="monospace" font-size="16" font-weight="bold" text-anchor="middle">YES</text>
+</svg>
+</td>
+</tr>
+</table>
+<img src="https://img.shields.io/badge/MAGI_STATUS-UNANIMOUS_APPROVAL-50c878?style=for-the-badge&labelColor=0d0d0d" />
 </div>
 
 <br/>
