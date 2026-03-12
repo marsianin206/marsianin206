@@ -6,8 +6,11 @@ document.addEventListener('DOMContentLoaded', () => {
     const bgMusic = document.getElementById('bg-music');
 
     activateBtn.addEventListener('click', () => {
-        // Play music
-        bgMusic.play().catch(e => console.log("Audio play blocked:", e));
+        // Establish Spotify Uplink
+        const spotifyContainer = document.getElementById('spotify-container');
+        if (spotifyContainer) {
+            spotifyContainer.classList.remove('hidden');
+        }
 
         // Hide splash screen
         splash.classList.add('hidden');
