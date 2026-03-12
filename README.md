@@ -9,6 +9,31 @@
   <img src="evangelion_nerv_banner_marsianin206_1773328664113.png" width="100%" alt="NERV COMMAND BANNER" />
 </div>
 
+<!-- ════════════════════ 🛡️ BIO-METRIC IDENTIFICATION 🛡️ ════════════════════ -->
+
+<div align="center">
+  <svg width="600" height="120" viewBox="0 0 600 120" xmlns="http://www.w3.org/2000/svg">
+    <rect width="600" height="120" fill="#0d0d0d" stroke="#ff6b35" stroke-width="2" rx="10"/>
+    <text x="20" y="30" fill="#ff6b35" font-family="monospace" font-size="14" font-weight="bold">SCANNING BIOMETRICS...</text>
+    
+    <!-- DNA / Pulse line -->
+    <path d="M100 80 Q 110 40 120 80 T 140 80 T 160 80 T 180 80 T 200 80" fill="none" stroke="#50c878" stroke-width="2">
+      <animate attributeName="d" values="M100 80 Q 110 40 120 80 T 140 80 T 160 80 T 180 80 T 200 80; M100 80 Q 110 120 120 80 T 140 80 T 160 80 T 180 80 T 200 80; M100 80 Q 110 40 120 80 T 140 80 T 160 80 T 180 80 T 200 80" dur="1s" repeatCount="indefinite" />
+    </path>
+
+    <!-- Scanning Bar -->
+    <rect x="250" y="45" width="300" height="20" fill="none" stroke="#ff6b35" stroke-width="1"/>
+    <rect x="255" y="50" width="0" height="10" fill="#ff6b35">
+      <animate attributeName="width" from="0" to="290" dur="3s" repeatCount="indefinite" />
+    </rect>
+    
+    <text x="400" y="95" fill="#50c878" font-family="monospace" font-size="18" font-weight="bold" text-anchor="middle">
+      <tspan>ACCESS GRANTED: PILOT [marsianin206]</tspan>
+      <animate attributeName="opacity" values="1;0.2;1" dur="1.5s" repeatCount="indefinite" />
+    </text>
+  </svg>
+</div>
+
 <div align="center">
   <img src="https://readme-typing-svg.demolab.com?font=Orbitron&weight=900&size=40&duration=3000&pause=500&color=FF6B35&center=true&vCenter=true&width=1000&height=100&lines=CORE+SYSTEM+ONLINE...;MAGI+VOTING+INITIALIZED...;PATTERN+BLUE+DETECTED" alt="Typing SVG" />
 </div>
@@ -159,69 +184,19 @@
 
 <!-- ════════════════════ 🛡️ SKILL SYNCHRONIZATION HUD 🛡️ ════════════════════ -->
 
-<h2 align="center">⚙️ SKILL SYNC HUD | МОНИТОР СИНХРОНИЗАЦИИ НАВЫКОВ ⚙️</h2>
+<!-- ════════════════════ 🛡️ SKILL SYNCHRONIZATION MONITOR 🛡️ ════════════════════ -->
+
+<h2 align="center">⚙️ SKILL SYNC MONITOR | МОНИТОР СИНХРОНИЗАЦИИ ⚙️</h2>
 
 <div align="center">
-  <svg width="800" height="420" viewBox="0 0 800 420" xmlns="http://www.w3.org/2000/svg">
-    <!-- Main Frame -->
-    <rect width="800" height="420" fill="#0d0d0d" stroke="#ff6b35" stroke-width="3" rx="10"/>
-    <path d="M0 40 L800 40" stroke="#ff6b35" stroke-width="2"/>
-    <text x="20" y="27" fill="#ff6b35" font-family="monospace" font-size="16" font-weight="900">NEURAL LINK: ESTABLISHED • PRIORITY AA</text>
-    <text x="780" y="27" fill="#ff6b35" font-family="monospace" font-size="14" text-anchor="end">v6.2.0-NERV</text>
 
-    <!-- PYTHON MODULE -->
-    <g transform="translate(40, 60)">
-      <text x="0" y="20" fill="#ff4500" font-family="monospace" font-size="18" font-weight="900">CORE_MODULE: PYTHON</text>
-      <text x="720" y="20" fill="#ff4500" font-family="monospace" font-size="14" text-anchor="end">STATUS: BERSERK</text>
-      <rect y="30" width="720" height="25" fill="#1a0a2e" stroke="#ff4500" stroke-width="1"/>
-      <rect y="30" width="720" height="25" fill="#ff4500">
-        <animate attributeName="opacity" values="1;0.6;1" dur="0.1s" repeatCount="indefinite" />
-      </rect>
-      <text x="360" y="48" fill="#0d0d0d" font-family="monospace" font-size="16" font-weight="900" text-anchor="middle">400% SYNC RATE</text>
-      <text y="70" fill="#ff4500" font-family="monospace" font-size="12">PULSE: CRITICAL | LCL CONDUCTIVITY: MAX | NEURAL FLOW: OVERLOADED</text>
-    </g>
+| MODULE | SYNCHRONIZATION RATIO | TELEMETRY STATUS |
+| :--- | :--- | :--- |
+| <img src="https://img.shields.io/badge/CORE-PYTHON-ff4500?style=for-the-badge&labelColor=0d0d0d" /> | <img src="https://capsule-render.vercel.app/api?type=rect&color=ff4500&height=30&width=300&text=400%25%20BERSERK&fontSize=18&fontColor=ffffff&animation=twinkling" /> | `CRITICAL_FLOW / OVERLOADED` |
+| <img src="https://img.shields.io/badge/UI-JS%20/%20TS-50c878?style=for-the-badge&labelColor=0d0d0d" /> | <img src="https://capsule-render.vercel.app/api?type=rect&color=50c878&height=30&width=300&text=82%25%20STABLE&fontSize=18&fontColor=0d0d0d" /> | `HARMONIC_PULSE / OPTIMAL` |
+| <img src="https://img.shields.io/badge/ENV-DOCKER-3178C6?style=for-the-badge&labelColor=0d0d0d" /> | <img src="https://capsule-render.vercel.app/api?type=rect&color=3178C6&height=30&width=300&text=70%25%20SYNC&fontSize=18&fontColor=ffffff" /> | `CONTAINER_LOCK / SECURE` |
+| <img src="https://img.shields.io/badge/DATA-SQL%20/%20DB-ff9900?style=for-the-badge&labelColor=0d0d0d" /> | <img src="https://capsule-render.vercel.app/api?type=rect&color=ff9900&height=30&width=300&text=91%25%20SYNC&fontSize=18&fontColor=0d0d0d" /> | `INTEGRITY_LOG / ACTIVE` |
 
-    <!-- JS / TS MODULE -->
-    <g transform="translate(40, 150)">
-      <text x="0" y="20" fill="#50c878" font-family="monospace" font-size="18" font-weight="900">UI_MODULE: JS / TS</text>
-      <text x="720" y="20" fill="#50c878" font-family="monospace" font-size="14" text-anchor="end">STATUS: STABLE</text>
-      <rect y="30" width="720" height="20" fill="#1a0a2e" stroke="#50c878" stroke-width="1"/>
-      <rect y="30" width="590" height="20" fill="#50c878">
-        <animate attributeName="width" from="0" to="590" dur="2s" fill="freeze" />
-      </rect>
-      <text x="360" y="45" fill="#0d0d0d" font-family="monospace" font-size="14" font-weight="900" text-anchor="middle">82% SYNC RATE</text>
-      <text y="65" fill="#50c878" font-family="monospace" font-size="11">HARMONIC RATIO: OPTIMAL | SIGNAL INTERFERENCE: 0.02% | SYSTEM: NOMINAL</text>
-    </g>
-
-    <!-- DOCKER MODULE -->
-    <g transform="translate(40, 235)">
-      <text x="0" y="20" fill="#3178C6" font-family="monospace" font-size="18" font-weight="900">ENV_MODULE: DOCKER</text>
-      <text x="720" y="20" fill="#3178C6" font-family="monospace" font-size="14" text-anchor="end">STATUS: SYNCING</text>
-      <rect y="30" width="720" height="20" fill="#1a0a2e" stroke="#3178C6" stroke-width="1"/>
-      <rect y="30" width="504" height="20" fill="#3178C6">
-        <animate attributeName="width" from="0" to="504" dur="2s" fill="freeze" />
-      </rect>
-      <text x="360" y="45" fill="#0d0d0d" font-family="monospace" font-size="14" font-weight="900" text-anchor="middle">70% SYNC RATE</text>
-      <text y="65" fill="#3178C6" font-family="monospace" font-size="11">CONTAINER_LOCK: ENGAGED | BRIDGE_PULSE: ACTIVE | VIRTUAL_LAYER: SECURE</text>
-    </g>
-
-    <!-- DATABASE MODULE -->
-    <g transform="translate(40, 320)">
-      <text x="0" y="20" fill="#ff9900" font-family="monospace" font-size="18" font-weight="900">DATA_MODULE: DATABASE</text>
-      <text x="720" y="20" fill="#ff9900" font-family="monospace" font-size="14" text-anchor="end">STATUS: OPTIMAL</text>
-      <rect y="30" width="720" height="20" fill="#1a0a2e" stroke="#ff9900" stroke-width="1"/>
-      <rect y="30" width="655" height="20" fill="#ff9900">
-        <animate attributeName="width" from="0" to="655" dur="2s" fill="freeze" />
-      </rect>
-      <text x="360" y="45" fill="#0d0d0d" font-family="monospace" font-size="14" font-weight="900" text-anchor="middle">91% SYNC RATE</text>
-      <text y="65" fill="#ff9900" font-family="monospace" font-size="11">QUERY_LATENCY: < 1ms | INTEGRITY: 100% | PERSISTENCE_LOG: ACTIVE</text>
-    </g>
-
-    <!-- Scanline effect -->
-    <rect width="800" height="2" fill="#ffffff" opacity="0.1">
-      <animate attributeName="y" from="40" to="415" dur="3s" repeatCount="indefinite" />
-    </rect>
-  </svg>
 </div>
 
 <br/>
@@ -252,19 +227,44 @@
 
 <br/>
 
-<!-- ════════════════════ 🛡️ OPERATION HISTORY 🛡️ ════════════════════ -->
+<!-- ════════════════════ 🛡️ TACTICAL MISSION LOG 🛡️ ════════════════════ -->
 
-<h2 align="center">🛡️ OPERATION HISTORY / ЖУРНАЛ БОЕВ 🛡️</h2>
+<h2 align="center">🛡️ TACTICAL MISSION LOG | ЖУРНАЛ БОЕВЫХ ОПЕРАЦИЙ 🛡️</h2>
 
 <div align="center">
 
-| ANGEL | CODE | OPERATION STATUS | PILOT SYNC | DAMAGE |
-|:---:|:---:|:---:|:---:|:---:|
-| **SACHIEL** | 03 | ✅ SUCCESS | 41.3% | LIGHT |
-| **RAMIEL** | 05 | ✅ SUCCESS | 89.1% | CRITICAL |
-| **ZERUEL** | 14 | ⚠️ BERSERK | ERR:% | DESTROYED |
-| **TABRIS** | 17 | ✅ TERMINATED | 100% | EMOTIONAL |
+| TARGET | CODE | STATUS | PILOT SYNC | DAMAGE |
+| :--- | :---: | :--- | :---: | :---: |
+| **SACHIEL** | `03` | <img src="https://img.shields.io/badge/SUCCESS-50c878?style=flat-square" /> | `41.3%` | `LIGHT` |
+| **RAMIEL** | `05` | <img src="https://img.shields.io/badge/SUCCESS-50c878?style=flat-square" /> | `89.1%` | `CRITICAL` |
+| **ZERUEL** | `14` | <img src="https://img.shields.io/badge/BERSERK-ff4500?style=flat-square" /> | `ERR:%` | `DESTROYED` |
+| **TABRIS** | `17` | <img src="https://img.shields.io/badge/TERMINATED-7b00ff?style=flat-square" /> | `100%` | `EMOTIONAL` |
 
+</div>
+
+<br/>
+
+<!-- ════════════════════ 📂 CLASSIFIED PROJECT DOSSIERS ════════════════════ -->
+
+<h2 align="center">📂 CLASSIFIED PROJECT DOSSIERS | СЕКРЕТНЫЕ МИССИИ 📂</h2>
+
+<div align="center">
+  <table border="0">
+    <tr>
+      <td width="50%">
+         <img src="https://img.shields.io/badge/MISSION-PROJECT_MAGI-ff6b35?style=for-the-badge&labelColor=0d0d0d" /><br/>
+         <code>> STATUS: [IN_PROGRESS]</code><br/>
+         <code>> CODE_NAME: "MELCHIOR"</code><br/>
+         <code>> OBJECTIVE: NEURAL NETWORK DEV</code>
+      </td>
+      <td width="50%">
+         <img src="https://img.shields.io/badge/MISSION-GEOFRONT_IO-ff6b35?style=for-the-badge&labelColor=0d0d0d" /><br/>
+         <code>> STATUS: [COMPLETED]</code><br/>
+         <code>> CODE_NAME: "ADAM"</code><br/>
+         <code>> OBJECTIVE: CLOUD INFRASTRUCTURE</code>
+      </td>
+    </tr>
+  </table>
 </div>
 
 <br/>
