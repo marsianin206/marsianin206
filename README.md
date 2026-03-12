@@ -71,25 +71,33 @@
 
 <br/>
 
-<!-- ════════════════════ 🛡️ PILOT CARDS (ACCOMPLICES) 🛡️ ════════════════════ -->
+<!-- ════════════════════ 🃏 NERV CLASSIFIED PILOT DATABASE 🃏 ════════════════════ -->
+
+<h2 align="center">🧬 CLASSIFIED PILOT DATABASE | БАЗА ДАННЫХ ПИЛОТОВ 🧬</h2>
 
 <div align="center">
   <table border="0">
     <tr>
       <td align="center" width="33%">
-        <img src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExMGlmNWs2ZzR4ZzR4ZzR4ZzR4ZzR4ZzR4ZzR4ZzR4ZzR4ZzR4dyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/mTe9zqc7SAdMs/giphy.gif" width="280" />
-        <br/><b>REI AYANAMI / 綾波 レイ</b><br/>
-        <img src="https://img.shields.io/badge/UNIT--00-ELIMINATED-3178C6?style=for-the-badge" />
+        <img src="rei_ayanami_dossier_profile_1773329275067.png" width="280" style="border: 2px solid #3178C6; border-radius: 10px;" />
+        <br/>
+        <img src="https://img.shields.io/badge/REI_AYANAMI-FIRST_CHILD-3178C6?style=for-the-badge&labelColor=0d0d0d" />
+        <br/>
+        <sub><b>綾波 レイ • EVA-00 PILOT</b></sub>
       </td>
       <td align="center" width="33%">
-        <img src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExMGlmNWs2ZzR4ZzR4ZzR4ZzR4ZzR4ZzR4ZzR4ZzR4ZzR4ZzR4dyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/kC8XbI09V7N4c/giphy.gif" width="280" />
-        <br/><b>IKARI SHINJI / 碇 シンジ</b><br/>
-        <img src="https://img.shields.io/badge/UNIT--01-ACTIVE-4b0082?style=for-the-badge" />
+        <img src="shinji_ikari_dossier_profile_1773329583132.png" width="280" style="border: 2px solid #4b0082; border-radius: 10px;" />
+        <br/>
+        <img src="https://img.shields.io/badge/IKARI_SHINJI-THIRD_CHILD-4b0082?style=for-the-badge&labelColor=0d0d0d" />
+        <br/>
+        <sub><b>碇 シンジ • EVA-01 PILOT</b></sub>
       </td>
       <td align="center" width="33%">
-        <img src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExMGlmNWs2ZzR4ZzR4ZzR4ZzR4ZzR4ZzR4ZzR4ZzR4ZzR4ZzR4dyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/9v9rK2AO9YAsU/giphy.gif" width="280" />
-        <br/><b>ASUKA LANGLEY / アスカ</b><br/>
-        <img src="https://img.shields.io/badge/UNIT--02-READY-ff4500?style=for-the-badge" />
+        <img src="asuka_langley_dossier_profile_1773329744616.png" width="280" style="border: 2px solid #ff4500; border-radius: 10px;" />
+        <br/>
+        <img src="https://img.shields.io/badge/ASUKA_LANGLEY-SECOND_CHILD-ff4500?style=for-the-badge&labelColor=0d0d0d" />
+        <br/>
+        <sub><b>惣流・アスカ • EVA-02 PILOT</b></sub>
       </td>
     </tr>
   </table>
