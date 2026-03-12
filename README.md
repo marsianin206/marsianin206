@@ -84,8 +84,8 @@
 
 <div align="center">
 
-![Unit-01](https://i.imgur.com/3y2M2.gif)
-![Unit-01](https://i.imgur.com/7XKbE.gif)
+<img src="https://media.tenor.com/1不4K8aV4XUAAAAi/neon-genesis-evangelion.gif" width="300">
+<img src="https://media.tenor.com/tCqNjh0plEoAAAAi/eva-pilot.gif" width="300">
 
 </div>
 
@@ -122,9 +122,9 @@
 
 <div align="center">
 
-![Shinji](https://i.imgur.com/8XK7e.gif)
-![Asuka](https://i.imgur.com/9Y8Zf.gif)
-![Rei](https://i.imgur.com/7W9Xa.gif)
+<img src="https://media.tenor.com/O9y2V6q4P3QAAAAi/evangelion-shinji.gif" width="250">
+<img src="https://media.tenor.com/7b0Z1K8V4XUAAAAi/neon-genesis-evangelion.gif" width="250">
+<img src="https://media.tenor.com/tCqNjh0plEoAAAAi/eva-pilot.gif" width="250">
 
 </div>
 
@@ -207,7 +207,7 @@
 
 <div align="center">
 
-![NERV](https://i.imgur.com/2Y8Zf.gif)
+<img src="https://media.tenor.com/NlL4G2o3pzkAAAAi/evangelion.gif" width="400">
 
 </div>
 
@@ -293,7 +293,7 @@
 
 <div align="center">
 
-![Footer](https://i.imgur.com/4Y9Xa.gif)
+<img src="https://media.tenor.com/WvE0_6u4bFoAAAAi/eva.gif" width="500">
 
 ```
 ╔══════════════════════════════════════════════════════════════════════════════╗
