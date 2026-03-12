@@ -103,24 +103,21 @@
 
 <!-- ════════════════════ 🎧 NERV AUDIO COMMAND CONSOLE 🎧 ════════════════════ -->
 
-<h3 align="center">🎧 NERV AUDIO COMMAND CONSOLE | КОНСОЛЬ УПРАВЛЕНИЯ ЗВУКОМ 🎧</h3>
+<div align="center">
+  <a href="https://open.spotify.com/playlist/37i9dQZF1E8KkUS5Hd4AU0">
+    <img src="https://capsule-render.vercel.app/api?type=rect&color=ff6b35&height=35&text=NERV%20AUDIO%20TACTICAL%20TERMINAL&fontSize=20&fontColor=0d0d0d&fontAlignY=45" width="100%" />
+    <img src="https://readme-typing-svg.demolab.com?font=Orbitron&weight=700&size=22&duration=3000&pause=1000&color=FF6B35&center=true&vCenter=true&width=1000&height=50&lines=STREAMING%3A+EVANGELION+COMPLETE+SOUNDTRACK;CHANNEL%3A+NERV+SECURE+UPLINK;ENCRYPTION%3A+ACTIVE" width="100%" />
+    <img src="https://capsule-render.vercel.app/api?type=waving&color=1a0a2e&height=120&section=header&text=%7C%7C%20%7C%7C%20%7C%7C%20%7C%7C%20%7C%7C%20%7C%7C%20%7C%7C%20%7C%7C%20%7C%7C%20%7C%7C%20%7C%7C%20%7C%7C%20%7C%7C%20%7C%7C%20%7C%7C&fontSize=30&fontColor=ff4500&animation=twinkling" width="100%" />
+  </a>
+</div>
 
 <div align="center">
   <a href="https://open.spotify.com/playlist/37i9dQZF1E8KkUS5Hd4AU0">
-    <table border="0" style="background-color: #0d0d0d; border: 2px solid #ff6b35; border-radius: 15px;">
-      <tr>
-        <td width="200" align="center">
-          <img src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExMGlmNWs2ZzR4ZzR4ZzR4ZzR4ZzR4ZzR4ZzR4ZzR4ZzR4ZzR4ZzR4dyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/kC8XbI09V7N4c/giphy.gif" width="180" style="border-radius: 10px;" />
-        </td>
-        <td width="400" align="left">
-          <img src="https://img.shields.io/badge/STATUS-STREAMING-50c878?style=for-the-badge&labelColor=1a0a2e" /><br/>
-          <font size="5" color="#ff6b35"><b>EVANGELION OST MIX</b></font><br/>
-          <font size="3" color="#ff6b35" opacity="0.8">NERV SECURE AUDIO CHANNEL-01</font><br/><br/>
-          <img src="https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.png" width="100%" height="2" /><br/>
-          <img src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExMGlmNWs2ZzR4ZzR4ZzR4ZzR4ZzR4ZzR4ZzR4ZzR4ZzR4ZzR4ZzR4dyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/1367E9sB8rR8zX/giphy.gif" width="100%" height="30" />
-        </td>
-      </tr>
-    </table>
+    <img src="https://img.shields.io/badge/▶_PLAY-SYNC-50c878?style=for-the-badge&labelColor=0d0d0d" />
+    &nbsp;
+    <img src="https://img.shields.io/badge/⬛_STOP-TERMINATE-ff4500?style=for-the-badge&labelColor=0d0d0d" />
+    &nbsp;
+    <img src="https://img.shields.io/badge/⏭️_NEXT-LEVEL_ACCESS-ff6b35?style=for-the-badge&labelColor=0d0d0d" />
   </a>
 </div>
 
