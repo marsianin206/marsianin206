@@ -6,10 +6,9 @@ document.addEventListener('DOMContentLoaded', () => {
     const bgMusic = document.getElementById('bg-music');
 
     activateBtn.addEventListener('click', () => {
-        // Establish Spotify Uplink
-        const spotifyContainer = document.getElementById('spotify-container');
-        if (spotifyContainer) {
-            spotifyContainer.classList.remove('hidden');
+        // Play local music (Single Click Autoplay)
+        if (bgMusic) {
+            bgMusic.play().catch(e => console.log("Audio play blocked:", e));
         }
 
         // Hide splash screen
