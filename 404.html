@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <title>404 - ACCESS DENIED // NERV</title>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@900&display=swap" rel="stylesheet">
+    <style>
+        body {
+            background-color: #000;
+            color: #ff4500;
+            font-family: 'Orbitron', sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            overflow: hidden;
+            text-align: center;
+        }
+
+        .emergency-box {
+            border: 10px solid #ff4500;
+            padding: 50px;
+            animation: blink 0.5s step-end infinite;
+        }
+
+        h1 {
+            font-size: 5rem;
+            margin: 0;
+        }
+
+        p {
+            font-size: 1.5rem;
+            letter-spacing: 5px;
+        }
+
+        .back-link {
+            display: inline-block;
+            margin-top: 30px;
+            color: #fff;
+            text-decoration: none;
+            border: 2px solid #fff;
+            padding: 10px 20px;
+        }
+
+        @keyframes blink {
+            0% {
+                border-color: #ff4500;
+                color: #ff4500;
+            }
+
+            50% {
+                border-color: #1a0a2e;
+                color: #1a0a2e;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="emergency-box">
+        <h1>404</h1>
+        <p>EMERGENCY // ACCESS DENIED</p>
+        <p>PATTERN BLUE DETECTED</p>
+        <a href="/" class="back-link">RETURN TO COMMAND CENTER</a>
+    </div>
+</body>
+
+</html>
