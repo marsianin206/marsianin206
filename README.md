@@ -23,18 +23,41 @@
 
 <br/>
 
-<!-- ════════════════════ 🎬 ICONIC EVA MOMENTS (CANON) 🎬 ════════════════════ -->
+<!-- ════════════════════ 🎬 TECHNICAL HUD SEQUENCES 🎬 ════════════════════ -->
 
 <div align="center">
   <table border="0">
     <tr>
-      <td width="50%">
-        <img src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExMGlmNWs2ZzR4ZzR4ZzR4ZzR4ZzR4ZzR4ZzR4ZzR4ZzR4ZzR4ZzR4dyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/k48n3vYfMvHBS/giphy.gif" width="100%" />
-        <p align="center"><sub><b>ПОСЛЕДОВАТЕЛЬНОСТЬ АКТИВАЦИИ ЕВА-БЛОКА 01</b></sub></p>
+      <td width="48%" align="center">
+        <svg width="350" height="200" viewBox="0 0 350 200" xmlns="http://www.w3.org/2000/svg">
+          <rect width="350" height="200" fill="#0d0d0d" stroke="#ff6b35" stroke-width="3"/>
+          <rect width="350" height="30" fill="#ff6b35"/>
+          <text x="10" y="20" fill="#0d0d0d" font-family="monospace" font-size="14" font-weight="900">SYSTEM: EVA-01</text>
+          <text x="175" y="85" fill="#ff6b35" font-family="monospace" font-size="16" font-weight="900" text-anchor="middle">ПОСЛЕДОВАТЕЛЬНОСТЬ</text>
+          <text x="175" y="110" fill="#ff6b35" font-family="monospace" font-size="16" font-weight="900" text-anchor="middle">АКТИВАЦИИ ЕВА-БЛОКА 01</text>
+          <rect x="45" y="145" width="260" height="20" fill="none" stroke="#ff6b35" stroke-width="1.5"/>
+          <rect x="50" y="150" width="250" height="10" fill="#ff6b35">
+            <animate attributeName="width" from="0" to="250" dur="4s" repeatCount="indefinite" />
+          </rect>
+          <text x="175" y="185" fill="#ff6b35" font-family="monospace" font-size="12" text-anchor="middle">
+            <tspan>INITIALIZING PHASE...</tspan>
+            <animate attributeName="opacity" values="1;0;1" dur="1s" repeatCount="indefinite" />
+          </text>
+        </svg>
       </td>
-      <td width="50%">
-        <img src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExMGlmNWs2ZzR4ZzR4ZzR4ZzR4ZzR4ZzR4ZzR4ZzR4ZzR4ZzR4dyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/ydI6vNDwS28PC/giphy.gif" width="100%" />
-        <p align="center"><sub><b>ВНУТРЕННЕЕ ДАВЛЕНИЕ LCL СТАБИЛИЗИРОВАНО</b></sub></p>
+      <td width="4%"></td>
+      <td width="48%" align="center">
+        <svg width="350" height="200" viewBox="0 0 350 200" xmlns="http://www.w3.org/2000/svg">
+          <rect width="350" height="200" fill="#0d0d0d" stroke="#50c878" stroke-width="3"/>
+          <rect width="350" height="30" fill="#50c878"/>
+          <text x="10" y="20" fill="#0d0d0d" font-family="monospace" font-size="14" font-weight="900">HUD: LCL STATUS</text>
+          <text x="175" y="85" fill="#50c878" font-family="monospace" font-size="16" font-weight="900" text-anchor="middle">ВНУТРЕННЕЕ ДАВЛЕНИЕ</text>
+          <text x="175" y="110" fill="#50c878" font-family="monospace" font-size="16" font-weight="900" text-anchor="middle">LCL СТАБИЛИЗИРОВАНО</text>
+          <path d="M50 155 Q 100 135 150 155 T 250 155 T 350 155" fill="none" stroke="#50c878" stroke-width="1.5">
+            <animate attributeName="d" values="M50 155 Q 100 135 150 155 T 250 155 T 350 155; M50 155 Q 100 175 150 155 T 250 155 T 350 155; M50 155 Q 100 135 150 155 T 250 155 T 350 155" dur="3s" repeatCount="indefinite" />
+          </path>
+          <text x="175" y="185" fill="#50c878" font-family="monospace" font-size="12" text-anchor="middle">SYNC RATE: OPTIMAL</text>
+        </svg>
       </td>
     </tr>
   </table>
@@ -195,7 +218,7 @@
 <!-- 
 ═══════════════════════════════════════════════════════════════════
 📌 ВАЖНО / IMPORTANT:
-1. Загрузи файл баннера 'evangelion_nerv_banner_marsianin206.png' в свой репозиторий вместе с README.
+1. Загрузи файлы баннеров и портретов в свой репозиторий вместе с README.
 2. Проверь, что в репозитории есть ветка 'output' для работы змейки.
 ═══════════════════════════════════════════════════════════════════
 -->
