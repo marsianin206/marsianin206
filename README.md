@@ -136,7 +136,7 @@
 <h2 align="center">🐍 Змея-покровитель 🐍</h2>
 
 <div align="center">
-  <img src="https://raw.githubusercontent.com/marsianin206/marsianin206/output/github-snake-dark.svg" width="100%" alt="Змея-покровитель" />
+  <img src="nerv_snake_guardian_pattern_blue_1773330319413.png" width="100%" alt="Змея-покровитель" />
 </div>
 
 <br/>
@@ -180,10 +180,10 @@
 
 <br/>
 
-<!-- ════════════════════ 🎬 FINAL BATTLE GIF 🎬 ════════════════════ -->
+<!-- ════════════════════ 🎬 FINAL BATTLE 🎬 ════════════════════ -->
 
 <div align="center">
-  <img src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExMGlmNWs2ZzR4ZzR4ZzR4ZzR4ZzR4ZzR4ZzR4ZzR4ZzR4ZzR4ZzR4dyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/8vtmMKDAnvYHe/giphy.gif" width="800" />
+  <img src="eva_01_final_battle_cinematic_1773330858790.png" width="100%" alt="FINAL BATTLE" />
 </div>
 
 <br/>
