@@ -7,84 +7,74 @@
 <!--        ███████╗ ╚████╔╝ ██║  ██║██║ ╚████║╚██████╔╝███████╗███████╗╝██║  -->
 <!--        ╚══════╝  ╚═══╝  ╚═╝  ╚═╝╚═╝  ╚═══╝ ╚═════╝ ╚══════╝╚══════╝╚═╝  -->
 <!--                                                                           -->
-<!--              ⚡ NERV SYSTEMS v3.0 — PILOT: marsianin206 ⚡                -->
+<!--           ⚠️  CONFIDENTIAL — NERV CENTRAL COMMAND TERMINAL  ⚠️           -->
 <!-- ═══════════════════════════════════════════════════════════════════════════ -->
 
-<!-- ╔══════════════════════════════════════════════════════════════╗ -->
-<!-- ║                    🌊 HEADER SECTION 🌊                      ║ -->
-<!-- ╚══════════════════════════════════════════════════════════════╝ -->
-
 <div align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:0d0d0d,10:1a0a2e,25:2d1b69,40:4b0082,55:6b2fa0,70:50c878,85:ff6b35,100:ff4500&height=280&section=header&text=⚡%20N%20E%20R%20V%20⚡&fontSize=80&fontColor=50c878&fontAlignY=30&desc=NEON%20GENESIS%20EVANGELION%20%7C%20PILOT%20COMMAND%20SYSTEM%20v3.0&descSize=16&descColor=ff6b35&descAlignY=52&animation=fadeIn" width="100%" />
+  <img src="https://capsule-render.vercel.app/api?type=rect&color=0:ff6b35,100:ff4500&height=30&section=header" width="100%" />
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=1a0a2e&height=250&section=header&text=EMERGENCY&fontSize=90&fontColor=ff4500&fontAlignY=35&animation=twinkling" width="100%" />
+  <img src="https://capsule-render.vercel.app/api?type=rect&color=0:ff4500,100:ff6b35&height=30&section=footer" width="100%" />
 </div>
 
-<!-- ╔══════════════════════════════════════════════════════════════╗ -->
-<!-- ║               ✨ ANIMATED TYPING HEADER ✨                   ║ -->
-<!-- ╚══════════════════════════════════════════════════════════════╝ -->
-
 <div align="center">
-  <a href="https://git.io/typing-svg">
-    <img src="https://readme-typing-svg.demolab.com?font=Orbitron&weight=900&size=30&duration=2500&pause=800&color=50C878&center=true&vCenter=true&multiline=true&repeat=true&width=900&height=120&lines=%E2%96%B6+MAGI+SYSTEM%3A+MELCHIOR-1+%7C+BALTHASAR-2+%7C+CASPER-3;%E2%96%B6+A.T.+FIELD+MAXIMUM+%7C+SYNC+RATE%3A+400%25+CRITICAL;%E2%96%B6+PATTERN+BLUE+CONFIRMED+%7C+DEPLOYING+UNIT-01" alt="Typing SVG" />
-  </a>
+  <img src="https://readme-typing-svg.demolab.com?font=Orbitron&weight=900&size=35&duration=2000&pause=500&color=FF6B35&center=true&vCenter=true&multiline=true&repeat=true&width=1000&height=100&lines=WARNING%3A+ANGEL+APPROACHING;A.T.+FIELD+RECOGNIZED%3A+PATTERN+BLUE;PILOT+marsianin206%3A+READY+TO+LAUNCH" alt="Typing SVG" />
 </div>
 
 <br/>
 
-<!-- ╔══════════════════════════════════════════════════════════════╗ -->
-<!-- ║                 🎖️ STATUS BADGES 🎖️                         ║ -->
-<!-- ╚══════════════════════════════════════════════════════════════╝ -->
+<!-- ════════════════════ 🧠 MAGI SYSTEM STATUS 🧠 ════════════════════ -->
 
 <div align="center">
-  <img src="https://img.shields.io/badge/🔮_MAGI_SYSTEM-ALL_THREE_AGREE-50c878?style=for-the-badge&labelColor=0d0d0d" />
-  &nbsp;
-  <img src="https://img.shields.io/badge/⚡_SYNC_RATE-400%25_CRITICAL-ff6b35?style=for-the-badge&labelColor=0d0d0d" />
-  &nbsp;
-  <img src="https://img.shields.io/badge/🛡️_A.T._FIELD-MAXIMUM-ff4500?style=for-the-badge&labelColor=0d0d0d" />
-  &nbsp;
-  <img src="https://img.shields.io/badge/👾_ANGEL_THREAT-PATTERN_BLUE-4b0082?style=for-the-badge&labelColor=0d0d0d" />
+  <table border="0">
+    <tr>
+      <td align="center">
+        <img src="https://img.shields.io/badge/MELCHIOR--1-RESOLVED-ff6b35?style=for-the-badge&labelColor=0d0d0d" /><br/>
+        <sub><b>YES / 承認</b></sub>
+      </td>
+      <td align="center">
+        <img src="https://img.shields.io/badge/BALTHASAR--2-RESOLVED-ff6b35?style=for-the-badge&labelColor=0d0d0d" /><br/>
+        <sub><b>YES / 承認</b></sub>
+      </td>
+      <td align="center">
+        <img src="https://img.shields.io/badge/CASPER--3-RESOLVED-ff6b35?style=for-the-badge&labelColor=0d0d0d" /><br/>
+        <sub><b>YES / 承認</b></sub>
+      </td>
+    </tr>
+  </table>
+  <img src="https://img.shields.io/badge/MAGI_DECISION-UNANIMOUS_APPROVAL-50c878?style=for-the-badge&labelColor=0d0d0d" />
 </div>
 
 <br/>
 
-<!-- ═══════════════ EVA-01 MAIN GIF BANNER ═══════════════ -->
-
 <div align="center">
-  <img src="https://media.giphy.com/media/Nx0rz3jtxtEre/giphy.gif" width="800" alt="Evangelion Opening" />
+  <img src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExMGlmNWs2ZzR4ZzR4ZzR4ZzR4ZzR4ZzR4ZzR4ZzR4ZzR4ZzR4ZzR4dyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/3C64S61x8mO8S7E7uS/giphy.gif" width="800" />
 </div>
 
 <br/>
 
-<img src="https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.png" width="100%" />
-
-<!-- ╔══════════════════════════════════════════════════════════════╗ -->
-<!-- ║             🧬 PILOT DOSSIER / ДОСЬЕ ПИЛОТА 🧬              ║ -->
-<!-- ╚══════════════════════════════════════════════════════════════╝ -->
+<!-- ════════════════════ 🧬 PILOT IDENTIFICATION 🧬 ════════════════════ -->
 
 <h2 align="center">
-  <img src="https://media.giphy.com/media/12oufCB0MyZ1Go/giphy.gif" width="40" />
-  &nbsp; PILOT DOSSIER | ДОСЬЕ ПИЛОТА &nbsp;
-  <img src="https://media.giphy.com/media/12oufCB0MyZ1Go/giphy.gif" width="40" />
+  <img src="https://media.giphy.com/media/12oufCB0MyZ1Go/giphy.gif" width="35" />
+  &nbsp; NERV PERSONNEL IDENTIFICATION &nbsp;
+  <img src="https://media.giphy.com/media/12oufCB0MyZ1Go/giphy.gif" width="35" />
 </h2>
-
-<br/>
 
 <div align="center">
 
 ```
 ╔══════════════════════════════════════════════════════════════════════╗
 ║                                                                      ║
-║    ██╗   ██╗███╗   ██╗██╗████████╗     ██████╗  ██╗                  ║
-║    ██║   ██║████╗  ██║██║╚══██╔══╝    ██╔═████╗███║                  ║
-║    ██║   ██║██╔██╗ ██║██║   ██║       ██║██╔██║╚██║                  ║
-║    ██║   ██║██║╚██╗██║██║   ██║       ████╔╝██║ ██║                  ║
-║    ╚██████╔╝██║ ╚████║██║   ██║       ╚██████╔╝ ██║                  ║
-║     ╚═════╝ ╚═╝  ╚═══╝╚═╝   ╚═╝        ╚═════╝  ╚═╝                  ║
+║   ███╗   ██╗███████╗██████╗ ██╗   ██╗    ██╗  ██╗ ██████╗             ║
+║   ████╗  ██║██╔════╝██╔══██╗██║   ██║    ██║  ██║██╔═══██╗            ║
+║   ██╔██╗ ██║█████╗  ██████╔╝██║   ██║    ███████║██║   ██║            ║
+║   ██║╚██╗██║██╔══╝  ██╔══██╗╚██╗ ██╔╝    ██╔══██║██║   ██║            ║
+║   ██║ ╚████║███████╗██║  ██║ ╚████╔╝     ██║  ██║╚██████╔╝            ║
+║   ╚═╝  ╚═══╝╚══════╝╚═╝  ╚═╝  ╚═══╝      ╚═╝  ╚═╝ ╚═════╝             ║
 ║                                                                      ║
-║                 ╔═══════════════════════════════════╗                ║
-║                 ║  ﾟ｡✧ PILOT: marsianin206 ✧｡ﾟ    ║                ║
-║                 ║  ﾟ｡✧ DESIGNATION: EVA PILOT ✧｡ﾟ  ║                ║
-║                 ║  ﾟ｡✧ CLEARANCE: LEVEL A ✧｡ﾟ      ║                ║
-║                 ╚═══════════════════════════════════╝                ║
+║             [ 📂 ACCESSING PILOT FILE: marsianin206 ]                ║
+║             [ 💉 BLOOD TYPE: BLUE (PATTERN BLUE)    ]                ║
+║             [ 🧠 COGNITIVE SYNC: 400% (STABLE)      ]                ║
 ║                                                                      ║
 ╚══════════════════════════════════════════════════════════════════════╝
 ```
@@ -93,31 +83,28 @@
 
 <br/>
 
-<!-- ═══════════════ CHARACTER GIFS — SHINJI / ASUKA / REI ═══════════════ -->
+<!-- ════════════════════ 🃏 PILOT ID CARDS 🃏 ════════════════════ -->
 
 <div align="center">
   <table>
     <tr>
-      <td align="center" width="33%">
-        <img src="https://media.giphy.com/media/GRSnxyhJnEjVR1bPwn/giphy.gif" width="250" alt="Shinji Ikari" />
-        <br/><br/>
-        <img src="https://img.shields.io/badge/SHINJI_IKARI-THIRD_CHILD-4b0082?style=for-the-badge&labelColor=0d0d0d" />
+      <td align="center" width="33%" style="background-color: #1a0a2e; border: 2px solid #50c878;">
+        <img src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExYXN0Nnh6ZzR4ZzR4ZzR4ZzR4ZzR4ZzR4ZzR4ZzR4ZzR4ZzR4dyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/3o7TKpxSIsIHYM0VYA/giphy.gif" width="250" />
         <br/>
-        <sub><b>碇シンジ • EVA-01 PILOT</b></sub>
+        <img src="https://img.shields.io/badge/UNIT--01-PURPLE-4b0082?style=for-the-badge" /><br/>
+        <b>IKARI SHINJI / 碇 シンジ</b>
       </td>
-      <td align="center" width="33%">
-        <img src="https://media.giphy.com/media/14bWswbeWGzYEo/giphy.gif" width="250" alt="Asuka Langley" />
-        <br/><br/>
-        <img src="https://img.shields.io/badge/ASUKA_LANGLEY-SECOND_CHILD-ff4500?style=for-the-badge&labelColor=0d0d0d" />
+      <td align="center" width="33%" style="background-color: #1a0a2e; border: 2px solid #ff4500;">
+        <img src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExZzR4ZzR4ZzR4ZzR4ZzR4ZzR4ZzR4ZzR4ZzR4ZzR4ZzR4dyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/3o7TKzanh3mYyvXay4/giphy.gif" width="250" />
         <br/>
-        <sub><b>惣流・アスカ • EVA-02 PILOT</b></sub>
+        <img src="https://img.shields.io/badge/UNIT--02-RED-ff4500?style=for-the-badge" /><br/>
+        <b>LANGLEY ASUKA / アスカ</b>
       </td>
-      <td align="center" width="33%">
-        <img src="https://media.giphy.com/media/3OsFzorSZSUZcvo04s/giphy.gif" width="250" alt="Rei Ayanami" />
-        <br/><br/>
-        <img src="https://img.shields.io/badge/REI_AYANAMI-FIRST_CHILD-3178C6?style=for-the-badge&labelColor=0d0d0d" />
+      <td align="center" width="33%" style="background-color: #1a0a2e; border: 2px solid #3178C6;">
+        <img src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExZzR4ZzR4ZzR4ZzR4ZzR4ZzR4ZzR4ZzR4ZzR4ZzR4ZzR4dyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/3o7TKvWpM7kYh3D5wA/giphy.gif" width="250" />
         <br/>
-        <sub><b>綾波レイ • EVA-00 PILOT</b></sub>
+        <img src="https://img.shields.io/badge/UNIT--00-BLUE-3178C6?style=for-the-badge" /><br/>
+        <b>AYANAMI REI / 綾波 レイ</b>
       </td>
     </tr>
   </table>
@@ -125,419 +112,128 @@
 
 <br/>
 
-<!-- ═══════════════ PILOT PARAMETERS TABLE ═══════════════ -->
-
-<table align="center">
-<tr>
-<td width="50%" valign="top">
-
-### 🟣 NERV IDENTIFICATION
-
-```yaml
-╔═══════════════════════════════════╗
-║  Позывной:   marsianin206        ║
-║  Тип:        Fullstack Developer  ║ 
-║  Подразделение: NERV HQ           ║
-║  Система:    MAGI MELCHIOR-3      ║
-║  Статус:     ▓▓▓▓▓▓▓▓▓▓ ONLINE   ║
-║  Допуск:     УРОВЕНЬ A            ║
-╚═══════════════════════════════════╝
-```
-
-</td>
-<td width="50%" valign="top">
-
-### ⚡ PILOT PARAMETERS
-
-```yaml
-╔═══════════════════════════════════╗
-║  Sync Rate:  ██████████████ 400%  ║
-║  A.T. Field: ██████████████ MAX   ║
-║  Combat:     ██████████████ 100%  ║
-║  Coffee:     ██████████████ ∞%    ║
-║  Code Power: ██████████████ OVER  ║
-║  Sleep:      █░░░░░░░░░░░░ 5%    ║
-╚═══════════════════════════════════╝
-```
-
-</td>
-</tr>
-</table>
+<img src="https://capsule-render.vercel.app/api?type=rect&color=ff6b35&height=15" width="100%" />
+<img src="https://capsule-render.vercel.app/api?type=rect&color=0d0d0d&height=5" width="100%" />
+<img src="https://capsule-render.vercel.app/api?type=rect&color=ff6b35&height=15" width="100%" />
 
 <br/>
 
-<img src="https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.png" width="100%" />
-
-<!-- ╔══════════════════════════════════════════════════════════════╗ -->
-<!-- ║          💻 TECH ARMORY / ТЕХНИЧЕСКИЙ АРСЕНАЛ 💻             ║ -->
-<!-- ╚══════════════════════════════════════════════════════════════╝ -->
+<!-- ════════════════════ 🛠️ ARMAMENT & TECH 🛠️ ════════════════════ -->
 
 <h2 align="center">
-  <img src="https://media.giphy.com/media/WUlplcMpOCEmTGBtBW/giphy.gif" width="40" />
-  &nbsp; TECH ARMORY | ТЕХНИЧЕСКИЙ АРСЕНАЛ &nbsp;
-  <img src="https://media.giphy.com/media/WUlplcMpOCEmTGBtBW/giphy.gif" width="40" />
+  💻 EVA UNIT ARMAMENT | ТЕХНИЧЕСКИЙ АРСЕНАЛ 💻
 </h2>
 
-<br/>
-
 <div align="center">
-
-### 🔮 Core Languages | Основные языки
-
-<br/>
-
-<a href="#">
-  <img src="https://skillicons.dev/icons?i=python,javascript,typescript,java,cpp,rust,go&theme=dark&perline=7" alt="Languages" />
-</a>
-
-<br/><br/>
-
-### 🛡️ Frameworks & Tools | Фреймворки и инструменты
-
-<br/>
-
-<a href="#">
-  <img src="https://skillicons.dev/icons?i=react,nodejs,django,flask,nextjs,docker,git,github,linux,aws,postgres,redis,vscode,figma&theme=dark&perline=7" alt="Tools" />
-</a>
-
+  <img src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExZzR4ZzR4ZzR4ZzR4ZzR4ZzR4ZzR4ZzR4ZzR4ZzR4ZzR4dyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/3o7TKv6fM1Lp7YpQG4/giphy.gif" width="400" />
 </div>
 
 <br/>
 
-<!-- ═══════════════ EVA GIF DIVIDER ═══════════════ -->
-
 <div align="center">
-  <img src="https://media.giphy.com/media/Nx0rz3jtxtEre/giphy.gif" width="350" alt="EVA Unit 01" />
-  &nbsp;&nbsp;&nbsp;&nbsp;
-  <img src="https://media.giphy.com/media/oOCbcGBJjlXJL8imGO/giphy.gif" width="350" alt="Evangelion Scene" />
+  <img src="https://skillicons.dev/icons?i=python,js,typescript,java,cpp,rust,go,react,nextjs,nodejs,docker,aws,linux,postgres,redis,figma,vscode,git&theme=dark&perline=9" />
 </div>
 
 <br/>
 
-<img src="https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.png" width="100%" />
-
-<!-- ╔══════════════════════════════════════════════════════════════╗ -->
-<!-- ║         📊 BATTLE STATISTICS / БОЕВАЯ СТАТИСТИКА 📊          ║ -->
-<!-- ╚══════════════════════════════════════════════════════════════╝ -->
+<!-- ════════════════════ 📊 NERV ANALYTICS 📊 ════════════════════ -->
 
 <h2 align="center">
-  <img src="https://media.giphy.com/media/coxQHKASG60HrHtvkt/giphy.gif" width="40" />
-  &nbsp; BATTLE STATISTICS | БОЕВАЯ СТАТИСТИКА &nbsp;
-  <img src="https://media.giphy.com/media/coxQHKASG60HrHtvkt/giphy.gif" width="40" />
+  📊 NERV ANALYTICS | БОЕВАЯ СТАТИСТИКА 📊
 </h2>
 
-<br/>
+<div align="center">
+  <img src="https://github-readme-stats.vercel.app/api?username=marsianin206&show_icons=true&hide_border=true&bg_color=0d0d0d&title_color=ff6b35&text_color=c9d1d9&icon_color=50c878&ring_color=ff6b35&count_private=true&custom_title=⚡%20PILOT%20DATA%20LOG%20⚡" width="48%" />
+  <img src="https://github-readme-streak-stats.herokuapp.com/?user=marsianin206&hide_border=true&background=0d0d0d&stroke=ff6b35&fire=ff6b35&ring=50c878&currStreakLabel=ff6b35&sideLabels=ff6b35&currStreakNum=50c878&sideNums=50c878&dates=c9d1d9" width="48%" />
+</div>
 
 <div align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=marsianin206&show_icons=true&hide_border=true&bg_color=0d0d0d&title_color=50c878&text_color=c9d1d9&icon_color=ff6b35&ring_color=50c878&count_private=true&custom_title=⚡%20NERV%20COMBAT%20LOG%20⚡" width="49%" alt="GitHub Stats" />
-  <img src="https://github-readme-streak-stats.herokuapp.com/?user=marsianin206&hide_border=true&background=0d0d0d&stroke=50c87800&fire=ff6b35&ring=50c878&currStreakLabel=50c878&sideLabels=50c878&currStreakNum=ff6b35&sideNums=ff6b35&dates=c9d1d9" width="49%" alt="Streak Stats" />
+  <img src="https://github-readme-activity-graph.vercel.app/graph?username=marsianin206&bg_color=0d0d0d&color=ff6b35&line=50c878&point=ff6b35&area=true&area_color=4b0082&hide_border=true&custom_title=⚡%20NERV%20SYNC%20CHART%20⚡" width="98%" />
 </div>
 
 <br/>
 
-<div align="center">
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=marsianin206&layout=donut-vertical&hide_border=true&bg_color=0d0d0d&title_color=50c878&text_color=c9d1d9&icon_color=ff6b35&langs_count=8&custom_title=🔮%20LANGUAGE%20ANALYSIS%20🔮" width="38%" alt="Top Languages" />
-</div>
-
-<br/>
-
-<!-- ═══════════════ ACTIVITY GRAPH ═══════════════ -->
-
-<div align="center">
-  <img src="https://github-readme-activity-graph.vercel.app/graph?username=marsianin206&bg_color=0d0d0d&color=50c878&line=ff6b35&point=50c878&area=true&area_color=4b008280&hide_border=true&custom_title=⚡%20NERV%20ACTIVITY%20LOG%20•%20CONTRIBUTION%20ANALYSIS%20⚡" width="98%" alt="Activity Graph" />
-</div>
-
-<br/>
-
-<!-- ═══════════════ EVA SCENE GIF ═══════════════ -->
-
-<div align="center">
-  <img src="https://media.giphy.com/media/8Bl3BGZfPCKJi/giphy.gif" width="700" alt="Evangelion Battle Scene" />
-</div>
-
-<br/>
-
-<img src="https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.png" width="100%" />
-
-<!-- ╔══════════════════════════════════════════════════════════════╗ -->
-<!-- ║                 🐍 SNAKE ANIMATION 🐍                        ║ -->
-<!-- ╚══════════════════════════════════════════════════════════════╝ -->
-
-<h2 align="center">
-  🐍 ━━━ CONTRIBUTION SNAKE | ЗМЕЯ КОНТРИБУЦИЙ ━━━ 🐍
-</h2>
+<!-- ════════════════════ 🐍 SNAKE 🐍 ════════════════════ -->
 
 <div align="center">
   <picture>
     <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/marsianin206/marsianin206/output/github-snake-dark.svg" />
-    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/marsianin206/marsianin206/output/github-snake.svg" />
-    <img alt="Snake animation" src="https://raw.githubusercontent.com/marsianin206/marsianin206/output/github-snake-dark.svg" width="100%" />
+    <img src="https://raw.githubusercontent.com/marsianin206/marsianin206/output/github-snake-dark.svg" width="100%" />
   </picture>
 </div>
 
 <br/>
 
-> 💡 **Для активации змейки** — создай файл `.github/workflows/snake.yml` в репозитории `marsianin206`. Содержимое файла есть в `snake.yml` в этой папке.
+<img src="https://capsule-render.vercel.app/api?type=rect&color=ff6b35&height=10" width="100%" />
 
 <br/>
 
-<img src="https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.png" width="100%" />
+<!-- ════════════════════ 🏆 ACHIEVEMENTS 🏆 ════════════════════ -->
 
-<!-- ╔══════════════════════════════════════════════════════════════╗ -->
-<!-- ║          🛡️ ANGEL BATTLES / БИТВЫ С АНГЕЛАМИ 🛡️              ║ -->
-<!-- ╚══════════════════════════════════════════════════════════════╝ -->
-
-<h2 align="center">
-  <img src="https://media.giphy.com/media/RgfGmnVvt8Pfy/giphy.gif" width="40" />
-  &nbsp; ANGEL BATTLES | БИТВЫ С АНГЕЛАМИ &nbsp;
-  <img src="https://media.giphy.com/media/RgfGmnVvt8Pfy/giphy.gif" width="40" />
-</h2>
+<h3 align="center">🏆 NERV COMMENDATIONS | ТРОФЕИ И ТИТУЛЫ</h3>
+<div align="center">
+  <img src="https://github-trophies.vercel.app/?username=marsianin206&theme=discord&no-frame=true&no-bg=true&column=7&margin-w=10&margin-h=10" width="100%" />
+</div>
 
 <br/>
 
+<!-- ════════════════════ 🛡️ ANGEL RECORD 🛡️ ════════════════════ -->
+
+<h2 align="center">🛡️ ANGEL ELIMINATION RECORD 🛡️</h2>
 <div align="center">
 
-| # | Angel | Ангел | EVA Unit | Status | Threat |
-|:---:|:---:|:---:|:---:|:---:|:---:|
-| 3rd | **Sachiel** | サキエル | 🟣 Unit-01 | ✅ `ELIMINATED` | 🟡🟡🟡⚪⚪ |
-| 4th | **Shamshel** | シャムシエル | 🟣 Unit-01 | ✅ `ELIMINATED` | 🟡🟡🟡⚪⚪ |
-| 5th | **Ramiel** | ラミエル | 🟣 Unit-01 | ✅ `ELIMINATED` | 🟡🟡🟡🟡⚪ |
-| 6th | **Gaghiel** | ガギエル | 🔴 Unit-02 | ✅ `ELIMINATED` | 🟡🟡🟡⚪⚪ |
-| 7th | **Israfel** | イスラフェル | 🟣🔴 01+02 | ✅ `ELIMINATED` | 🟡🟡🟡🟡⚪ |
-| 8th | **Sandalphon** | サンダルフォン | 🔴 Unit-02 | ✅ `ELIMINATED` | 🟡🟡🟡⚪⚪ |
-| 9th | **Matarael** | マトリエル | 🟣🔴🔵 ALL | ✅ `ELIMINATED` | 🟡🟡⚪⚪⚪ |
-| 10th | **Sahaquiel** | サハクィエル | 🟣🔴🔵 ALL | ✅ `ELIMINATED` | 🟡🟡🟡🟡🟡 |
-| 11th | **Ireul** | イロウル | 🖥️ MAGI | ✅ `ELIMINATED` | 🟡🟡🟡⚪⚪ |
-| 12th | **Leliel** | レリエル | 🟣 Unit-01 | ✅ `ELIMINATED` | 🟡🟡🟡🟡⚪ |
-| 13th | **Bardiel** | バルディエル | ⚫ Dummy | ✅ `ELIMINATED` | 🔴🔴🔴🔴🔴 |
-| 14th | **Zeruel** | ゼルエル | 🟣 Unit-01 👹 | ✅ `BERSERK` | 🔴🔴🔴🔴🔴 |
-| 15th | **Arael** | アラエル | 🗡️ Spear | ✅ `ELIMINATED` | 🟡🟡🟡🟡⚪ |
-| 16th | **Armisael** | アルミサエル | 🔵 Unit-00 💥 | ✅ `SACRIFICE` | 🔴🔴🔴🔴🔴 |
-| 17th | **Tabris** | タブリス | 🟣 Unit-01 | ✅ `ELIMINATED` | 🔴🔴🔴🔴🔴 |
+| ANGEL | CODE | EVA UNIT | STATUS | SYNC |
+|:---:|:---:|:---:|:---:|:---:|
+| **Ramiel** | 05 | 🟣 01 | ELIMINATED | 400% |
+| **Zeruel** | 14 | 🟣 01 👹 | BERSERK | ERR |
+| **Tabris** | 17 | 🟣 01 | TERMINATED | 100% |
 
 </div>
 
 <br/>
 
-<!-- ═══════════════ EVANGELION DRAMATIC GIF ═══════════════ -->
+<!-- ════════════════════ 🔗 CONTACTS 🔗 ════════════════════ -->
 
+<h2 align="center">🔗 NERV SECURITY COMMS 🔗</h2>
 <div align="center">
-  <img src="https://media.giphy.com/media/MFRqMnOIGNH4k/giphy.gif" width="350" alt="EVA Scene 1" />
+  <a href="https://t.me/SER_X_FEAR">
+    <img src="https://img.shields.io/badge/TELEGRAM-@SER__X__FEAR-ff6b35?style=for-the-badge&logo=telegram&logoColor=fff&labelColor=0d0d0d" />
+  </a>
   &nbsp;&nbsp;
-  <img src="https://media.giphy.com/media/SgwPtMD47PV04/giphy.gif" width="350" alt="EVA Scene 2" />
-</div>
-
-<br/>
-
-<img src="https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.png" width="100%" />
-
-<!-- ╔══════════════════════════════════════════════════════════════╗ -->
-<!-- ║             🎯 CURRENT MISSIONS / МИССИИ 🎯                  ║ -->
-<!-- ╚══════════════════════════════════════════════════════════════╝ -->
-
-<h2 align="center">
-  🎯 ━━━ CURRENT MISSIONS | ТЕКУЩИЕ МИССИИ ━━━ 🎯
-</h2>
-
-<br/>
-
-<div align="center">
-
-```
-╔════════════════════════════════════════════════════════════════════════╗
-║                                                                        ║
-║   ▶ 🟢 PROJECTS DEPLOYED         ══════════════════════  ◉ 100%     ║
-║   ▶ 🟢 ANGEL BATTLES WON         ══════════════════════  ◉ 17/17    ║
-║   ▶ 🟢 CODE COMMITS              ══════════════════════  ◉ ∞        ║
-║   ▶ 🟢 BUGS EXTERMINATED         ══════════════════════  ◉ 9999+    ║
-║   ▶ 🟡 WORLD DOMINATION          ══════════════════════  ◉ 42%      ║
-║   ▶ 🟡 THIRD IMPACT PREVENTION   ══════════════════════  ◉ 78%      ║
-║   ▶ 🔴 COFFEE DEPENDENCY         ══════════════════════  ◉ ∞∞∞      ║
-║   ▶ 🔴 SLEEP SCHEDULE            ══════════════════════  ◉ ERROR    ║
-║                                                                        ║
-║          ╔═══════════════════════════════════════════════╗             ║
-║          ║    ★ ALL SYSTEMS NOMINAL • UNIT-01 STANDBY ★  ║             ║
-║          ╚═══════════════════════════════════════════════╝             ║
-║                                                                        ║
-╚════════════════════════════════════════════════════════════════════════╝
-```
-
-</div>
-
-<br/>
-
-<img src="https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.png" width="100%" />
-
-<!-- ╔══════════════════════════════════════════════════════════════╗ -->
-<!-- ║              🏆 TROPHIES / ТРОФЕИ 🏆                         ║ -->
-<!-- ╚══════════════════════════════════════════════════════════════╝ -->
-
-<h2 align="center">
-  🏆 ━━━ TROPHIES | ТРОФЕИ ━━━ 🏆
-</h2>
-
-<br/>
-
-<div align="center">
-  <img src="https://github-trophies.vercel.app/?username=marsianin206&theme=discord&no-frame=true&no-bg=true&column=7&margin-w=10&margin-h=10" width="98%" alt="Trophies" />
+  <a href="#">
+    <img src="https://img.shields.io/badge/DISCORD-NERV__HQ-ff6b35?style=for-the-badge&logo=discord&logoColor=fff&labelColor=0d0d0d" />
+  </a>
 </div>
 
 <br/>
 
 <div align="center">
-  <img src="https://img.shields.io/badge/🏆_COMMITS-ACHIEVED-50c878?style=for-the-badge&labelColor=0d0d0d" />
-  &nbsp;
-  <img src="https://img.shields.io/badge/🏆_REPOS-ACHIEVED-ff6b35?style=for-the-badge&labelColor=0d0d0d" />
-  &nbsp;
-  <img src="https://img.shields.io/badge/🏆_STARS-ACHIEVED-4b0082?style=for-the-badge&labelColor=0d0d0d" />
-  &nbsp;
-  <img src="https://img.shields.io/badge/🏆_FOLLOWERS-ACHIEVED-ff4500?style=for-the-badge&labelColor=0d0d0d" />
-  &nbsp;
-  <img src="https://img.shields.io/badge/🏆_PULL_REQUESTS-ACHIEVED-3178C6?style=for-the-badge&labelColor=0d0d0d" />
+  <img src="https://komarev.com/ghpvc/?username=marsianin206&label=PILOT+VISITORS&color=ff6b35&style=for-the-badge&labelColor=0d0d0d" />
 </div>
 
 <br/>
 
-<img src="https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.png" width="100%" />
+<!-- ════════════════════ 🎬 OUTRO 🎬 ════════════════════ -->
 
-<!-- ╔══════════════════════════════════════════════════════════════╗ -->
-<!-- ║          🔗 COMMUNICATION / КАНАЛЫ СВЯЗИ 🔗                  ║ -->
-<!-- ╚══════════════════════════════════════════════════════════════╝ -->
-
-<h2 align="center">
-  <img src="https://media.giphy.com/media/LnQjpWaON8nhr21vNW/giphy.gif" width="40" />
-  &nbsp; NERV COMMS | КАНАЛЫ СВЯЗИ &nbsp;
-  <img src="https://media.giphy.com/media/LnQjpWaON8nhr21vNW/giphy.gif" width="40" />
-</h2>
-
-<br/>
+<div align="center">
+  <img src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExYnJqZzR4ZzR4ZzR4ZzR4ZzR4ZzR4ZzR4ZzR4ZzR4ZzR4ZzR4dyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/unJ6U264wV2E0/giphy.gif" width="800" />
+</div>
 
 <div align="center">
 
 ```
 ╔══════════════════════════════════════════════════════════════════╗
 ║                                                                  ║
-║                    ◈ NERV COMMUNICATION HQ ◈                    ║
+║             ﾟ｡✧ GOD'S IN HIS HEAVEN ✧｡ﾟ                        ║
+║         ﾟ｡✧ ALL'S RIGHT WITH THE WORLD ✧｡ﾟ                     ║
 ║                                                                  ║
-║    ┌──────────────────────────────────────────────────────────┐  ║
-║    │                                                          │  ║
-║    │   💬  Telegram:  @SER_X_FEAR                            │  ║
-║    │   🐙  GitHub:    github.com/marsianin206                │  ║
-║    │   🎮  Discord:   [NERV_HQ]                              │  ║
-║    │                                                          │  ║
-║    └──────────────────────────────────────────────────────────┘  ║
-║                                                                  ║
-║                     ⚠️ ANGEL SHALL NOT PASS ⚠️                  ║
+║        [ TERMINAL SESSION TERMINATED. HAVE A NICE DAY. ]         ║
 ║                                                                  ║
 ╚══════════════════════════════════════════════════════════════════╝
 ```
 
-<br/>
-
-<a href="https://t.me/SER_X_FEAR">
-  <img src="https://img.shields.io/badge/💬_Telegram-@SER__X__FEAR-26A5E4?style=for-the-badge&labelColor=0d0d0d" />
-</a>
-&nbsp;&nbsp;
-<a href="https://github.com/marsianin206">
-  <img src="https://img.shields.io/badge/🐙_GitHub-marsianin206-fff?style=for-the-badge&labelColor=0d0d0d" />
-</a>
-&nbsp;&nbsp;
-<a href="#">
-  <img src="https://img.shields.io/badge/🎮_Discord-NERV__HQ-5865F2?style=for-the-badge&labelColor=0d0d0d" />
-</a>
-
 </div>
-
-<br/>
-
-<img src="https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.png" width="100%" />
-
-<!-- ╔══════════════════════════════════════════════════════════════╗ -->
-<!-- ║             👁️ PROFILE VIEWS / ПРОСМОТРЫ 👁️                  ║ -->
-<!-- ╚══════════════════════════════════════════════════════════════╝ -->
 
 <div align="center">
-  <img src="https://komarev.com/ghpvc/?username=marsianin206&label=👁️+PROFILE+VISITORS&color=50c878&style=for-the-badge&labelColor=0d0d0d" alt="Profile Views" />
-  &nbsp;&nbsp;
-  <a href="https://github.com/marsianin206?tab=followers">
-    <img src="https://img.shields.io/github/followers/marsianin206?style=for-the-badge&color=ff6b35&labelColor=0d0d0d&logo=github&logoColor=fff" alt="Followers" />
-  </a>
-  &nbsp;&nbsp;
-  <a href="https://github.com/marsianin206">
-    <img src="https://img.shields.io/badge/⭐_STARS-marsianin206-50c878?style=for-the-badge&labelColor=0d0d0d&logo=github&logoColor=fff" alt="Stars" />
-  </a>
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=1a0a2e&height=150&section=footer&text=SAYONARA&fontSize=40&fontColor=ff4500&animation=fadeIn" width="100%" />
 </div>
-
-<br/>
-
-<!-- ╔══════════════════════════════════════════════════════════════╗ -->
-<!-- ║                  🎬 ENDING SECTION 🎬                        ║ -->
-<!-- ╚══════════════════════════════════════════════════════════════╝ -->
-
-<!-- ═══════════════ FINAL EVA GIF + QUOTE ═══════════════ -->
-
-<div align="center">
-  <img src="https://media.giphy.com/media/M2xCKJBEYGdJm/giphy.gif" width="700" alt="End of Evangelion" />
-</div>
-
-<br/>
-
-<div align="center">
-
-```
-╔══════════════════════════════════════════════════════════════════════╗
-║                                                                      ║
-║                                                                      ║
-║                ﾟ｡✧  GOD'S IN HIS HEAVEN  ✧｡ﾟ                      ║
-║            ﾟ｡✧  ALL'S RIGHT WITH THE WORLD  ✧｡ﾟ                    ║
-║                                                                      ║
-║          ┌──────────────────────────────────────────┐               ║
-║          │     ★★★ NERV COMMAND SIGNING OFF ★★★     │               ║
-║          │                                          │               ║
-║          │  "Anywhere can be paradise as long as    │               ║
-║          │   you have the will to live.              │               ║
-║          │   After all, you are alive,               │               ║
-║          │   so you will always have the chance      │               ║
-║          │   to be happy."                           │               ║
-║          │                          — Yui Ikari      │               ║
-║          └──────────────────────────────────────────┘               ║
-║                                                                      ║
-║                                                                      ║
-╚══════════════════════════════════════════════════════════════════════╝
-```
-
-</div>
-
-<br/>
-
-<!-- ═══════════════ FOOTER WAVE ═══════════════ -->
-
-<div align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:ff4500,10:ff6b35,25:50c878,40:6b2fa0,55:4b0082,70:2d1b69,85:1a0a2e,100:0d0d0d&height=200&section=footer&text=ﾟ｡✧%20EVANGELION%20✧｡ﾟ&fontSize=40&fontColor=50c878&fontAlignY=70&desc=THE%20FATE%20OF%20DESTRUCTION%20IS%20ALSO%20THE%20JOY%20OF%20REBIRTH&descSize=14&descColor=ff6b35&descAlignY=88&animation=fadeIn" width="100%" />
-</div>
-
-<!-- 
-═══════════════════════════════════════════════════════════════════════
-📌 SETUP INSTRUCTIONS / ИНСТРУКЦИИ ПО НАСТРОЙКЕ:
-═══════════════════════════════════════════════════════════════════════
-
-1. Создай репозиторий: marsianin206/marsianin206
-   https://github.com/new → имя: marsianin206 → Public → Add README
-
-2. Скопируй содержимое этого файла в README.md
-
-3. ЗАМЕНИ контакты:
-   - Discord: замени NERV_HQ на свой Discord-тег
-
-4. SNAKE ANIMATION — создай файл:
-   .github/workflows/snake.yml  (содержимое в файле snake.yml)
-   Затем: Actions → "Generate Snake" → Run workflow
-
-5. SKILL ICONS — если хочешь изменить технологии:
-   https://skillicons.dev — генератор иконок
-
-6. Все GIF-ки берутся с Giphy CDN — они надёжные и быстрые
-
-★ NERV CENTRAL COMMAND — ALL SYSTEMS OPERATIONAL ★
-═══════════════════════════════════════════════════════════════════════
--->
