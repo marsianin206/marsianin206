@@ -157,61 +157,71 @@
 
 <br/>
 
-<!-- ════════════════════ 🛡️ SKILL SYNCHRONIZATION RATIOS 🛡️ ════════════════════ -->
+<!-- ════════════════════ 🛡️ SKILL SYNCHRONIZATION HUD 🛡️ ════════════════════ -->
 
-<h2 align="center">⚙️ SKILL SYNC RATIOS | УРОВНИ СИНХРОНИЗАЦИИ ⚙️</h2>
+<h2 align="center">⚙️ SKILL SYNC HUD | МОНИТОР СИНХРОНИЗАЦИИ НАВЫКОВ ⚙️</h2>
 
 <div align="center">
-  <table border="0" width="80%">
-    <tr>
-      <td><b>PYTHON</b></td>
-      <td>
-        <svg width="400" height="20">
-          <rect width="400" height="20" fill="#1a0a2e" rx="10"/>
-          <rect width="380" height="20" fill="#ff6b35" rx="10">
-            <animate attributeName="width" from="0" to="380" dur="2s" fill="freeze" />
-          </rect>
-          <text x="200" y="15" fill="#0d0d0d" font-family="monospace" font-size="12" text-anchor="middle" font-weight="bold">400% BERSERK</text>
-        </svg>
-      </td>
-    </tr>
-    <tr>
-      <td><b>JS / TS</b></td>
-      <td>
-        <svg width="400" height="20">
-          <rect width="400" height="20" fill="#1a0a2e" rx="10"/>
-          <rect width="320" height="20" fill="#50c878" rx="10">
-            <animate attributeName="width" from="0" to="320" dur="2s" fill="freeze" />
-          </rect>
-          <text x="200" y="15" fill="#0d0d0d" font-family="monospace" font-size="12" text-anchor="middle" font-weight="bold">82% STABLE</text>
-        </svg>
-      </td>
-    </tr>
-    <tr>
-      <td><b>DOCKER</b></td>
-      <td>
-        <svg width="400" height="20">
-          <rect width="400" height="20" fill="#1a0a2e" rx="10"/>
-          <rect width="280" height="20" fill="#3178C6" rx="10">
-            <animate attributeName="width" from="0" to="280" dur="2s" fill="freeze" />
-          </rect>
-          <text x="200" y="15" fill="#0d0d0d" font-family="monospace" font-size="12" text-anchor="middle" font-weight="bold">70% SYNC</text>
-        </svg>
-      </td>
-    </tr>
-     <tr>
-      <td><b>DATABASE</b></td>
-      <td>
-        <svg width="400" height="20">
-          <rect width="400" height="20" fill="#1a0a2e" rx="10"/>
-          <rect width="360" height="20" fill="#ff4500" rx="10">
-            <animate attributeName="width" from="0" to="360" dur="2s" fill="freeze" />
-          </rect>
-          <text x="200" y="15" fill="#0d0d0d" font-family="monospace" font-size="12" text-anchor="middle" font-weight="bold">91% OPTIMAL</text>
-        </svg>
-      </td>
-    </tr>
-  </table>
+  <svg width="800" height="420" viewBox="0 0 800 420" xmlns="http://www.w3.org/2000/svg">
+    <!-- Main Frame -->
+    <rect width="800" height="420" fill="#0d0d0d" stroke="#ff6b35" stroke-width="3" rx="10"/>
+    <path d="M0 40 L800 40" stroke="#ff6b35" stroke-width="2"/>
+    <text x="20" y="27" fill="#ff6b35" font-family="monospace" font-size="16" font-weight="900">NEURAL LINK: ESTABLISHED • PRIORITY AA</text>
+    <text x="780" y="27" fill="#ff6b35" font-family="monospace" font-size="14" text-anchor="end">v6.2.0-NERV</text>
+
+    <!-- PYTHON MODULE -->
+    <g transform="translate(40, 60)">
+      <text x="0" y="20" fill="#ff4500" font-family="monospace" font-size="18" font-weight="900">CORE_MODULE: PYTHON</text>
+      <text x="720" y="20" fill="#ff4500" font-family="monospace" font-size="14" text-anchor="end">STATUS: BERSERK</text>
+      <rect y="30" width="720" height="25" fill="#1a0a2e" stroke="#ff4500" stroke-width="1"/>
+      <rect y="30" width="720" height="25" fill="#ff4500">
+        <animate attributeName="opacity" values="1;0.6;1" dur="0.1s" repeatCount="indefinite" />
+      </rect>
+      <text x="360" y="48" fill="#0d0d0d" font-family="monospace" font-size="16" font-weight="900" text-anchor="middle">400% SYNC RATE</text>
+      <text y="70" fill="#ff4500" font-family="monospace" font-size="12">PULSE: CRITICAL | LCL CONDUCTIVITY: MAX | NEURAL FLOW: OVERLOADED</text>
+    </g>
+
+    <!-- JS / TS MODULE -->
+    <g transform="translate(40, 150)">
+      <text x="0" y="20" fill="#50c878" font-family="monospace" font-size="18" font-weight="900">UI_MODULE: JS / TS</text>
+      <text x="720" y="20" fill="#50c878" font-family="monospace" font-size="14" text-anchor="end">STATUS: STABLE</text>
+      <rect y="30" width="720" height="20" fill="#1a0a2e" stroke="#50c878" stroke-width="1"/>
+      <rect y="30" width="590" height="20" fill="#50c878">
+        <animate attributeName="width" from="0" to="590" dur="2s" fill="freeze" />
+      </rect>
+      <text x="360" y="45" fill="#0d0d0d" font-family="monospace" font-size="14" font-weight="900" text-anchor="middle">82% SYNC RATE</text>
+      <text y="65" fill="#50c878" font-family="monospace" font-size="11">HARMONIC RATIO: OPTIMAL | SIGNAL INTERFERENCE: 0.02% | SYSTEM: NOMINAL</text>
+    </g>
+
+    <!-- DOCKER MODULE -->
+    <g transform="translate(40, 235)">
+      <text x="0" y="20" fill="#3178C6" font-family="monospace" font-size="18" font-weight="900">ENV_MODULE: DOCKER</text>
+      <text x="720" y="20" fill="#3178C6" font-family="monospace" font-size="14" text-anchor="end">STATUS: SYNCING</text>
+      <rect y="30" width="720" height="20" fill="#1a0a2e" stroke="#3178C6" stroke-width="1"/>
+      <rect y="30" width="504" height="20" fill="#3178C6">
+        <animate attributeName="width" from="0" to="504" dur="2s" fill="freeze" />
+      </rect>
+      <text x="360" y="45" fill="#0d0d0d" font-family="monospace" font-size="14" font-weight="900" text-anchor="middle">70% SYNC RATE</text>
+      <text y="65" fill="#3178C6" font-family="monospace" font-size="11">CONTAINER_LOCK: ENGAGED | BRIDGE_PULSE: ACTIVE | VIRTUAL_LAYER: SECURE</text>
+    </g>
+
+    <!-- DATABASE MODULE -->
+    <g transform="translate(40, 320)">
+      <text x="0" y="20" fill="#ff9900" font-family="monospace" font-size="18" font-weight="900">DATA_MODULE: DATABASE</text>
+      <text x="720" y="20" fill="#ff9900" font-family="monospace" font-size="14" text-anchor="end">STATUS: OPTIMAL</text>
+      <rect y="30" width="720" height="20" fill="#1a0a2e" stroke="#ff9900" stroke-width="1"/>
+      <rect y="30" width="655" height="20" fill="#ff9900">
+        <animate attributeName="width" from="0" to="655" dur="2s" fill="freeze" />
+      </rect>
+      <text x="360" y="45" fill="#0d0d0d" font-family="monospace" font-size="14" font-weight="900" text-anchor="middle">91% SYNC RATE</text>
+      <text y="65" fill="#ff9900" font-family="monospace" font-size="11">QUERY_LATENCY: < 1ms | INTEGRITY: 100% | PERSISTENCE_LOG: ACTIVE</text>
+    </g>
+
+    <!-- Scanline effect -->
+    <rect width="800" height="2" fill="#ffffff" opacity="0.1">
+      <animate attributeName="y" from="40" to="415" dur="3s" repeatCount="indefinite" />
+    </rect>
+  </svg>
 </div>
 
 <br/>
