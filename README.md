@@ -29,17 +29,17 @@
   <table border="0">
     <tr>
       <td width="48%" align="center">
-        <svg width="350" height="200" viewBox="0 0 350 200" xmlns="http://www.w3.org/2000/svg">
-          <rect width="350" height="200" fill="#0d0d0d" stroke="#ff6b35" stroke-width="3"/>
-          <rect width="350" height="30" fill="#ff6b35"/>
-          <text x="10" y="20" fill="#0d0d0d" font-family="monospace" font-size="14" font-weight="900">SYSTEM: EVA-01</text>
-          <text x="175" y="85" fill="#ff6b35" font-family="monospace" font-size="16" font-weight="900" text-anchor="middle">ПОСЛЕДОВАТЕЛЬНОСТЬ</text>
-          <text x="175" y="110" fill="#ff6b35" font-family="monospace" font-size="16" font-weight="900" text-anchor="middle">АКТИВАЦИИ ЕВА-БЛОКА 01</text>
-          <rect x="45" y="145" width="260" height="20" fill="none" stroke="#ff6b35" stroke-width="1.5"/>
-          <rect x="50" y="150" width="250" height="10" fill="#ff6b35">
-            <animate attributeName="width" from="0" to="250" dur="4s" repeatCount="indefinite" />
+        <svg width="300" height="180" viewBox="0 0 300 180" xmlns="http://www.w3.org/2000/svg">
+          <rect width="300" height="180" fill="#0d0d0d" stroke="#ff6b35" stroke-width="2"/>
+          <rect width="300" height="25" fill="#ff6b35"/>
+          <text x="10" y="17" fill="#0d0d0d" font-family="monospace" font-size="12" font-weight="bold">SYSTEM: EVA-01</text>
+          <text x="150" y="70" fill="#ff6b35" font-family="monospace" font-size="13" font-weight="bold" text-anchor="middle">ПОСЛЕДОВАТЕЛЬНОСТЬ</text>
+          <text x="150" y="90" fill="#ff6b35" font-family="monospace" font-size="13" font-weight="bold" text-anchor="middle">АКТИВАЦИИ ЕВА-БЛОКА 01</text>
+          <rect x="30" y="120" width="240" height="15" fill="none" stroke="#ff6b35" stroke-width="1"/>
+          <rect x="35" y="125" width="230" height="5" fill="#ff6b35">
+            <animate attributeName="width" from="0" to="230" dur="4s" repeatCount="indefinite" />
           </rect>
-          <text x="175" y="185" fill="#ff6b35" font-family="monospace" font-size="12" text-anchor="middle">
+          <text x="150" y="155" fill="#ff6b35" font-family="monospace" font-size="12" text-anchor="middle">
             <tspan>INITIALIZING PHASE...</tspan>
             <animate attributeName="opacity" values="1;0;1" dur="1s" repeatCount="indefinite" />
           </text>
@@ -47,20 +47,49 @@
       </td>
       <td width="4%"></td>
       <td width="48%" align="center">
-        <svg width="350" height="200" viewBox="0 0 350 200" xmlns="http://www.w3.org/2000/svg">
-          <rect width="350" height="200" fill="#0d0d0d" stroke="#50c878" stroke-width="3"/>
-          <rect width="350" height="30" fill="#50c878"/>
-          <text x="10" y="20" fill="#0d0d0d" font-family="monospace" font-size="14" font-weight="900">HUD: LCL STATUS</text>
-          <text x="175" y="85" fill="#50c878" font-family="monospace" font-size="16" font-weight="900" text-anchor="middle">ВНУТРЕННЕЕ ДАВЛЕНИЕ</text>
-          <text x="175" y="110" fill="#50c878" font-family="monospace" font-size="16" font-weight="900" text-anchor="middle">LCL СТАБИЛИЗИРОВАНО</text>
-          <path d="M50 155 Q 100 135 150 155 T 250 155 T 350 155" fill="none" stroke="#50c878" stroke-width="1.5">
-            <animate attributeName="d" values="M50 155 Q 100 135 150 155 T 250 155 T 350 155; M50 155 Q 100 175 150 155 T 250 155 T 350 155; M50 155 Q 100 135 150 155 T 250 155 T 350 155" dur="3s" repeatCount="indefinite" />
+        <svg width="300" height="180" viewBox="0 0 300 180" xmlns="http://www.w3.org/2000/svg">
+          <rect width="300" height="180" fill="#0d0d0d" stroke="#50c878" stroke-width="2"/>
+          <rect width="300" height="25" fill="#50c878"/>
+          <text x="10" y="17" fill="#0d0d0d" font-family="monospace" font-size="12" font-weight="bold">HUD: LCL STATUS</text>
+          <text x="150" y="70" fill="#50c878" font-family="monospace" font-size="13" font-weight="bold" text-anchor="middle">ВНУТРЕННЕЕ ДАВЛЕНИЕ</text>
+          <text x="150" y="90" fill="#50c878" font-family="monospace" font-size="13" font-weight="bold" text-anchor="middle">LCL СТАБИЛИЗИРОВАНО</text>
+          <path d="M40 130 Q 80 110 120 130 T 200 130 T 280 130" fill="none" stroke="#50c878" stroke-width="1">
+            <animate attributeName="d" values="M40 130 Q 80 110 120 130 T 200 130 T 280 130; M40 130 Q 80 150 120 130 T 200 130 T 280 130; M40 130 Q 80 110 120 130 T 200 130 T 280 130" dur="3s" repeatCount="indefinite" />
           </path>
-          <text x="175" y="185" fill="#50c878" font-family="monospace" font-size="12" text-anchor="middle">SYNC RATE: OPTIMAL</text>
+          <text x="150" y="155" fill="#50c878" font-family="monospace" font-size="12" text-anchor="middle">SYNC RATE: OPTIMAL</text>
         </svg>
       </td>
     </tr>
   </table>
+</div>
+
+<br/>
+
+<!-- ════════════════════ 🎧 NERV AUDIO LOGS 🎧 ════════════════════ -->
+
+<h2 align="center">🎧 NERV AUDIO TERMINAL | МУЗЫКАЛЬНЫЙ ТЕРМИНАЛ 🎧</h2>
+
+<div align="center">
+  <a href="https://open.spotify.com/playlist/37i9dQZF1E8KkUS5Hd4AU0">
+    <svg width="600" height="80" viewBox="0 0 600 80" xmlns="http://www.w3.org/2000/svg">
+      <rect width="600" height="80" fill="#0d0d0d" stroke="#ff6b35" stroke-width="2" rx="40"/>
+      <circle cx="40" cy="40" r="25" fill="none" stroke="#ff6b35" stroke-width="2">
+        <animate attributeName="r" values="25;28;25" dur="1s" repeatCount="indefinite" />
+      </circle>
+      <path d="M35 30 L53 40 L35 50 Z" fill="#ff6b35"/>
+      <text x="80" y="35" fill="#ff6b35" font-family="monospace" font-size="14" font-weight="bold">NOW PLAYING: EVANGELION OST MIX</text>
+      <text x="80" y="55" fill="#ff6b35" font-family="monospace" font-size="12" opacity="0.7">SOURCE: SPOTIFY SECURE CHANNEL</text>
+      <rect x="350" y="32" width="200" height="15" fill="none" stroke="#ff6b35" stroke-width="1"/>
+      <rect x="355" y="37" width="10" height="5" fill="#ff6b35">
+         <animate attributeName="width" from="0" to="190" dur="20s" repeatCount="indefinite" />
+      </rect>
+      <!-- Visualizer bars -->
+      <rect x="280" y="50" width="4" height="10" fill="#ff6b35"><animate attributeName="height" values="10;25;10" dur="0.5s" repeatCount="indefinite" /></rect>
+      <rect x="286" y="50" width="4" height="20" fill="#ff6b35"><animate attributeName="height" values="20;5;20" dur="0.7s" repeatCount="indefinite" /></rect>
+      <rect x="292" y="50" width="4" height="15" fill="#ff6b35"><animate attributeName="height" values="15;30;15" dur="0.6s" repeatCount="indefinite" /></rect>
+      <rect x="298" y="50" width="4" height="22" fill="#ff6b35"><animate attributeName="height" values="22;12;22" dur="0.8s" repeatCount="indefinite" /></rect>
+    </svg>
+  </a>
 </div>
 
 <br/>
