@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NERV | marsianin206 Central Command</title>
+    <!-- SEO -->
+    <meta name="description" content="Technical profile of Pilot marsianin206. NERV Central Command Secure Access.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=JetBrains+Mono:wght@300;500;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="nerv-terminal">
+    <!-- Grid Overlay -->
+    <div class="scanlines"></div>
+    <div class="grid-overlay"></div>
+
+    <header class="main-header">
+        <div class="header-container">
+            <img src="evangelion_nerv_banner_marsianin206_1773328664113.png" alt="NERV Banner" class="banner-img">
+            <div class="terminal-status">
+                <span class="status-dot pulse"></span>
+                <span class="status-text">CORE SYSTEM ONLINE // ACCESS LEVEL: AA</span>
+            </div>
+        </div>
+    </header>
+
+    <main class="content-wrapper">
+        
+        <!-- SECTION 1: BIOMETRIC SCAN -->
+        <section id="biometrics" class="data-block glass-panel">
+            <div class="block-header">
+                <h2>IDENTIFICATION / ИДЕНТИФИКАЦИЯ</h2>
+            </div>
+            <div class="bio-scan-container">
+                <div class="scan-visual">
+                    <svg viewBox="0 0 400 100">
+                        <path class="dna-wave" d="M0 50 Q 25 10 50 50 T 100 50 T 150 50 T 200 50 T 250 50 T 300 50 T 350 50 T 400 50" fill="none" stroke="#50c878" stroke-width="2"/>
+                    </svg>
+                    <div class="scan-bar"></div>
+                </div>
+                <div class="scan-data">
+                    <p class="typing" id="auth-status">> INCOMING CONNECTION...<br>> ANALYZING BIOMETRICS...<br>> SYNC RATIO: 412.35%</p>
+                    <div class="access-badge">ACCESS GRANTED</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECTION 2: MAGI SYSTEM -->
+        <section id="magi" class="data-block">
+            <h2 class="section-title">MAGI SYSTEM DECISION</h2>
+            <div class="magi-container">
+                <div class="magi-node" data-node="MELCHIOR">
+                    <h3>MELCHIOR-1</h3>
+                    <div class="decision accepted">PRIORITY</div>
+                </div>
+                <div class="magi-node" data-node="BALTHASAR">
+                    <h3>BALTHASAR-2</h3>
+                    <div class="decision accepted">YES</div>
+                </div>
+                <div class="magi-node" data-node="CASPER">
+                    <h3>CASPER-3</h3>
+                    <div class="decision accepted">YES</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECTION 3: HUD METRICS -->
+        <div class="hud-grid">
+            <div class="hud-card orange-glow">
+                <div class="hud-title">EVA-01 ACTIVATION</div>
+                <div class="progress-container">
+                    <div class="progress-bar orange" style="width: 85%"></div>
+                </div>
+                <div class="hud-stats">INTERNAL BATTERY: 04:59:59</div>
+            </div>
+            <div class="hud-card green-glow">
+                <div class="hud-title">LCL PRESSURE</div>
+                <div class="progress-container">
+                    <div class="progress-bar green" style="width: 100%"></div>
+                </div>
+                <div class="hud-stats">STATUS: STABILIZED</div>
+            </div>
+        </div>
+
+        <!-- SECTION 4: PILOT DOSSIERS -->
+        <section id="dossiers" class="data-block">
+            <h2 class="section-title">CLASSIFIED PILOT DATABASE</h2>
+            <div class="dossier-grid">
+                <div class="dossier-card" style="--border-color: #3178C6;">
+                    <img src="rei_ayanami_dossier_profile_1773329275067.png" alt="Rei Ayanami">
+                    <div class="dossier-info">
+                        <h4>REI AYANAMI</h4>
+                        <span class="label">FIRST CHILD</span>
+                        <p>綾波 レイ • EVA-00</p>
+                    </div>
+                </div>
+                <div class="dossier-card featured" style="--border-color: #4b0082;">
+                    <img src="shinji_ikari_dossier_profile_1773329583132.png" alt="Shinji Ikari">
+                    <div class="dossier-info">
+                        <h4>SHINJI IKARI</h4>
+                        <span class="label">THIRD CHILD</span>
+                        <p>碇 シンジ • EVA-01</p>
+                    </div>
+                </div>
+                <div class="dossier-card" style="--border-color: #ff4500;">
+                    <img src="asuka_langley_dossier_profile_1773329744616.png" alt="Asuka Langley">
+                    <div class="dossier-info">
+                        <h4>ASUKA LANGLEY</h4>
+                        <span class="label">SECOND CHILD</span>
+                        <p>惣流・アスカ • EVA-02</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECTION 5: STATS -->
+        <section id="stats" class="data-block stats-panel">
+            <div class="stats-grid">
+                <div class="stat-img-wrap">
+                    <img src="https://github-readme-stats.vercel.app/api?username=marsianin206&show_icons=true&hide_border=true&bg_color=00000000&title_color=ff6b35&text_color=c9d1d9&icon_color=50c878&ring_color=ff6b35&count_private=true" alt="Github Stats">
+                </div>
+                <div class="stat-img-wrap">
+                    <img src="https://github-readme-streak-stats.herokuapp.com/?user=marsianin206&hide_border=true&background=00000000&stroke=ff6b35&fire=ff6b35&ring=50c878&currStreakLabel=ff6b35&sideLabels=ff6b35&currStreakNum=50c878&sideNums=50c878&dates=c9d1d9" alt="Github Streak">
+                </div>
+            </div>
+        </section>
+
+        <!-- SECTION 6: MISSION HISTORY -->
+        <section id="history" class="data-block glass-panel">
+            <h2 class="section-title">TACTICAL MISSION LOG</h2>
+            <div class="table-container">
+                <table class="mission-table">
+                    <thead>
+                        <tr>
+                            <th>TARGET</th>
+                            <th>CODE</th>
+                            <th>STATUS</th>
+                            <th>DAMAGE</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>SACHIEL</td><td>03</td><td class="status-ok">SUCCESS</td><td>LIGHT</td></tr>
+                        <tr><td>RAMIEL</td><td>05</td><td class="status-ok">SUCCESS</td><td>CRITICAL</td></tr>
+                        <tr><td>ZERUEL</td><td>14</td><td class="status-warn">BERSERK</td><td>DESTROYED</td></tr>
+                        <tr><td>TABRIS</td><td>17</td><td class="status-purple">TERMINATED</td><td>EMOTIONAL</td></tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <!-- SECTION 7: FINAL BATTLE -->
+        <div class="final-battle">
+            <img src="eva_01_final_battle_cinematic_1773330858790.png" alt="Final Battle">
+        </div>
+
+    </main>
+
+    <footer class="main-footer">
+        <div class="footer-overlay">
+            <p>GOD'S IN HIS HEAVEN, ALL'S RIGHT WITH THE WORLD.</p>
+        </div>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>
