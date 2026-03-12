@@ -30,11 +30,11 @@
     <tr>
       <td width="50%">
         <img src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExMGlmNWs2ZzR4ZzR4ZzR4ZzR4ZzR4ZzR4ZzR4ZzR4ZzR4ZzR4ZzR4dyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/k48n3vYfMvHBS/giphy.gif" width="100%" />
-        <p align="center"><sub><b>EVA UNIT-01 ACTIVATION SEQUENCE</b></sub></p>
+        <p align="center"><sub><b>ПОСЛЕДОВАТЕЛЬНОСТЬ АКТИВАЦИИ ЕВА-БЛОКА 01</b></sub></p>
       </td>
       <td width="50%">
         <img src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExMGlmNWs2ZzR4ZzR4ZzR4ZzR4ZzR4ZzR4ZzR4ZzR4ZzR4ZzR4dyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/ydI6vNDwS28PC/giphy.gif" width="100%" />
-        <p align="center"><sub><b>INTERNAL LCL PRESSURE STABILIZED</b></sub></p>
+        <p align="center"><sub><b>ВНУТРЕННЕЕ ДАВЛЕНИЕ LCL СТАБИЛИЗИРОВАНО</b></sub></p>
       </td>
     </tr>
   </table>
@@ -132,10 +132,11 @@
 
 <br/>
 
-<!-- ════════════════════ 🐍 SNAKE 🐍 ════════════════════ -->
+<!-- ════════════════════ 🐍 Змея-покровитель 🐍 ════════════════════ -->
+<h2 align="center">🐍 Змея-покровитель 🐍</h2>
 
 <div align="center">
-  <img src="https://raw.githubusercontent.com/marsianin206/marsianin206/output/github-snake-dark.svg" width="100%" alt="Contribution Snake" />
+  <img src="https://raw.githubusercontent.com/marsianin206/marsianin206/output/github-snake-dark.svg" width="100%" alt="Змея-покровитель" />
 </div>
 
 <br/>
@@ -159,7 +160,7 @@
 
 <!-- ════════════════════ 🔗 COMMUNICATION 🔗 ════════════════════ -->
 
-<h2 align="center">📡 NERV SECURE CHANNEL / СВЯЗЬ 📡</h2>
+<h2 align="center">📡 КАНАЛ NERV SECURE / СВЯЗЬ 📡</h2>
 
 <div align="center">
   <a href="https://t.me/SER_X_FEAR">
