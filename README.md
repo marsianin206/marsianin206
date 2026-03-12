@@ -379,7 +379,21 @@
 <br/>
 
 <div align="center">
-  <img src="https://github-profile-trophy.vercel.app/?username=marsianin206&theme=discord&no-frame=true&no-bg=true&column=7&margin-w=10&margin-h=10" width="98%" alt="Trophies" />
+  <img src="https://github-trophies.vercel.app/?username=marsianin206&theme=discord&no-frame=true&no-bg=true&column=7&margin-w=10&margin-h=10" width="98%" alt="Trophies" />
+</div>
+
+<br/>
+
+<div align="center">
+  <img src="https://img.shields.io/badge/🏆_COMMITS-ACHIEVED-50c878?style=for-the-badge&labelColor=0d0d0d" />
+  &nbsp;
+  <img src="https://img.shields.io/badge/🏆_REPOS-ACHIEVED-ff6b35?style=for-the-badge&labelColor=0d0d0d" />
+  &nbsp;
+  <img src="https://img.shields.io/badge/🏆_STARS-ACHIEVED-4b0082?style=for-the-badge&labelColor=0d0d0d" />
+  &nbsp;
+  <img src="https://img.shields.io/badge/🏆_FOLLOWERS-ACHIEVED-ff4500?style=for-the-badge&labelColor=0d0d0d" />
+  &nbsp;
+  <img src="https://img.shields.io/badge/🏆_PULL_REQUESTS-ACHIEVED-3178C6?style=for-the-badge&labelColor=0d0d0d" />
 </div>
 
 <br/>
