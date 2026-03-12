@@ -1,7 +1,7 @@
 <!-- ═══════════════════════════════════════════════════════════════════════════ -->
 <!--                                                                           -->
 <!--           NERV CENTRAL COMMAND • TOP SECRET • ACCESS RESTRICTED           -->
-<!--           PROJECT E • HUMAN INSTRUMENTALITY PROJECT • v5.0                -->
+<!--           PROJECT E • HUMAN INSTRUMENTALITY PROJECT • v6.0                -->
 <!--                                                                           -->
 <!-- ═══════════════════════════════════════════════════════════════════════════ -->
 
@@ -10,15 +10,51 @@
 </div>
 
 <div align="center">
-  <img src="https://readme-typing-svg.demolab.com?font=Orbitron&weight=900&size=40&duration=3000&pause=500&color=FF6B35&center=true&vCenter=true&width=1000&height=100&lines=SYNCHRONIZATION+INITIALIZED...;SYNC+RATE%3A+412.35%25;PILOT+STATUS%3A+BERSERK+MODE" alt="Typing SVG" />
+  <img src="https://readme-typing-svg.demolab.com?font=Orbitron&weight=900&size=40&duration=3000&pause=500&color=FF6B35&center=true&vCenter=true&width=1000&height=100&lines=CORE+SYSTEM+ONLINE...;MAGI+VOTING+INITIALIZED...;PATTERN+BLUE+DETECTED" alt="Typing SVG" />
 </div>
 
 <br/>
 
-<!-- ════════════════════ ⚠️ EMERGENCY / WARNING ⚠️ ════════════════════ -->
+<!-- ════════════════════ 🧠 MAGI SUPERCOMPUTER VOTING 🧠 ════════════════════ -->
+
+<h3 align="center">🧠 MAGI SYSTEM DECISION | РЕШЕНИЕ СИСТЕМЫ МАГИ 🧠</h3>
 
 <div align="center">
-  <img src="https://capsule-render.vercel.app/api?type=rect&color=ff4500&height=40&text=EMERGENCY%20•%20PATTERN%20BLUE%20RECOGNIZED%20•%20EMERGENCY&fontSize=20&fontColor=ffffff&animation=twinkling" width="100%" />
+  <table border="0">
+    <tr>
+      <td align="center">
+        <svg width="150" height="100" viewBox="0 0 150 100">
+          <rect width="150" height="100" fill="#0d0d0d" stroke="#ff6b35" stroke-width="2"/>
+          <text x="75" y="30" fill="#ff6b35" font-family="monospace" font-size="12" text-anchor="middle">MELCHIOR-1</text>
+          <rect x="25" y="45" width="100" height="30" fill="#50c878">
+            <animate attributeName="opacity" values="1;0.3;1" dur="2s" repeatCount="indefinite" />
+          </rect>
+          <text x="75" y="65" fill="#0d0d0d" font-family="monospace" font-size="16" font-weight="bold" text-anchor="middle">PRIORITY</text>
+        </svg>
+      </td>
+      <td align="center">
+        <svg width="150" height="100" viewBox="0 0 150 100">
+          <rect width="150" height="100" fill="#0d0d0d" stroke="#ff6b35" stroke-width="2"/>
+          <text x="75" y="30" fill="#ff6b35" font-family="monospace" font-size="12" text-anchor="middle">BALTHASAR-2</text>
+          <rect x="25" y="45" width="100" height="30" fill="#50c878">
+            <animate attributeName="opacity" values="1;0.3;1" dur="2.5s" repeatCount="indefinite" />
+          </rect>
+          <text x="75" y="65" fill="#0d0d0d" font-family="monospace" font-size="16" font-weight="bold" text-anchor="middle">YES</text>
+        </svg>
+      </td>
+      <td align="center">
+        <svg width="150" height="100" viewBox="0 0 150 100">
+          <rect width="150" height="100" fill="#0d0d0d" stroke="#ff6b35" stroke-width="2"/>
+          <text x="75" y="30" fill="#ff6b35" font-family="monospace" font-size="12" text-anchor="middle">CASPER-3</text>
+          <rect x="25" y="45" width="100" height="30" fill="#50c878">
+            <animate attributeName="opacity" values="1;0.3;1" dur="1.5s" repeatCount="indefinite" />
+          </rect>
+          <text x="75" y="65" fill="#0d0d0d" font-family="monospace" font-size="16" font-weight="bold" text-anchor="middle">YES</text>
+        </svg>
+      </td>
+    </tr>
+  </table>
+  <img src="https://img.shields.io/badge/MAGI_STATUS-UNANIMOUS_APPROVAL-50c878?style=for-the-badge&labelColor=0d0d0d" />
 </div>
 
 <br/>
@@ -65,60 +101,31 @@
 
 <br/>
 
-<!-- ════════════════════ 🎧 NERV AUDIO LOGS 🎧 ════════════════════ -->
+<!-- ════════════════════ 🎧 NERV AUDIO COMMAND CONSOLE 🎧 ════════════════════ -->
 
-<h2 align="center">🎧 NERV AUDIO TERMINAL | МУЗЫКАЛЬНЫЙ ТЕРМИНАЛ 🎧</h2>
+<h3 align="center">🎧 NERV AUDIO COMMAND CONSOLE | КОНСОЛЬ УПРАВЛЕНИЯ ЗВУКОМ 🎧</h3>
 
 <div align="center">
   <a href="https://open.spotify.com/playlist/37i9dQZF1E8KkUS5Hd4AU0">
-    <svg width="600" height="80" viewBox="0 0 600 80" xmlns="http://www.w3.org/2000/svg">
-      <rect width="600" height="80" fill="#0d0d0d" stroke="#ff6b35" stroke-width="2" rx="40"/>
-      <circle cx="40" cy="40" r="25" fill="none" stroke="#ff6b35" stroke-width="2">
-        <animate attributeName="r" values="25;28;25" dur="1s" repeatCount="indefinite" />
-      </circle>
-      <path d="M35 30 L53 40 L35 50 Z" fill="#ff6b35"/>
-      <text x="80" y="35" fill="#ff6b35" font-family="monospace" font-size="14" font-weight="bold">NOW PLAYING: EVANGELION OST MIX</text>
-      <text x="80" y="55" fill="#ff6b35" font-family="monospace" font-size="12" opacity="0.7">SOURCE: SPOTIFY SECURE CHANNEL</text>
-      <rect x="350" y="32" width="200" height="15" fill="none" stroke="#ff6b35" stroke-width="1"/>
-      <rect x="355" y="37" width="10" height="5" fill="#ff6b35">
-         <animate attributeName="width" from="0" to="190" dur="20s" repeatCount="indefinite" />
-      </rect>
+    <svg width="600" height="150" viewBox="0 0 600 150" xmlns="http://www.w3.org/2000/svg">
+      <rect width="600" height="150" fill="#0d0d0d" stroke="#ff6b35" stroke-width="2" rx="10"/>
+      <rect width="600" height="25" fill="#ff6b35"/>
+      <text x="10" y="17" fill="#0d0d0d" font-family="monospace" font-size="12" font-weight="bold">AUDIO SOURCE: SPOTIFY EXTERNAL UPLINK</text>
+      <text x="300" y="60" fill="#ff6b35" font-family="monospace" font-size="18" font-weight="bold" text-anchor="middle">NOW PLAYING: EVANGELION OST</text>
+      
       <!-- Visualizer bars -->
-      <rect x="280" y="50" width="4" height="10" fill="#ff6b35"><animate attributeName="height" values="10;25;10" dur="0.5s" repeatCount="indefinite" /></rect>
-      <rect x="286" y="50" width="4" height="20" fill="#ff6b35"><animate attributeName="height" values="20;5;20" dur="0.7s" repeatCount="indefinite" /></rect>
-      <rect x="292" y="50" width="4" height="15" fill="#ff6b35"><animate attributeName="height" values="15;30;15" dur="0.6s" repeatCount="indefinite" /></rect>
-      <rect x="298" y="50" width="4" height="22" fill="#ff6b35"><animate attributeName="height" values="22;12;22" dur="0.8s" repeatCount="indefinite" /></rect>
+      <rect x="230" y="80" width="5" height="30" fill="#ff6b35"><animate attributeName="height" values="30;60;20;50;30" dur="0.5s" repeatCount="indefinite" /></rect>
+      <rect x="240" y="80" width="5" height="45" fill="#ff6b35"><animate attributeName="height" values="45;20;55;30;45" dur="0.7s" repeatCount="indefinite" /></rect>
+      <rect x="250" y="80" width="5" height="25" fill="#ff6b35"><animate attributeName="height" values="25;50;15;40;25" dur="0.6s" repeatCount="indefinite" /></rect>
+      <rect x="260" y="80" width="5" height="60" fill="#ff6b35"><animate attributeName="height" values="60;30;20;55;60" dur="0.4s" repeatCount="indefinite" /></rect>
+      <rect x="270" y="80" width="5" height="35" fill="#50c878"><animate attributeName="height" values="35;15;45;25;35" dur="0.8s" repeatCount="indefinite" /></rect>
+      
+      <rect x="150" y="125" width="300" height="10" fill="none" stroke="#ff6b35" stroke-width="1"/>
+      <rect x="155" y="128" width="0" height="4" fill="#ff6b35">
+        <animate attributeName="width" from="0" to="290" dur="15s" repeatCount="indefinite" />
+      </rect>
     </svg>
   </a>
-</div>
-
-<br/>
-
-<!-- ════════════════════ 🧬 NERV PILOT DATABASE 🧬 ════════════════════ -->
-
-<h2 align="center">
-  <img src="https://img.icons8.com/color/48/000000/skull.png" width="25" /> ◈ NERV CLASSIFIED ARCHIVE ◈ <img src="https://img.icons8.com/color/48/000000/skull.png" width="25" />
-</h2>
-
-<div align="center">
-
-```text
-╔══════════════════════════════════════════════════════════════════╗
-║                                                                  ║
-║   ██████╗ ███████╗ █████╗ ██████╗       ███╗   ███╗███████╗      ║
-║   ██╔══██╗██╔════╝██╔══██╗██╔══██╗      ████╗ ████║██╔════╝      ║
-║   ██████╔╝█████╗  ███████║██║  ██║      ██╔████╔██║███████╗      ║
-║   ██╔══██╗██╔══╝  ██╔══██║██║  ██║      ██║╚██╔╝██║╚════██║      ║
-║   ██║  ██║███████╗██║  ██║██████╔╝      ██║ ╚═╝ ██║███████║      ║
-║   ╚═╝  ╚═╝╚══════╝╚═╝  ╚═╝╚═════╝       ╚═╝     ╚═╝╚══════╝      ║
-║                                                                  ║
-║   > IDENTIFICATION: PILOT marsianin206                           ║
-║   > ASSIGNMENT: NERV CENTRAL DOGMA / TECH OPS                    ║
-║   > SYNC LIMITS: REMOVED (BERSERK MODE CAPABLE)                  ║
-║                                                                  ║
-╚══════════════════════════════════════════════════════════════════╝
-```
-
 </div>
 
 <br/>
@@ -157,12 +164,61 @@
 
 <br/>
 
-<!-- ════════════════════ 🛠️ TECH STACK 🛠️ ════════════════════ -->
+<!-- ════════════════════ 🛡️ SKILL SYNCHRONIZATION RATIOS 🛡️ ════════════════════ -->
 
-<h2 align="center">⚡ TECHNICAL SPECIFICATIONS | ТЕХОСНАЩЕНИЕ ⚡</h2>
+<h2 align="center">⚙️ SKILL SYNC RATIOS | УРОВНИ СИНХРОНИЗАЦИИ ⚙️</h2>
 
 <div align="center">
-  <img src="https://skillicons.dev/icons?i=python,js,typescript,java,cpp,rust,go,react,nextjs,nodejs,express,django,docker,aws,linux,postgres,mongodb,redis,git,github,vscode,figma&theme=dark&perline=11" />
+  <table border="0" width="80%">
+    <tr>
+      <td><b>PYTHON</b></td>
+      <td>
+        <svg width="400" height="20">
+          <rect width="400" height="20" fill="#1a0a2e" rx="10"/>
+          <rect width="380" height="20" fill="#ff6b35" rx="10">
+            <animate attributeName="width" from="0" to="380" dur="2s" fill="freeze" />
+          </rect>
+          <text x="200" y="15" fill="#0d0d0d" font-family="monospace" font-size="12" text-anchor="middle" font-weight="bold">400% BERSERK</text>
+        </svg>
+      </td>
+    </tr>
+    <tr>
+      <td><b>JS / TS</b></td>
+      <td>
+        <svg width="400" height="20">
+          <rect width="400" height="20" fill="#1a0a2e" rx="10"/>
+          <rect width="320" height="20" fill="#50c878" rx="10">
+            <animate attributeName="width" from="0" to="320" dur="2s" fill="freeze" />
+          </rect>
+          <text x="200" y="15" fill="#0d0d0d" font-family="monospace" font-size="12" text-anchor="middle" font-weight="bold">82% STABLE</text>
+        </svg>
+      </td>
+    </tr>
+    <tr>
+      <td><b>DOCKER</b></td>
+      <td>
+        <svg width="400" height="20">
+          <rect width="400" height="20" fill="#1a0a2e" rx="10"/>
+          <rect width="280" height="20" fill="#3178C6" rx="10">
+            <animate attributeName="width" from="0" to="280" dur="2s" fill="freeze" />
+          </rect>
+          <text x="200" y="15" fill="#0d0d0d" font-family="monospace" font-size="12" text-anchor="middle" font-weight="bold">70% SYNC</text>
+        </svg>
+      </td>
+    </tr>
+     <tr>
+      <td><b>DATABASE</b></td>
+      <td>
+        <svg width="400" height="20">
+          <rect width="400" height="20" fill="#1a0a2e" rx="10"/>
+          <rect width="360" height="20" fill="#ff4500" rx="10">
+            <animate attributeName="width" from="0" to="360" dur="2s" fill="freeze" />
+          </rect>
+          <text x="200" y="15" fill="#0d0d0d" font-family="monospace" font-size="12" text-anchor="middle" font-weight="bold">91% OPTIMAL</text>
+        </svg>
+      </td>
+    </tr>
+  </table>
 </div>
 
 <br/>
@@ -248,6 +304,5 @@
 ═══════════════════════════════════════════════════════════════════
 📌 ВАЖНО / IMPORTANT:
 1. Загрузи файлы баннеров и портретов в свой репозиторий вместе с README.
-2. Проверь, что в репозитории есть ветка 'output' для работы змейки.
 ═══════════════════════════════════════════════════════════════════
 -->
