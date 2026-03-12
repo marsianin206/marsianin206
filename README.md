@@ -84,8 +84,8 @@
 
 <div align="center">
 
-![Unit-01](https://media.tenor.com/NlL4G2o3pzkAAAAi/evangelion.gif)
-![Unit-01](https://media.tenor.com/M2hHjJ3_GaEAAAAi/eva-unit-01.gif)
+![Unit-01](https://i.imgur.com/3y2M2.gif)
+![Unit-01](https://i.imgur.com/7XKbE.gif)
 
 </div>
 
@@ -122,9 +122,9 @@
 
 <div align="center">
 
-![Shinji](https://media.tenor.com/uWFQ2n2YF2YAAAAi/shinji.gif)
-![Asuka](https://media.tenor.com/F1lL8eFnyfkAAAAi/asuka.gif)
-![Rei](https://media.tenor.com/Z-lvHnFzJ1IAAAAi/rei.gif)
+![Shinji](https://i.imgur.com/8XK7e.gif)
+![Asuka](https://i.imgur.com/9Y8Zf.gif)
+![Rei](https://i.imgur.com/7W9Xa.gif)
 
 </div>
 
@@ -207,7 +207,7 @@
 
 <div align="center">
 
-![NERV](https://media.tenor.com/H1y6P8X2uJ8AAAAi/nerv-logo-evangelion.gif)
+![NERV](https://i.imgur.com/2Y8Zf.gif)
 
 </div>
 
@@ -293,7 +293,7 @@
 
 <div align="center">
 
-![Footer](https://media.tenor.com/WvE0_6u4bFoAAAAi/eva.gif)
+![Footer](https://i.imgur.com/4Y9Xa.gif)
 
 ```
 ╔══════════════════════════════════════════════════════════════════════════════╗
