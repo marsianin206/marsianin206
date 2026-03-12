@@ -6,8 +6,12 @@
 <!-- ═══════════════════════════════════════════════════════════════════════════ -->
 
 <div align="center">
-  <img src="evangelion_nerv_banner_marsianin206_1773328664113.png" width="100%" alt="NERV COMMAND BANNER" />
+  <img src="evangelion_nerv_banner_marsianin206_1773328664113.webp" width="100%" alt="NERV COMMAND BANNER" />
 </div>
+
+  <a href="https://marsianin206.vercel.app">
+    <img src="https://img.shields.io/badge/NERV_CENTRAL_COMMAND-ENTER_TERMINAL-ff6b35?style=for-the-badge&logo=vercel&logoColor=white&labelColor=0d0d0d" />
+  </a>
 
 <!-- ════════════════════ 🛡️ BIO-METRIC IDENTIFICATION 🛡️ ════════════════════ -->
 
@@ -151,21 +155,21 @@
   <table border="0">
     <tr>
       <td align="center" width="33%">
-        <img src="rei_ayanami_dossier_profile_1773329275067.png" width="280" style="border: 2px solid #3178C6; border-radius: 10px;" />
+        <img src="rei_ayanami_dossier_profile_1773329275067.webp" width="280" style="border: 2px solid #3178C6; border-radius: 10px;" />
         <br/>
         <img src="https://img.shields.io/badge/REI_AYANAMI-FIRST_CHILD-3178C6?style=for-the-badge&labelColor=0d0d0d" />
         <br/>
         <sub><b>綾波 レイ • EVA-00 PILOT</b></sub>
       </td>
       <td align="center" width="33%">
-        <img src="shinji_ikari_dossier_profile_1773329583132.png" width="280" style="border: 2px solid #4b0082; border-radius: 10px;" />
+        <img src="shinji_ikari_dossier_profile_1773329583132.webp" width="280" style="border: 2px solid #4b0082; border-radius: 10px;" />
         <br/>
         <img src="https://img.shields.io/badge/IKARI_SHINJI-THIRD_CHILD-4b0082?style=for-the-badge&labelColor=0d0d0d" />
         <br/>
         <sub><b>碇 シンジ • EVA-01 PILOT</b></sub>
       </td>
       <td align="center" width="33%">
-        <img src="asuka_langley_dossier_profile_1773329744616.png" width="280" style="border: 2px solid #ff4500; border-radius: 10px;" />
+        <img src="asuka_langley_dossier_profile_1773329744616.webp" width="280" style="border: 2px solid #ff4500; border-radius: 10px;" />
         <br/>
         <img src="https://img.shields.io/badge/ASUKA_LANGLEY-SECOND_CHILD-ff4500?style=for-the-badge&labelColor=0d0d0d" />
         <br/>
@@ -217,7 +221,20 @@
 <h2 align="center">🐍 Змея-покровитель 🐍</h2>
 
 <div align="center">
-  <img src="nerv_snake_guardian_pattern_blue_1773330319413.png" width="100%" alt="Змея-покровитель" />
+  <img src="nerv_snake_guardian_pattern_blue_1773330319413.webp" width="100%" alt="Змея-покровитель" />
+
+<!-- ════════════════════ 🐍 CONTRIBUTION PATTERN 🐍 ════════════════════ -->
+
+<div align="center">
+  <h2>🐍 CONTRIBUTION PATTERN ANALYSIS 🐍</h2>
+  <br/>
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/marsianin206/marsianin206/output/github-snake-dark.svg" />
+    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/marsianin206/marsianin206/output/github-snake.svg" />
+    <img alt="GitHub Contribution Snake" src="https://raw.githubusercontent.com/marsianin206/marsianin206/output/github-snake.svg" width="100%" />
+  </picture>
+</div>
+
 </div>
 
 <br/>
@@ -289,7 +306,7 @@
 <!-- ════════════════════ 🎬 FINAL BATTLE 🎬 ════════════════════ -->
 
 <div align="center">
-  <img src="eva_01_final_battle_cinematic_1773330858790.png" width="100%" alt="FINAL BATTLE" />
+  <img src="eva_01_final_battle_cinematic_1773330858790.webp" width="100%" alt="FINAL BATTLE" />
 </div>
 
 <br/>
