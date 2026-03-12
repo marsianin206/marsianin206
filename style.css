@@ -517,3 +517,44 @@ body.nerv-terminal {
         opacity: 0.2;
     }
 }
+
+/* === BUG FIX: Missing flicker animation === */
+@keyframes flicker {
+    0%, 100% { opacity: 1; }
+    92% { opacity: 1; }
+    93% { opacity: 0.3; }
+    94% { opacity: 1; }
+    96% { opacity: 0.5; }
+    97% { opacity: 1; }
+}
+
+/* === BUG FIX: Missing footer styles === */
+.main-footer {
+    margin-top: 40px;
+    border-top: 2px solid var(--nerv-orange);
+    background: rgba(13, 13, 13, 0.95);
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.footer-overlay p {
+    font-family: Orbitron, sans-serif;
+    color: var(--nerv-orange);
+    font-size: 1rem;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    text-shadow: 0 0 10px rgba(255, 107, 53, 0.5);
+}
+
+/* === BUG FIX: Responsive design for mobile === */
+@media (max-width: 768px) {
+    .magi-container { grid-template-columns: 1fr; }
+    .hud-grid { grid-template-columns: 1fr; }
+    .dossier-grid { grid-template-columns: 1fr; }
+    .stats-grid { grid-template-columns: 1fr; }
+    .bio-scan-container { flex-direction: column; }
+    .splash-title { font-size: 1.6rem; }
+    .splash-content { padding: 30px 20px; margin: 10px; }
+    #activate-btn { font-size: 1rem; padding: 15px 30px; }
+    .content-wrapper { padding: 0 10px; gap: 25px; }
+}
