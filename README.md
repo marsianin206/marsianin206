@@ -190,8 +190,8 @@
     <img src="https://img.shields.io/badge/TELEGRAM-@SER__X__FEAR-ff6b35?style=for-the-badge&logo=telegram&logoColor=fff&labelColor=1a0a2e" />
   </a>
   &nbsp;&nbsp;
-  <a href="#">
-    <img src="https://img.shields.io/badge/DISCORD-NERV__HQ-ff6b35?style=for-the-badge&logo=discord&logoColor=fff&labelColor=1a0a2e" />
+  <a href="https://discord.com/users/355713182595022861">
+    <img src="https://img.shields.io/badge/DISCORD-x.fear-ff6b35?style=for-the-badge&logo=discord&logoColor=fff&labelColor=1a0a2e" />
   </a>
 </div>
 
