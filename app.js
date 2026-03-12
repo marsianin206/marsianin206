@@ -1,8 +1,21 @@
 // NERV Terminal Logic
 
 document.addEventListener('DOMContentLoaded', () => {
-    initTypingEffect();
-    handleMagiVoting();
+    const splash = document.getElementById('splash-screen');
+    const activateBtn = document.getElementById('activate-btn');
+    const bgMusic = document.getElementById('bg-music');
+
+    activateBtn.addEventListener('click', () => {
+        // Play music
+        bgMusic.play().catch(e => console.log("Audio play blocked:", e));
+
+        // Hide splash screen
+        splash.classList.add('hidden');
+
+        // Start typing effects
+        initTypingEffect();
+        handleMagiVoting();
+    });
 });
 
 /**
@@ -12,7 +25,7 @@ function initTypingEffect() {
     const target = document.getElementById('auth-status');
     const text = target.innerHTML;
     target.innerHTML = '';
-    
+
     let i = 0;
     const speed = 30; // ms
 
@@ -44,7 +57,7 @@ function initTypingEffect() {
  */
 function handleMagiVoting() {
     const nodes = document.querySelectorAll('.magi-node');
-    
+
     nodes.forEach(node => {
         setInterval(() => {
             if (Math.random() > 0.95) {
