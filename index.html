@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,10 +9,30 @@
     <meta name="description" content="Technical profile of Pilot marsianin206. NERV Central Command Secure Access.">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=JetBrains+Mono:wght@300;500;800&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=JetBrains+Mono:wght@300;500;800&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body class="nerv-terminal">
+    <!-- Splash Screen (Audio Trigger) -->
+    <div id="splash-screen">
+        <div class="splash-content">
+            <img src="https://upload.wikimedia.org/wikipedia/en/thumb/3/3b/Nerv_logo.svg/1200px-Nerv_logo.svg.png"
+                alt="NERV" class="splash-logo">
+            <h1 class="splash-title">NERV CENTRAL COMMAND</h1>
+            <p class="splash-subtitle">BEYOND THE TERMINAL: SYSTEM SYNCHRONIZATION REQUIRED</p>
+            <button id="activate-btn">INITIATE SYSTEM SYNC</button>
+            <div class="warning-text">WARNING: AUDITORY INTERFACE ENGAGED</div>
+        </div>
+    </div>
+
+    <!-- Background Music -->
+    <audio id="bg-music" loop>
+        <source src="music.mp3" type="audio/mpeg">
+    </audio>
+
     <!-- Grid Overlay -->
     <div class="scanlines"></div>
     <div class="grid-overlay"></div>
@@ -27,7 +48,7 @@
     </header>
 
     <main class="content-wrapper">
-        
+
         <!-- SECTION 1: BIOMETRIC SCAN -->
         <section id="biometrics" class="data-block glass-panel">
             <div class="block-header">
@@ -36,12 +57,15 @@
             <div class="bio-scan-container">
                 <div class="scan-visual">
                     <svg viewBox="0 0 400 100">
-                        <path class="dna-wave" d="M0 50 Q 25 10 50 50 T 100 50 T 150 50 T 200 50 T 250 50 T 300 50 T 350 50 T 400 50" fill="none" stroke="#50c878" stroke-width="2"/>
+                        <path class="dna-wave"
+                            d="M0 50 Q 25 10 50 50 T 100 50 T 150 50 T 200 50 T 250 50 T 300 50 T 350 50 T 400 50"
+                            fill="none" stroke="#50c878" stroke-width="2" />
                     </svg>
                     <div class="scan-bar"></div>
                 </div>
                 <div class="scan-data">
-                    <p class="typing" id="auth-status">> INCOMING CONNECTION...<br>> ANALYZING BIOMETRICS...<br>> SYNC RATIO: 412.35%</p>
+                    <p class="typing" id="auth-status">> INCOMING CONNECTION...<br>> ANALYZING BIOMETRICS...<br>> SYNC
+                        RATIO: 412.35%</p>
                     <div class="access-badge">ACCESS GRANTED</div>
                 </div>
             </div>
@@ -119,10 +143,12 @@
         <section id="stats" class="data-block stats-panel">
             <div class="stats-grid">
                 <div class="stat-img-wrap">
-                    <img src="https://github-readme-stats.vercel.app/api?username=marsianin206&show_icons=true&hide_border=true&bg_color=00000000&title_color=ff6b35&text_color=c9d1d9&icon_color=50c878&ring_color=ff6b35&count_private=true" alt="Github Stats">
+                    <img src="https://github-readme-stats.vercel.app/api?username=marsianin206&show_icons=true&hide_border=true&bg_color=00000000&title_color=ff6b35&text_color=c9d1d9&icon_color=50c878&ring_color=ff6b35&count_private=true"
+                        alt="Github Stats">
                 </div>
                 <div class="stat-img-wrap">
-                    <img src="https://github-readme-streak-stats.herokuapp.com/?user=marsianin206&hide_border=true&background=00000000&stroke=ff6b35&fire=ff6b35&ring=50c878&currStreakLabel=ff6b35&sideLabels=ff6b35&currStreakNum=50c878&sideNums=50c878&dates=c9d1d9" alt="Github Streak">
+                    <img src="https://github-readme-streak-stats.herokuapp.com/?user=marsianin206&hide_border=true&background=00000000&stroke=ff6b35&fire=ff6b35&ring=50c878&currStreakLabel=ff6b35&sideLabels=ff6b35&currStreakNum=50c878&sideNums=50c878&dates=c9d1d9"
+                        alt="Github Streak">
                 </div>
             </div>
         </section>
@@ -141,10 +167,30 @@
                         </tr>
                     </thead>
                     <tbody>
-                        <tr><td>SACHIEL</td><td>03</td><td class="status-ok">SUCCESS</td><td>LIGHT</td></tr>
-                        <tr><td>RAMIEL</td><td>05</td><td class="status-ok">SUCCESS</td><td>CRITICAL</td></tr>
-                        <tr><td>ZERUEL</td><td>14</td><td class="status-warn">BERSERK</td><td>DESTROYED</td></tr>
-                        <tr><td>TABRIS</td><td>17</td><td class="status-purple">TERMINATED</td><td>EMOTIONAL</td></tr>
+                        <tr>
+                            <td>SACHIEL</td>
+                            <td>03</td>
+                            <td class="status-ok">SUCCESS</td>
+                            <td>LIGHT</td>
+                        </tr>
+                        <tr>
+                            <td>RAMIEL</td>
+                            <td>05</td>
+                            <td class="status-ok">SUCCESS</td>
+                            <td>CRITICAL</td>
+                        </tr>
+                        <tr>
+                            <td>ZERUEL</td>
+                            <td>14</td>
+                            <td class="status-warn">BERSERK</td>
+                            <td>DESTROYED</td>
+                        </tr>
+                        <tr>
+                            <td>TABRIS</td>
+                            <td>17</td>
+                            <td class="status-purple">TERMINATED</td>
+                            <td>EMOTIONAL</td>
+                        </tr>
                     </tbody>
                 </table>
             </div>
@@ -165,4 +211,5 @@
 
     <script src="app.js"></script>
 </body>
+
 </html>
