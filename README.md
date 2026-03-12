@@ -459,9 +459,13 @@
 <div align="center">
   <img src="https://komarev.com/ghpvc/?username=marsianin206&label=👁️+PROFILE+VISITORS&color=50c878&style=for-the-badge&labelColor=0d0d0d" alt="Profile Views" />
   &nbsp;&nbsp;
-  <img src="https://img.shields.io/github/followers/marsianin206?style=for-the-badge&color=ff6b35&labelColor=0d0d0d&label=⚡+FOLLOWERS" alt="Followers" />
+  <a href="https://github.com/marsianin206?tab=followers">
+    <img src="https://img.shields.io/github/followers/marsianin206?style=for-the-badge&color=ff6b35&labelColor=0d0d0d&logo=github&logoColor=fff" alt="Followers" />
+  </a>
   &nbsp;&nbsp;
-  <img src="https://img.shields.io/github/stars/marsianin206?style=for-the-badge&color=50c878&labelColor=0d0d0d&label=⭐+STARS" alt="Stars" />
+  <a href="https://github.com/marsianin206">
+    <img src="https://img.shields.io/badge/⭐_STARS-marsianin206-50c878?style=for-the-badge&labelColor=0d0d0d&logo=github&logoColor=fff" alt="Stars" />
+  </a>
 </div>
 
 <br/>
