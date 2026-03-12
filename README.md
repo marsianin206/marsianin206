@@ -107,24 +107,20 @@
 
 <div align="center">
   <a href="https://open.spotify.com/playlist/37i9dQZF1E8KkUS5Hd4AU0">
-    <svg width="600" height="150" viewBox="0 0 600 150" xmlns="http://www.w3.org/2000/svg">
-      <rect width="600" height="150" fill="#0d0d0d" stroke="#ff6b35" stroke-width="2" rx="10"/>
-      <rect width="600" height="25" fill="#ff6b35"/>
-      <text x="10" y="17" fill="#0d0d0d" font-family="monospace" font-size="12" font-weight="bold">AUDIO SOURCE: SPOTIFY EXTERNAL UPLINK</text>
-      <text x="300" y="60" fill="#ff6b35" font-family="monospace" font-size="18" font-weight="bold" text-anchor="middle">NOW PLAYING: EVANGELION OST</text>
-      
-      <!-- Visualizer bars -->
-      <rect x="230" y="80" width="5" height="30" fill="#ff6b35"><animate attributeName="height" values="30;60;20;50;30" dur="0.5s" repeatCount="indefinite" /></rect>
-      <rect x="240" y="80" width="5" height="45" fill="#ff6b35"><animate attributeName="height" values="45;20;55;30;45" dur="0.7s" repeatCount="indefinite" /></rect>
-      <rect x="250" y="80" width="5" height="25" fill="#ff6b35"><animate attributeName="height" values="25;50;15;40;25" dur="0.6s" repeatCount="indefinite" /></rect>
-      <rect x="260" y="80" width="5" height="60" fill="#ff6b35"><animate attributeName="height" values="60;30;20;55;60" dur="0.4s" repeatCount="indefinite" /></rect>
-      <rect x="270" y="80" width="5" height="35" fill="#50c878"><animate attributeName="height" values="35;15;45;25;35" dur="0.8s" repeatCount="indefinite" /></rect>
-      
-      <rect x="150" y="125" width="300" height="10" fill="none" stroke="#ff6b35" stroke-width="1"/>
-      <rect x="155" y="128" width="0" height="4" fill="#ff6b35">
-        <animate attributeName="width" from="0" to="290" dur="15s" repeatCount="indefinite" />
-      </rect>
-    </svg>
+    <table border="0" style="background-color: #0d0d0d; border: 2px solid #ff6b35; border-radius: 15px;">
+      <tr>
+        <td width="200" align="center">
+          <img src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExMGlmNWs2ZzR4ZzR4ZzR4ZzR4ZzR4ZzR4ZzR4ZzR4ZzR4ZzR4ZzR4dyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/kC8XbI09V7N4c/giphy.gif" width="180" style="border-radius: 10px;" />
+        </td>
+        <td width="400" align="left">
+          <img src="https://img.shields.io/badge/STATUS-STREAMING-50c878?style=for-the-badge&labelColor=1a0a2e" /><br/>
+          <font size="5" color="#ff6b35"><b>EVANGELION OST MIX</b></font><br/>
+          <font size="3" color="#ff6b35" opacity="0.8">NERV SECURE AUDIO CHANNEL-01</font><br/><br/>
+          <img src="https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.png" width="100%" height="2" /><br/>
+          <img src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExMGlmNWs2ZzR4ZzR4ZzR4ZzR4ZzR4ZzR4ZzR4ZzR4ZzR4ZzR4ZzR4dyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/1367E9sB8rR8zX/giphy.gif" width="100%" height="30" />
+        </td>
+      </tr>
+    </table>
   </a>
 </div>
 
