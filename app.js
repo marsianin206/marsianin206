@@ -71,7 +71,16 @@ function handleMagiVoting() {
     });
 }
 
-// Log connection to terminal
-console.log('%c [NERV] CONNECTION ESTABLISHED ', 'background: #ff6b35; color: #000; font-weight: bold;');
-console.log('%c [NERV] SYNC RATE: 412.35% ', 'color: #50c878; font-weight: bold;');
-console.log('%c [NERV] DATA SOURCE: marsianin206 ', 'color: #ff6b35;');
+// Log connection to terminal with enhanced diagnostics
+const logStyle = 'background: #0d0d0d; color: #ff6b35; font-weight: bold; border: 1px solid #ff6b35; padding: 2px 5px;';
+const successStyle = 'background: #0d0d0d; color: #50c878; font-weight: bold; border: 1px solid #50c878; padding: 2px 5px;';
+
+console.log('%c [NERV] SYSTEM BOOT INITIALIZED ', logStyle);
+setTimeout(() => {
+    console.log('%c [NERV] OS: MAGI v6.2.0-NERV ', logStyle);
+    console.log('%c [NERV] CONNECTION: SECURE_UPLINK_ESTABLISHED ', successStyle);
+    console.log('%c [NERV] LCL CONDUCTIVITY: OPTIMAL ', successStyle);
+    console.log('%c [NERV] SYNC RATE: 412.35% (OVER-SYNC DETECTED) ', 'background: #ff4500; color: #0d0d0d; font-weight: bold; padding: 2px 5px;');
+    console.log('%c [NERV] PILOT: marsianin206 ', logStyle);
+    console.log('%c [NERV] STATUS: ACCESS_GRANTED_TO_ALL_LEVELS ', successStyle);
+}, 500);
