@@ -32,7 +32,7 @@
         },
         {
           "key": "Content-Security-Policy",
-          "value": "default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; img-src 'self' https://upload.wikimedia.org https://github-readme-stats.vercel.app https://github-readme-streak-stats.herokuapp.com data:; media-src 'self'; connect-src 'self'; frame-ancestors 'none'"
+          "value": "default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; img-src 'self' https://upload.wikimedia.org https://github-readme-stats.vercel.app https://github-readme-streak-stats.herokuapp.com data: https://raw.githubusercontent.com; media-src 'self'; connect-src 'self'; frame-ancestors 'none'"
         }
       ]
     },
