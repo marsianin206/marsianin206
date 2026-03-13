@@ -102,7 +102,12 @@ document.addEventListener('DOMContentLoaded', () => {
         initPilotLicense(); 
         initBatteryMonitor(); // Track internal power
         initAngelRadar(); // Search for Angels
+        initMusicPlayer(); // Advanced SDAT
+        initLCLBubbles(); // Ambient Environment
     }
+
+    initBootSequence(); // Start First
+    initCustomCursor(); // Always Active
 });
 
 /**
@@ -977,6 +982,113 @@ function initAngelRadar() {
         requestAnimationFrame(animate);
     }
     animate();
+}
+
+/**
+ * BOOT SEQUENCE: Fake Terminal Booting
+ */
+function initBootSequence() {
+    const bootScreen = document.getElementById('boot-screen');
+    const log = document.getElementById('boot-log');
+    const lines = [
+        "MAGI SYSTEM v6.2.0 INITIALIZING...",
+        "CHECKING MELCHIOR-1... OK",
+        "CHECKING BALTHASAR-2... OK",
+        "CHECKING CASPER-3... OK",
+        "LCL CONDUCTIVITY: 99.8%",
+        "NEURAL LINK: ESTABLISHED",
+        "ENTRY PLUG STATUS: READY",
+        "CONNECTING TO NERV HQ...",
+        "ACCESS GRANTED."
+    ];
+    
+    let i = 0;
+    function addLine() {
+        if (i < lines.length) {
+            log.innerHTML += `> ${lines[i]}<br>`;
+            i++;
+            setTimeout(addLine, 200);
+        } else {
+            setTimeout(() => {
+                bootScreen.style.opacity = '0';
+                setTimeout(() => bootScreen.style.display = 'none', 500);
+            }, 500);
+        }
+    }
+    addLine();
+}
+
+/**
+ * CUSTOM CURSOR: NERV Crosshair
+ */
+function initCustomCursor() {
+    const cursor = document.getElementById('nerv-cursor');
+    document.addEventListener('mousemove', (e) => {
+        cursor.style.left = e.clientX + 'px';
+        cursor.style.top = e.clientY + 'px';
+    });
+
+    const interactive = document.querySelectorAll('button, a, .dossier-card');
+    interactive.forEach(el => {
+        el.addEventListener('mouseenter', () => cursor.classList.add('cursor-hover'));
+        el.addEventListener('mouseleave', () => cursor.classList.remove('cursor-hover'));
+    });
+}
+
+/**
+ * LCL BUBBLES: Ambient Particles
+ */
+function initLCLBubbles() {
+    const container = document.getElementById('lcl-bubbles');
+    setInterval(() => {
+        if (!document.body.classList.contains('lcl-active')) return;
+        const bubble = document.createElement('div');
+        bubble.className = 'bubble';
+        const size = Math.random() * 10 + 5;
+        bubble.style.width = size + 'px';
+        bubble.style.height = size + 'px';
+        bubble.style.left = Math.random() * 100 + 'vw';
+        bubble.style.animationDuration = Math.random() * 3 + 2 + 's';
+        container.appendChild(bubble);
+        setTimeout(() => bubble.remove(), 5000);
+    }, 300);
+}
+
+/**
+ * MUSIC PLAYER: Advanced SDAT Interface
+ */
+function initMusicPlayer() {
+    const bgMusic = document.getElementById('bg-music');
+    const playPause = document.getElementById('play-pause');
+    const trackInfo = document.querySelector('.track-info');
+    const nextBtn = document.getElementById('next-track');
+    const prevBtn = document.getElementById('prev-track');
+
+    const playlist = [
+        { name: "DECISIVE_BATTLE", src: "assets/audio/music.mp3" },
+        { name: "A_CRUEL_ANGELS_THESIS", src: "assets/audio/music.mp3" }, // Fallback to same file
+        { name: "THANATOS", src: "assets/audio/music.mp3" }
+    ];
+    let currentTrack = 0;
+
+    if (playPause) {
+        playPause.addEventListener('click', () => {
+            if (bgMusic.paused) {
+                bgMusic.play();
+                playPause.innerText = 'PAUSE';
+            } else {
+                bgMusic.pause();
+                playPause.innerText = 'PLAY';
+            }
+        });
+    }
+
+    if (nextBtn) {
+        nextBtn.addEventListener('click', () => {
+            currentTrack = (currentTrack + 1) % playlist.length;
+            trackInfo.innerText = `TRACK_0${currentTrack+1}: ${playlist[currentTrack].name}`;
+        });
+    }
 }
 
 setTimeout(() => {

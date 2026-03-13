@@ -34,6 +34,17 @@
     <div class="parallax-layer layer-mid"></div>
     <div class="parallax-layer layer-front"></div>
 
+    <!-- BOOT SEQUENCE -->
+    <div id="boot-screen">
+        <div class="boot-log" id="boot-log"></div>
+    </div>
+
+    <!-- LCL BUBBLES CONTAINER -->
+    <div id="lcl-bubbles"></div>
+
+    <!-- Custom Cursor -->
+    <div id="nerv-cursor"></div>
+
     <!-- Splash Screen (Biometric Scan) -->
     <div id="splash-screen">
         <div class="scrolling-tapes">
@@ -169,34 +180,76 @@
                 </div>
                 <div class="hud-stats">STATUS: STABILIZED</div>
             </div>
+            <!-- ADVANCED MUSIC PLAYER -->
+            <div class="hud-card purple-glow music-player">
+                <div class="hud-title">SDAT-2026 PLAYER</div>
+                <div class="player-controls">
+                    <button id="prev-track" class="player-btn">«</button>
+                    <button id="play-pause" class="player-btn">PLAY</button>
+                    <button id="next-track" class="player-btn">»</button>
+                </div>
+                <div class="now-playing">
+                    <div class="track-info">TRACK_01: DECISIVE_BATTLE</div>
+                    <div class="visualizer-mini">
+                        <div class="v-bar"></div><div class="v-bar"></div><div class="v-bar"></div><div class="v-bar"></div>
+                    </div>
+                </div>
+            </div>
         </div>
 
         <!-- SECTION 4: PILOT DOSSIERS -->
         <section id="dossiers" class="data-block">
             <h2 class="section-title">CLASSIFIED PILOT DATABASE</h2>
             <div class="dossier-grid">
-                <div class="dossier-card" style="--border-color: #3178C6;">
-                    <picture><source srcset="assets/images/rei_ayanami_dossier_profile_1773329275067.webp" type="image/webp"><img src="assets/images/rei_ayanami_dossier_profile_1773329275067.png" alt="Rei Ayanami"></picture>
-                    <div class="dossier-info">
-                        <h4>REI AYANAMI</h4>
-                        <span class="label">FIRST CHILD</span>
-                        <p>綾波 レイ • EVA-00</p>
+                <div class="dossier-card" style="--border-color: #3178C6;" onclick="this.classList.toggle('expanded')">
+                    <div class="card-inner">
+                        <picture><source srcset="assets/images/rei_ayanami_dossier_profile_1773329275067.webp" type="image/webp"><img src="assets/images/rei_ayanami_dossier_profile_1773329275067.png" alt="Rei Ayanami"></picture>
+                        <div class="dossier-info">
+                            <h4>REI AYANAMI</h4>
+                            <span class="label">FIRST CHILD</span>
+                            <p>綾波 レイ • EVA-00</p>
+                        </div>
+                        <div class="expanded-data">
+                            <ul class="stats-list">
+                                <li>SYNC RATE: 82%</li>
+                                <li>STATUS: SOULLESS</li>
+                                <li>MENTAL: STABLE</li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
-                <div class="dossier-card featured" style="--border-color: #4b0082;">
-                    <picture><source srcset="assets/images/shinji_ikari_dossier_profile_1773329583132.webp" type="image/webp"><img src="assets/images/shinji_ikari_dossier_profile_1773329583132.png" alt="Shinji Ikari"></picture>
-                    <div class="dossier-info">
-                        <h4>SHINJI IKARI</h4>
-                        <span class="label">THIRD CHILD</span>
-                        <p>碇 シンジ • EVA-01</p>
+                <div class="dossier-card featured" style="--border-color: #4b0082;" onclick="this.classList.toggle('expanded')">
+                    <div class="card-inner">
+                        <picture><source srcset="assets/images/shinji_ikari_dossier_profile_1773329583132.webp" type="image/webp"><img src="assets/images/shinji_ikari_dossier_profile_1773329583132.png" alt="Shinji Ikari"></picture>
+                        <div class="dossier-info">
+                            <h4>SHINJI IKARI</h4>
+                            <span class="label">THIRD CHILD</span>
+                            <p>碇 シンジ • EVA-01</p>
+                        </div>
+                        <div class="expanded-data">
+                            <ul class="stats-list">
+                                <li>SYNC RATE: 412.35%</li>
+                                <li>STATUS: BERSERK</li>
+                                <li>MENTAL: DANGER</li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
-                <div class="dossier-card" style="--border-color: #ff4500;">
-                    <picture><source srcset="assets/images/asuka_langley_dossier_profile_1773329744616.webp" type="image/webp"><img src="assets/images/asuka_langley_dossier_profile_1773329744616.png" alt="Asuka Langley"></picture>
-                    <div class="dossier-info">
-                        <h4>ASUKA LANGLEY</h4>
-                        <span class="label">SECOND CHILD</span>
-                        <p>惣流・アスカ • EVA-02</p>
+                <div class="dossier-card" style="--border-color: #ff4500;" onclick="this.classList.toggle('expanded')">
+                    <div class="card-inner">
+                        <picture><source srcset="assets/images/asuka_langley_dossier_profile_1773329744616.webp" type="image/webp"><img src="assets/images/asuka_langley_dossier_profile_1773329744616.png" alt="Asuka Langley"></picture>
+                        <div class="dossier-info">
+                            <h4>ASUKA LANGLEY</h4>
+                            <span class="label">SECOND CHILD</span>
+                            <p>惣流・アスカ • EVA-02</p>
+                        </div>
+                        <div class="expanded-data">
+                            <ul class="stats-list">
+                                <li>SYNC RATE: 94%</li>
+                                <li>STATUS: ACTIVE</li>
+                                <li>MENTAL: AGGRESSIVE</li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
             </div>
