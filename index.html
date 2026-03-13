@@ -423,15 +423,31 @@
             </div>
         </section>
 
-        <!-- SECTION 5: SATELLITE UPLINK MAP -->
+        <!-- SECTION 5: TACTICAL GLOBAL TRACKER -->
         <section id="satellite-map" class="data-block glass-panel">
-            <h2 class="section-title">GLOBAL UPLINK STATUS / КАРТА БАЗ NERV</h2>
-            <div class="map-container">
-                <div id="world-map">
-                    <!-- Dots will be generated via JS -->
+            <h2 class="section-title">ANGEL TRACKING SYSTEM // ГЛОБАЛЬНЫЙ МОНИТОРИНГ</h2>
+            <div class="globe-wrapper">
+                <div class="globe-container">
+                    <div id="globe-3d">
+                        <div class="globe-sphere"></div>
+                        <div class="globe-lines"></div>
+                        <div id="globe-markers"></div>
+                    </div>
                 </div>
-                <div class="map-overlay">
-                    <div class="map-status">SCANNING SATELLITE FEED...</div>
+                <div class="globe-stats">
+                    <div class="stat-box">
+                        <span class="label">TARGET IDENTIFIED:</span>
+                        <span id="target-name" class="val">NONE</span>
+                    </div>
+                    <div class="stat-box">
+                        <span class="label">COORDINATES:</span>
+                        <span id="target-coords" class="val">00°00'00"N 00°00'00"E</span>
+                    </div>
+                    <div class="stat-box">
+                        <span class="label">ALERT LEVEL:</span>
+                        <span id="target-alert" class="val color-green">CLEARED</span>
+                    </div>
+                    <div class="map-status">SATELLITE UPLINK: STABLE</div>
                 </div>
             </div>
         </section>

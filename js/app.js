@@ -96,8 +96,10 @@ document.addEventListener('DOMContentLoaded', () => {
         initAdvancedSystems(); 
         applyTimeTheme();
         initGitHubSync();
+        initGitHubHeatmap(); // Bio-activity Grid
         initTelegramFeed();
         initParallax();
+        initTacticalGlobe(); // Angel Tracker
         initSatelliteMap();
         initPilotLicense(); 
         initBatteryMonitor(); // Track internal power
@@ -1209,6 +1211,56 @@ function initATFieldGame() {
     });
 }
 
+
+
+/**
+ * TACTICAL GLOBE: Angel Tracking System
+ */
+function initTacticalGlobe() {
+    const markersContainer = document.getElementById('globe-markers');
+    const nameEl = document.getElementById('target-name');
+    const coordsEl = document.getElementById('target-coords');
+    const alertEl = document.getElementById('target-alert');
+    
+    if (!markersContainer) return;
+
+    const angels = [
+        { name: 'SACHIEL', coords: '35°15\'00"N 139°10\'00"E', top: '40%', left: '70%', alert: 'S' },
+        { name: 'SHAMSHIEL', coords: '34°40\'00"N 139°30\'00"E', top: '60%', left: '80%', alert: 'A' },
+        { name: 'RAMIEL', coords: '35°25\'00"N 138°50\'00"E', top: '30%', left: '40%', alert: 'S' },
+        { name: 'GAGHIEL', coords: '54°00\'00"N 10°00\'00"E', top: '20%', left: '30%', alert: 'B' },
+        { name: 'ZERUEL', coords: '35°00\'00"N 139°00\'00"E', top: '50%', left: '50%', alert: 'GOD' }
+    ];
+
+    let currentIdx = 0;
+
+    function updateTargetInfo(angel) {
+        if (!nameEl || !coordsEl || !alertEl) return;
+        nameEl.innerText = angel.name;
+        coordsEl.innerText = angel.coords;
+        alertEl.innerText = `LEVEL ${angel.alert} / CODE RED`;
+        alertEl.className = 'val color-red';
+    }
+
+    function spawnMarker() {
+        if (!markersContainer) return;
+        const angel = angels[currentIdx];
+        markersContainer.innerHTML = '';
+        
+        const marker = document.createElement('div');
+        marker.className = 'globe-marker';
+        marker.style.top = angel.top;
+        marker.style.left = angel.left;
+        
+        markersContainer.appendChild(marker);
+        updateTargetInfo(angel);
+        
+        currentIdx = (currentIdx + 1) % angels.length;
+        setTimeout(spawnMarker, 5000);
+    }
+
+    spawnMarker();
+}
 
 /**
  * GITHUB HEATMAP: Bio-activity Grid Generation

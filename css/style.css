@@ -1401,6 +1401,115 @@ body.nerv-terminal {
     padding-top: 15px;
 }
 
+/* Tactical Globe */
+.globe-wrapper {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+    padding: 20px;
+    background: rgba(0,0,0,0.3);
+    border: 1px solid rgba(255,107,53,0.1);
+}
+
+.globe-container {
+    perspective: 1000px;
+    width: 250px;
+    height: 250px;
+    position: relative;
+    flex-shrink: 0;
+}
+
+#globe-3d {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    transform-style: preserve-3d;
+    animation: rotate-globe 20s infinite linear;
+}
+
+.globe-sphere {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    border: 1px solid var(--accent);
+    position: absolute;
+    box-shadow: inset 0 0 50px rgba(255,107,53,0.2), 0 0 20px rgba(255,107,53,0.1);
+}
+
+.globe-lines {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background: 
+        repeating-linear-gradient(90deg, transparent, transparent 29px, rgba(255,107,53,0.1) 30px),
+        repeating-linear-gradient(0deg, transparent, transparent 29px, rgba(255,107,53,0.1) 30px);
+    transform-style: preserve-3d;
+}
+
+.globe-marker {
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    background: #ff0000;
+    border-radius: 50%;
+    box-shadow: 0 0 10px #ff0000;
+    transform: translate(-50%, -50%);
+    cursor: pointer;
+    z-index: 10;
+}
+
+.globe-marker::after {
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    border: 1px solid #ff0000;
+    border-radius: 50%;
+    left: -7px;
+    top: -7px;
+    animation: marker-pulse 1.5s infinite;
+}
+
+.globe-stats {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.stat-box {
+    border-left: 3px solid var(--accent);
+    padding-left: 15px;
+    background: rgba(255,107,53,0.05);
+    padding: 10px 15px;
+}
+
+.stat-box .val {
+    display: block;
+    font-size: 1.1rem;
+    font-weight: 900;
+    font-family: 'Orbitron', sans-serif;
+}
+
+.color-green { color: var(--nerv-green); }
+.color-red { color: #ff0000; animation: blink 0.5s infinite; }
+
+@keyframes rotate-globe {
+    from { transform: rotateY(0deg) rotateX(15deg); }
+    to { transform: rotateY(360deg) rotateX(15deg); }
+}
+
+@keyframes marker-pulse {
+    0% { transform: scale(0.5); opacity: 1; }
+    100% { transform: scale(2.5); opacity: 0; }
+}
+
+@media (max-width: 768px) {
+    .globe-wrapper { flex-direction: column; text-align: center; }
+    .stat-box { border-left: none; border-top: 2px solid var(--accent); }
+}
+
 .heatmap-grid {
     display: grid;
     grid-auto-flow: column;
