@@ -420,13 +420,27 @@ body.nerv-terminal {
 
 .dossier-card {
     border: 2px solid var(--border-color);
-    padding: 10px;
+    padding: 15px;
     text-align: center;
-    transition: transform 0.3s ease;
+    transition: all 0.3s ease;
+    min-height: 380px; /* Ensure uniform size and visibility while loading */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background: rgba(0,0,0,0.5);
+    border-radius: 5px;
 }
 
 .dossier-card:hover {
-    transform: translateY(-10px) scale(1.05);
+    transform: translateY(-10px) scale(1.02);
+    box-shadow: 0 0 20px var(--border-color);
+}
+
+.card-inner {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .dossier-card img {
