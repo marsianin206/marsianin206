@@ -423,7 +423,7 @@ body.nerv-terminal {
     padding: 15px;
     text-align: center;
     transition: all 0.3s ease;
-    min-height: 380px; /* Ensure uniform size and visibility while loading */
+    min-height: 420px; /* Ensure uniform size and visibility while loading */
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -445,8 +445,9 @@ body.nerv-terminal {
 
 .dossier-card img {
     width: 100%;
-    height: 180px; /* Fixed height for consistency */
-    object-fit: cover; /* Crop to fit if necessary */
+    height: 220px; /* Increased height for better portrait framing */
+    object-fit: cover;
+    object-position: top; /* Ensure pilot faces are visible */
     border-radius: 5px;
     margin-bottom: 10px;
     display: block;
