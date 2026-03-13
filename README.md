@@ -217,7 +217,7 @@
         <sub><b>惣流・アスカ • EVA-02 PILOT</b></sub>
       </td>
       <td align="center" width="25%">
-        <div style="width: 280px; height: 180px; background: repeating-linear-gradient(45deg, #0d0d0d, #0d0d0d 10px, #1a1a1a 10px, #1a1a1a 20px); border: 2px dashed #7b00ff; border-radius: 10px; display: flex; align-items: center; justify-content: center; color: #ff0000; font-weight: 900; font-family: monospace;">[CLASSIFIED]</div>
+        <img src="assets/images/kaworu.webp" width="280" style="border: 2px solid #7b00ff; border-radius: 10px;" />
         <br/>
         <img src="https://img.shields.io/badge/KAWORU_NAGISA-FIFTH_CHILD-7b00ff?style=for-the-badge&labelColor=0d0d0d" />
         <br/>
