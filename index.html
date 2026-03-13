@@ -84,6 +84,13 @@
             <div class="terminal-status">
                 <span class="status-dot pulse"></span>
                 <span class="status-text">CORE SYSTEM ONLINE // ACCESS LEVEL: AA</span>
+                <!-- BATTERY MONITOR -->
+                <div id="battery-hud" class="battery-mini-hud">
+                    <span id="battery-percent">--%</span>
+                    <div class="battery-icon-wrap">
+                        <div id="battery-level" class="battery-fill"></div>
+                    </div>
+                </div>
             </div>
         </div>
     </header>
@@ -147,6 +154,13 @@
                     <div class="progress-bar orange" style="width: 85%"></div>
                 </div>
                 <div class="hud-stats">INTERNAL BATTERY: 04:59:59</div>
+            </div>
+            <div class="hud-card red-glow">
+                <div class="hud-title">ANGEL PROXIMITY SCANNER</div>
+                <div class="radar-box">
+                    <canvas id="radar-canvas" width="150" height="100"></canvas>
+                </div>
+                <div class="label">STATUS: <span id="radar-status">SCANNING...</span></div>
             </div>
             <div class="hud-card green-glow">
                 <div class="hud-title">LCL PRESSURE</div>
@@ -293,6 +307,7 @@
             <h2 class="section-title">PILOT CREDENTIALS / ЛИЦЕНЗИЯ 2026</h2>
             <div class="license-wrapper">
                 <div class="nerv-id-card" id="id-card">
+                    <div class="id-scan-line"></div>
                     <div class="id-header">
                         <img src="logo.png" alt="NERV" class="id-logo">
                         <div class="id-title-wrap">

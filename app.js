@@ -99,7 +99,9 @@ document.addEventListener('DOMContentLoaded', () => {
         initTelegramFeed();
         initParallax();
         initSatelliteMap();
-        initPilotLicense(); // Load 2026 Credentials
+        initPilotLicense(); 
+        initBatteryMonitor(); // Track internal power
+        initAngelRadar(); // Search for Angels
     }
 });
 
@@ -881,6 +883,100 @@ function initPilotLicense() {
     }
 
     console.log('%c [NERV] PILOT LICENSE 2026 GENERATED ', 'background: #000; color: #ff6b35; border: 1px solid #ff6b35; padding: 2px;');
+}
+
+/**
+ * BATTERY MONITOR: Real-time Device Power
+ */
+function initBatteryMonitor() {
+    const levelBar = document.getElementById('battery-level');
+    const percentText = document.getElementById('battery-percent');
+
+    if (navigator.getBattery) {
+        navigator.getBattery().then(battery => {
+            function updateAll() {
+                const level = battery.level * 100;
+                if (levelBar) levelBar.style.width = level + '%';
+                if (percentText) percentText.innerText = Math.round(level) + '%';
+                
+                // Color shift based on energy
+                if (level < 20) {
+                    levelBar.style.background = '#ff0000'; // RED ALERT
+                } else if (level < 50) {
+                    levelBar.style.background = '#ffce00'; // CAUTION
+                } else {
+                    levelBar.style.background = '#50c878'; // OPTIMAL
+                }
+            }
+            
+            updateAll();
+            battery.addEventListener('levelchange', updateAll);
+        });
+    }
+}
+
+/**
+ * ANGEL RADAR: Oscilloscope Animation
+ */
+function initAngelRadar() {
+    const canvas = document.getElementById('radar-canvas');
+    if (!canvas) return;
+    const ctx = canvas.getContext('2d');
+    const status = document.getElementById('radar-status');
+    
+    let angle = 0;
+    const points = [];
+
+    function animate() {
+        ctx.clearRect(0, 0, canvas.width, canvas.height);
+        
+        // Draw Grid
+        ctx.strokeStyle = 'rgba(255, 69, 0, 0.2)';
+        ctx.beginPath();
+        ctx.arc(canvas.width/2, canvas.height/2, 40, 0, Math.PI * 2);
+        ctx.stroke();
+        
+        // Draw Sweep
+        ctx.strokeStyle = 'rgba(255, 69, 0, 0.8)';
+        ctx.lineWidth = 2;
+        ctx.beginPath();
+        ctx.moveTo(canvas.width/2, canvas.height/2);
+        const x = canvas.width/2 + Math.cos(angle) * 50;
+        const y = canvas.height/2 + Math.sin(angle) * 50;
+        ctx.lineTo(x, y);
+        ctx.stroke();
+        
+        // Randomly "Detect" something
+        if (Math.random() > 0.99 && points.length < 3) {
+            points.push({
+                x: Math.random() * canvas.width,
+                y: Math.random() * canvas.height,
+                life: 100
+            });
+            if (status) {
+                status.innerText = 'PATTERN BLUE!';
+                status.style.color = '#ff0000';
+                setTimeout(() => {
+                    status.innerText = 'SCANNING...';
+                    status.style.color = 'inherit';
+                }, 3000);
+            }
+        }
+        
+        // Draw Points
+        points.forEach((p, idx) => {
+            ctx.fillStyle = `rgba(255, 0, 0, ${p.life / 100})`;
+            ctx.beginPath();
+            ctx.arc(p.x, p.y, 3, 0, Math.PI * 2);
+            ctx.fill();
+            p.life -= 0.5;
+            if (p.life <= 0) points.splice(idx, 1);
+        });
+
+        angle += 0.05;
+        requestAnimationFrame(animate);
+    }
+    animate();
 }
 
 setTimeout(() => {
