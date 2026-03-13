@@ -773,3 +773,82 @@ body.nerv-terminal {
         min-width: unset;
     }
 }
+
+/* === EASTER EGGS === */
+.berserk-mode {
+    animation: berserk-shake 0.1s infinite, red-glitch 5s infinite !important;
+}
+
+@keyframes berserk-shake {
+    0% { transform: translate(1px, 1px) rotate(0deg); }
+    10% { transform: translate(-1px, -2px) rotate(-1deg); }
+    20% { transform: translate(-3px, 0px) rotate(1deg); }
+    30% { transform: translate(3px, 2px) rotate(0deg); }
+    40% { transform: translate(1px, -1px) rotate(1deg); }
+    50% { transform: translate(-1px, 2px) rotate(-1deg); }
+    60% { transform: translate(-3px, 1px) rotate(0deg); }
+    70% { transform: translate(3px, 1px) rotate(-1deg); }
+    80% { transform: translate(-1px, -1px) rotate(1deg); }
+    90% { transform: translate(1px, 2px) rotate(0deg); }
+    100% { transform: translate(1px, -2px) rotate(-1deg); }
+}
+
+@keyframes red-glitch {
+    0% { background-color: #0d0d0d; }
+    50% { background-color: #4b0000; }
+    100% { background-color: #0d0d0d; }
+}
+
+.penpen-walk {
+    position: fixed;
+    bottom: 20px;
+    right: -100px;
+    width: 60px;
+    z-index: 10002;
+    pointer-events: none;
+    transition: transform 5s linear;
+}
+
+.lcl-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 165, 0, 0.2);
+    pointer-events: none;
+    z-index: 9998;
+    opacity: 0;
+    transition: opacity 2s ease-in-out;
+}
+
+.lcl-active .lcl-overlay {
+    opacity: 1;
+}
+
+#hidden-msg {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #000;
+    border: 2px solid var(--nerv-orange);
+    padding: 30px;
+    z-index: 10010;
+    display: none;
+    font-family: 'Orbitron', sans-serif;
+    color: var(--nerv-red);
+    text-align: center;
+    box-shadow: 0 0 100px var(--nerv-red);
+}
+
+.glitch-text {
+    text-shadow: 2px 2px var(--nerv-red), -2px -2px var(--nerv-green);
+    animation: flicker 0.2s infinite;
+}
+
+.secret-data {
+    color: var(--nerv-purple) !important;
+    font-weight: bold;
+    text-shadow: 0 0 10px var(--nerv-purple);
+}

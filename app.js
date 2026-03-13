@@ -53,6 +53,7 @@ document.addEventListener('DOMContentLoaded', () => {
         initTypingEffect();
         handleMagiVoting();
         initTetris(); // Initialize the tactical sorting system
+        initEasterEggs(); // SECRET SYSTEM ACTIVATED
     });
 });
 
@@ -370,6 +371,143 @@ function initTetris() {
         update();
         startBtn.style.display = 'none';
     });
+}
+
+/**
+ * NERV SECRET ARCHIVE: Easter Egg System
+ * Total: 10 Hidden Protocols
+ */
+function initEasterEggs() {
+    console.log('%c [NERV] HIDDEN PROTOCOLS LOADED ', 'background: #4b0082; color: #fff; font-weight: bold;');
+
+    const msgBox = document.getElementById('hidden-msg');
+    const showMsg = (text, duration = 3000) => {
+        msgBox.innerHTML = `<h2 class="glitch-text">${text}</h2>`;
+        msgBox.style.display = 'block';
+        setTimeout(() => { msgBox.style.display = 'none'; }, duration);
+    };
+
+    // 1. KONAMI CODE (Berserk Mode)
+    let konamiCode = ['ArrowUp', 'ArrowUp', 'ArrowDown', 'ArrowDown', 'ArrowLeft', 'ArrowRight', 'ArrowLeft', 'ArrowRight', 'b', 'a'];
+    let konamiPos = 0;
+    document.addEventListener('keydown', (e) => {
+        if (e.key === konamiCode[konamiPos]) {
+            konamiPos++;
+            if (konamiPos === konamiCode.length) {
+                document.body.classList.add('berserk-mode');
+                showMsg("BERSERK MODE: 400% SYNC REACHED", 5000);
+                setTimeout(() => { document.body.classList.remove('berserk-mode'); }, 10000);
+                konamiPos = 0;
+            }
+        } else { konamiPos = 0; }
+    });
+
+    // 2. NERV LOGO DOUBLE-CLICK (Gendo Quote)
+    const logo = document.querySelector('.banner-img') || document.querySelector('.splash-logo');
+    if (logo) {
+        logo.addEventListener('dblclick', () => {
+            showMsg("GENDO: \"Humanity's fate is in our hands.\"");
+        });
+    }
+
+    // 3. MAGI 3-2-1 CLICKS (Self-Destruct)
+    let magiSequence = [];
+    document.querySelectorAll('.magi-node').forEach(node => {
+        node.addEventListener('click', () => {
+            const id = node.getAttribute('data-node');
+            magiSequence.push(id);
+            if (magiSequence.join('-').includes('CASPER-BALTHASAR-MELCHIOR')) {
+                showMsg("CRITICAL: SELF-DESTRUCT INITIATED (ERROR 606)", 4000);
+                magiSequence = [];
+            }
+        });
+    });
+
+    // 4. REI CLONE CLICK (3 times on Rei)
+    const reiCard = document.querySelector('.dossier-card img[alt="Rei Ayanami"]');
+    if (reiCard) {
+        let reiClicks = 0;
+        reiCard.addEventListener('click', () => {
+            reiClicks++;
+            if (reiClicks === 3) {
+                reiCard.style.opacity = '0.1';
+                setTimeout(() => { reiCard.style.opacity = '1'; }, 2000);
+                showMsg("REI: \"I am me. But I am also someone else.\"");
+                reiClicks = 0;
+            }
+        });
+    }
+
+    // 5. PEN-PEN WALK (Click Footer Copyright)
+    const footer = document.querySelector('.main-footer');
+    if (footer) {
+        footer.addEventListener('click', () => {
+            const penpen = document.createElement('img');
+            penpen.src = 'https://upload.wikimedia.org/wikipedia/en/b/b3/Pen-Pen_%2BEvangelion%2B.png';
+            penpen.className = 'penpen-walk';
+            document.body.appendChild(penpen);
+            setTimeout(() => { penpen.style.transform = 'translateX(-150vw)'; }, 100);
+            setTimeout(() => { penpen.remove(); }, 6000);
+        });
+    }
+
+    // 6. LCL MODE (Double click on "LCL PRESSURE" card)
+    const lclCard = document.querySelector('.green-glow');
+    if (lclCard) {
+        lclCard.addEventListener('dblclick', () => {
+            document.body.classList.toggle('lcl-active');
+            showMsg("LCL DEPTH: 100% - INTERFACE TUNED");
+        });
+    }
+
+    // 7. TABRIS GHOST (Type "17" for 17th Angel)
+    let ghostTrigger = '';
+    document.addEventListener('keydown', (e) => {
+        ghostTrigger += e.key;
+        if (ghostTrigger.includes('17')) {
+            const h2 = document.querySelector('.section-title');
+            const original = h2.innerText;
+            h2.innerText = "TABRIS PROTOCOL // KAWORU NAGISA";
+            h2.classList.add('secret-data');
+            setTimeout(() => { 
+                h2.innerText = original; 
+                h2.classList.remove('secret-data');
+            }, 3000);
+            ghostTrigger = '';
+        }
+        if (ghostTrigger.length > 5) ghostTrigger = '';
+    });
+
+    // 8. SYNC LIMIT (Hold Start Button for 3 seconds)
+    const startTetris = document.getElementById('start-tetris');
+    if (startTetris) {
+        let holdTimer;
+        startTetris.addEventListener('mousedown', () => {
+            holdTimer = setTimeout(() => {
+                showMsg("SYNC RATIO: INFINITE - A-T FIELD COLLAPSING", 3000);
+            }, 3000);
+        });
+        startTetris.addEventListener('mouseup', () => clearTimeout(holdTimer));
+    }
+
+    // 9. BAKA MODE (Secret word)
+    let bakaSeq = '';
+    document.addEventListener('keydown', (e) => {
+        bakaSeq += e.key.toLowerCase();
+        if (bakaSeq.includes('baka')) {
+            showMsg("ASUKA: \"Anta Baka?!\"", 2000);
+            bakaSeq = '';
+        }
+        if (bakaSeq.length > 10) bakaSeq = '';
+    });
+
+    // 10. TERMINAL "STATUS" (Double click auth-status)
+    const auth = document.getElementById('auth-status');
+    if (auth) {
+        auth.addEventListener('dblclick', () => {
+            showMsg("CONNECTION: SECURE // GOD'S IN HIS HEAVEN");
+        });
+    }
 }
 
 // Log connection to terminal with enhanced diagnostics
