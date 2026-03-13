@@ -300,7 +300,7 @@
 <h2 align="center">☕️ TIP JAR / SUPPORT | ПОДДЕРЖКА ☕️</h2>
 <div align="center">
   <p><i>If you enjoy my tactical systems, consider supporting EVA maintenance:</i></p>
-  <a href="https://t.me/xfearlive_bot?start=donate">
+  <a href="https://t.me/SER_X_FEAR">
     <img src="https://img.shields.io/badge/TIP_WITH_TELEGRAM_STARS-ffce00?style=for-the-badge&logo=telegram&logoColor=000&labelColor=222" />
   </a>
 </div>

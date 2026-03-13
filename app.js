@@ -15,16 +15,19 @@ document.addEventListener('DOMContentLoaded', () => {
     const starBtn = document.getElementById('star-donation-btn');
 
     // Telegram Stars Payment Integration
-    if (starBtn && tg) {
+    if (starBtn) {
         starBtn.addEventListener('click', () => {
-            // Direct link to the bot's donation command
-            const donationUrl = 'https://t.me/xfearlive_bot?start=donate';
+            const profileUrl = 'https://t.me/SER_X_FEAR';
             
-            // Log for debug
-            console.log('%c [NERV] OPENING DONATION UPLINK ', 'background: #ffce00; color: #000; font-weight: bold;');
+            if (tg && tg.openTelegramLink) {
+                // Official way to open links in Telegram Mini App
+                tg.openTelegramLink(profileUrl);
+            } else {
+                // Fallback for regular browsers
+                window.open(profileUrl, '_blank');
+            }
             
-            // Open the link inside Telegram
-            tg.openTelegramLink(donationUrl);
+            console.log('%c [NERV] PERSONAL UPLINK TO @SER_X_FEAR ESTABLISHED ', 'background: #ffce00; color: #000; font-weight: bold;');
         });
     }
 
