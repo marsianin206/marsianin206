@@ -29,7 +29,12 @@
 </head>
 
 <body class="nerv-terminal">
-    <!-- Splash Screen (Audio Trigger) -->
+    <!-- Parallax Background Layers -->
+    <div class="parallax-layer layer-back"></div>
+    <div class="parallax-layer layer-mid"></div>
+    <div class="parallax-layer layer-front"></div>
+
+    <!-- Splash Screen (Biometric Scan) -->
     <div id="splash-screen">
         <div class="scrolling-tapes">
             <div class="tape" style="top: 10%"></div>
@@ -41,9 +46,26 @@
         <div class="splash-content">
             <img src="logo.png" alt="NERV LOGO" class="splash-logo">
             <h1 class="splash-title">NERV CENTRAL COMMAND</h1>
-            <p class="splash-subtitle">BEYOND THE TERMINAL: SYSTEM SYNCHRONIZATION REQUIRED</p>
-            <button id="activate-btn">INITIATE SYSTEM SYNC</button>
-            <div class="warning-text">WARNING: AUDITORY INTERFACE ENGAGED</div>
+            <p class="splash-subtitle">BEYOND THE TERMINAL: BIOMETRIC AUTH REQUIRED</p>
+            
+            <div class="scanner-container">
+                <div class="scanner-frame">
+                    <div class="scanner-line"></div>
+                    <div class="fingerprint-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <path d="M12 11c0-1.1-.9-2-2-2s-2 .9-2 2v2c0 1.1.9 2 2 2s2-.9 2-2v-2zM12 7c0-2.2-1.8-4-4-4S4 4.8 4 7v6c0 2.2 1.8 4 4 4s4-1.8 4-4V7z" />
+                            <path d="M16 11c0-3.3-2.7-6-6-6S4 7.7 4 11v2c0 3.3 2.7 6 6 6s6-2.7 6-6v-2z" />
+                            <path d="M20 11c0-5.5-4.5-10-10-10S0 5.5 0 11v2c0 5.5 4.5 10 10 10s10-4.5 10-10v-2z" />
+                        </svg>
+                    </div>
+                </div>
+                <div class="scan-progress-wrap">
+                    <div class="scan-progress-bar"></div>
+                </div>
+                <button id="activate-btn">HOLD TO SCAN</button>
+            </div>
+
+            <div class="warning-text">UNAUTHORIZED ACCESS WILL BE TERMINATED</div>
         </div>
     </div>
 
@@ -266,7 +288,20 @@
             </div>
         </section>
 
-        <!-- SECTION 5: GITHUB TACTICAL LOG -->
+        <!-- SECTION 5: SATELLITE UPLINK MAP -->
+        <section id="satellite-map" class="data-block glass-panel">
+            <h2 class="section-title">GLOBAL UPLINK STATUS / КАРТА БАЗ NERV</h2>
+            <div class="map-container">
+                <div id="world-map">
+                    <!-- Dots will be generated via JS -->
+                </div>
+                <div class="map-overlay">
+                    <div class="map-status">SCANNING SATELLITE FEED...</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECTION 6: GITHUB TACTICAL LOG -->
         <section id="github-activity" class="data-block glass-panel">
             <h2 class="section-title">GITHUB CODE INTEGRITY / ТЕЛЕМЕТРИЯ КОДА</h2>
             <div class="table-container">

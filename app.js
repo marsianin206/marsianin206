@@ -40,25 +40,66 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     }
 
-    activateBtn.addEventListener('click', () => {
-        // Play local music (Single Click Autoplay)
+    // Biometric Scanner Logic
+    let scanInterval;
+    let scanProgress = 0;
+    const progressBar = document.querySelector('.scan-progress-bar');
+
+    if (activateBtn) {
+        activateBtn.addEventListener('mousedown', startScanning);
+        activateBtn.addEventListener('touchstart', (e) => {
+            e.preventDefault();
+            startScanning(e);
+        });
+        document.addEventListener('mouseup', stopScanning);
+        document.addEventListener('touchend', stopScanning);
+    }
+
+    function startScanning(e) {
+        activateBtn.classList.add('scanning');
+        activateBtn.innerText = 'SCANNING...';
+        
+        scanInterval = setInterval(() => {
+            scanProgress += 2;
+            if (progressBar) progressBar.style.width = `${scanProgress}%`;
+            
+            if (scanProgress >= 100) {
+                stopScanning();
+                grantAccess();
+            }
+        }, 30);
+    }
+
+    function stopScanning() {
+        clearInterval(scanInterval);
+        if (scanProgress < 100) {
+            scanProgress = 0;
+            if (progressBar) progressBar.style.width = '0%';
+            if (activateBtn) {
+                activateBtn.classList.remove('scanning');
+                activateBtn.innerText = 'HOLD TO SCAN';
+            }
+        }
+    }
+
+    function grantAccess() {
         if (bgMusic) {
             bgMusic.play().catch(e => console.log("Audio play blocked:", e));
         }
 
-        // Hide splash screen
         splash.classList.add('hidden');
 
-        // Start typing effects
         initTypingEffect();
         handleMagiVoting();
-        initTetris(); // Initialize the tactical sorting system
-        initEasterEggs(); // SECRET SYSTEM ACTIVATED
-        initAdvancedSystems(); // A-T Field, Sync Graph & Emergency Mode
-        applyTimeTheme(); // Dynamic Theme based on hour
-        initGitHubSync(); // Code Integrity Status
-        initTelegramFeed(); // Tactical News Broadcast
-    });
+        initTetris(); 
+        initEasterEggs(); 
+        initAdvancedSystems(); 
+        applyTimeTheme();
+        initGitHubSync();
+        initTelegramFeed();
+        initParallax();
+        initSatelliteMap();
+    }
 });
 
 /**
@@ -731,6 +772,78 @@ function initTelegramFeed() {
 }
 
 console.log('%c [NERV] SYSTEM BOOT INITIALIZED ', logStyle);
+
+/**
+ * GEOFRONT PARALLAX: Background Shift
+ */
+function initParallax() {
+    const layers = [
+        { el: document.querySelector('.layer-back'), speed: 0.02 },
+        { el: document.querySelector('.layer-mid'), speed: 0.05 },
+        { el: document.querySelector('.layer-front'), speed: 0.1 }
+    ];
+
+    document.addEventListener('mousemove', (e) => {
+        const x = (window.innerWidth / 2 - e.clientX) * 0.01;
+        const y = (window.innerHeight / 2 - e.clientY) * 0.01;
+
+        layers.forEach(layer => {
+            if (layer.el) {
+                layer.el.style.transform = `translate(${x * layer.speed * 100}px, ${y * layer.speed * 100}px)`;
+            }
+        });
+    });
+
+    // Mobile Gyroscope support
+    if (window.DeviceOrientationEvent) {
+        window.addEventListener('deviceorientation', (e) => {
+            const x = e.gamma * 0.5; // Left/Right
+            const y = e.beta * 0.5;  // Front/Back
+            
+            layers.forEach(layer => {
+                if (layer.el) {
+                    layer.el.style.transform = `translate(${x * layer.speed * 10}px, ${y * layer.speed * 10}px)`;
+                }
+            });
+        });
+    }
+}
+
+/**
+ * SATELLITE MAP: NERV Base Generation
+ */
+function initSatelliteMap() {
+    const map = document.getElementById('world-map');
+    if (!map) return;
+
+    const baseLocations = [
+        { top: '35%', left: '80%' }, // Tokyo-3
+        { top: '40%', left: '20%' }, // Nevada
+        { top: '45%', left: '48%' }, // Berlin
+        { top: '80%', left: '15%' }, // Antarctica
+        { top: '25%', left: '30%' }, // London
+        { top: '60%', left: '85%' }, // Sydney
+    ];
+
+    baseLocations.forEach(loc => {
+        const dot = document.createElement('div');
+        dot.className = 'map-dot';
+        dot.style.top = loc.top;
+        dot.style.left = loc.left;
+        map.appendChild(dot);
+    });
+
+    // Random noise dots
+    setInterval(() => {
+        const tempDot = document.createElement('div');
+        tempDot.className = 'map-dot';
+        tempDot.style.top = Math.random() * 80 + 10 + '%';
+        tempDot.style.left = Math.random() * 80 + 10 + '%';
+        tempDot.style.opacity = '0.4';
+        map.appendChild(tempDot);
+        setTimeout(() => tempDot.remove(), 2000);
+    }, 3000);
+}
 setTimeout(() => {
     console.log('%c [NERV] OS: MAGI v6.2.0-NERV ', logStyle);
     console.log('%c [NERV] CONNECTION: SECURE_UPLINK_ESTABLISHED ', successStyle);
