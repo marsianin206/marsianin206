@@ -424,8 +424,11 @@ body.nerv-terminal {
 
 .dossier-card img {
     width: 100%;
+    height: 180px; /* Fixed height for consistency */
+    object-fit: cover; /* Crop to fit if necessary */
     border-radius: 5px;
     margin-bottom: 10px;
+    display: block;
 }
 
 .label {
@@ -1311,8 +1314,10 @@ body.nerv-terminal {
 
 /* Interactive Dossiers */
 .dossier-card {
-    height: 250px;
+    height: auto; /* Allow card to grow with content */
+    min-height: 250px;
     cursor: pointer !important;
+    overflow: hidden; /* Capture anything going out */
 }
 
 .card-inner {
