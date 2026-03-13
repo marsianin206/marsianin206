@@ -558,3 +558,75 @@ body.nerv-terminal {
     #activate-btn { font-size: 1rem; padding: 15px 30px; }
     .content-wrapper { padding: 0 10px; gap: 25px; }
 }
+
+/* === Contact Buttons === */
+.contact-grid {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    padding: 10px 0;
+}
+
+.contact-btn {
+    position: relative;
+    padding: 15px 35px;
+    background: transparent;
+    border: 2px solid var(--nerv-orange);
+    color: var(--nerv-orange);
+    text-decoration: none;
+    font-family: 'Orbitron', sans-serif;
+    font-weight: 700;
+    font-size: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    overflow: hidden;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    clip-path: polygon(10% 0, 100% 0, 90% 100%, 0% 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 200px;
+}
+
+.contact-btn::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -110%;
+    width: 110%;
+    height: 100%;
+    background: var(--nerv-orange);
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    z-index: 0;
+    transform: skewX(-15deg);
+}
+
+.contact-btn span {
+    position: relative;
+    z-index: 1;
+}
+
+.contact-btn:hover {
+    color: #000;
+    box-shadow: 0 0 25px rgba(255, 107, 53, 0.6);
+}
+
+.contact-btn:hover::before {
+    left: -5%;
+}
+
+.contact-btn.tg { border-color: #0088cc; color: #0088cc; }
+.contact-btn.tg::before { background: #0088cc; }
+.contact-btn.tg:hover { box-shadow: 0 0 25px rgba(0, 136, 204, 0.6); color: #fff; }
+
+.contact-btn.gh { border-color: #fff; color: #fff; }
+.contact-btn.gh::before { background: #fff; }
+.contact-btn.gh:hover { box-shadow: 0 0 25px rgba(255, 255, 255, 0.6); color: #000; }
+
+@media (max-width: 600px) {
+    .contact-btn {
+        width: 100%;
+        min-width: unset;
+    }
+}

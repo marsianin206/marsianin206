@@ -1,9 +1,26 @@
 // NERV Terminal Logic
 
 document.addEventListener('DOMContentLoaded', () => {
+    // Initialize Telegram WebApp
+    const tg = window.Telegram?.WebApp;
+    if (tg) {
+        tg.ready();
+        tg.expand();
+    }
+
     const splash = document.getElementById('splash-screen');
     const activateBtn = document.getElementById('activate-btn');
     const bgMusic = document.getElementById('bg-music');
+    const authStatus = document.getElementById('auth-status');
+
+    // Update terminal with Telegram user info if available
+    if (tg?.initDataUnsafe?.user) {
+        const user = tg.initDataUnsafe.user;
+        const userName = user.username || user.first_name || 'PILOT';
+        if (authStatus) {
+            authStatus.innerHTML = `> INCOMING CONNECTION: ${userName}<br>> ANALYZING BIOMETRICS...<br>> SYNC RATIO: 412.35%`;
+        }
+    }
 
     activateBtn.addEventListener('click', () => {
         // Play local music (Single Click Autoplay)
