@@ -637,23 +637,24 @@ async function initGitHubSync() {
     const repo = 'marsianin206/marsianin206';
     
     try {
+        console.log('[NERV] INITIATING GITHUB UPLINK...');
         const response = await fetch(`https://api.github.com/repos/${repo}/commits?per_page=5`);
         
         if (!response.ok) {
-            throw new Error(`STATUS_${response.status}`);
+            throw new Error(`INTERNAL_STATUS_${response.status}`);
         }
 
         const commits = await response.json();
         
         if (!Array.isArray(commits)) {
-            throw new Error('INVALID_DATA');
+            throw new Error('TELEMETRY_DATA_INVALID');
         }
 
         list.innerHTML = '';
         commits.forEach(item => {
             const date = new Date(item.commit.author.date).toLocaleDateString();
-            const message = (item.commit.message || 'NO MESSAGE').split('\n')[0];
-            const hash = (item.sha || '-------').substring(0, 7);
+            const message = (item.commit.message || 'NO RECORD').split('\n')[0];
+            const hash = (item.sha || 'XXXXXXX').substring(0, 7);
             
             const tr = document.createElement('tr');
             tr.innerHTML = `
@@ -667,13 +668,19 @@ async function initGitHubSync() {
         
         console.log('%c [NERV] GITHUB TELEMETRY: SYNC COMPLETE ', 'background: #000; color: #50c878; border: 1px solid #50c878; padding: 2px;');
     } catch (e) {
-        console.error('[NERV] GITHUB ERROR:', e.message);
-        let errorMsg = 'CONNECTION INTERRUPTED: ';
-        if (e.message.includes('403')) errorMsg += 'RATE_LIMIT_EXCEEDED';
-        else if (e.message.includes('404')) errorMsg += 'REPO_PRIVATE_OR_NOT_FOUND';
-        else errorMsg += 'GITHUB_API_OFFLINE';
+        console.warn('[NERV] GITHUB DIAGNOSTICS:', e.message);
         
-        list.innerHTML = `<tr><td colspan="4" style="color: #ff4500;">${errorMsg}</td></tr>`;
+        let errorMsg = 'CONNECTION_ERROR';
+        if (e.message.includes('403')) errorMsg = 'RATE_LIMIT_EXCEEDED';
+        else if (e.message.includes('404')) errorMsg = 'PRIVATE_REPO_OR_INVALID_NAME';
+        else if (e.message.includes('Failed to fetch')) errorMsg = 'NETWORK_BLOCKED_OR_OFFLINE';
+        
+        list.innerHTML = `<tr><td colspan="4" style="color: #ff4500;">[ERR] ${errorMsg} <br> <span style="font-size: 0.6rem; opacity: 0.6;">System Log: ${e.message}</span></td></tr>`;
+        
+        // Auto-retry once after 10 seconds if it's a generic network error
+        if (errorMsg === 'CONNECTION_ERROR' || errorMsg === 'NETWORK_BLOCKED_OR_OFFLINE') {
+            setTimeout(initGitHubSync, 10000);
+        }
     }
 }
 
