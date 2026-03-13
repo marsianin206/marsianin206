@@ -56,6 +56,8 @@ document.addEventListener('DOMContentLoaded', () => {
         initEasterEggs(); // SECRET SYSTEM ACTIVATED
         initAdvancedSystems(); // A-T Field, Sync Graph & Emergency Mode
         applyTimeTheme(); // Dynamic Theme based on hour
+        initGitHubSync(); // Code Integrity Status
+        initTelegramFeed(); // Tactical News Broadcast
     });
 });
 
@@ -625,6 +627,70 @@ function startEmergencyCycle() {
             document.body.classList.remove('emergency-mode');
         }, 5000);
     }, 60000); // Every minute for 5 seconds
+}
+
+/**
+ * GITHUB LIVE SYNC: Code Integrity
+ */
+async function initGitHubSync() {
+    const list = document.getElementById('github-commits');
+    const repo = 'marsianin206/marsianin206';
+    
+    try {
+        const response = await fetch(`https://api.github.com/repos/${repo}/commits?per_page=5`);
+        const commits = await response.json();
+        
+        list.innerHTML = '';
+        commits.forEach(item => {
+            const date = new Date(item.commit.author.date).toLocaleDateString();
+            const message = item.commit.message.split('\n')[0];
+            const hash = item.sha.substring(0, 7);
+            
+            const tr = document.createElement('tr');
+            tr.innerHTML = `
+                <td>> ${message.toUpperCase()}</td>
+                <td class="commit-hash">[${hash}]</td>
+                <td class="status-success">STABLE</td>
+                <td>${date}</td>
+            `;
+            list.appendChild(tr);
+        });
+        
+        console.log('%c [NERV] GITHUB TELEMETRY: SYNC COMPLETE ', 'background: #000; color: #50c878; border: 1px solid #50c878; padding: 2px;');
+    } catch (e) {
+        list.innerHTML = '<tr><td colspan="4" style="color: #ff4500;">CONNECTION INTERRUPTED: GITHUB_API_OFFLINE</td></tr>';
+    }
+}
+
+/**
+ * TELEGRAM BROADCAST: News Feed
+ */
+function initTelegramFeed() {
+    const ticker = document.getElementById('telegram-ticker');
+    const messages = [
+        "PILOT MARSIANIN206 HAS ENTERED THE GEORFRONT",
+        "PATTERN BLUE DETECTED NEAR TOKYO-3 SUBURBS",
+        "EVA-01 SYNCHRONIZATION RATIO AT 412.35% (OVERLOAD)",
+        "NERV HQ: ALL SYSTEMS TRANSFERRED TO INTERNAL POWER",
+        "MAGI SYSTEM STATUS: UNANIMOUS APPROVAL FOR COUNTER-ATTACK",
+        "NEW CODE UPDATE DETECTED: PROJECT 'HUMAN INSTRUMENTALITY' v6.2.0",
+        "LCL PRESSURE STABILIZED... NEURAL LINK ESTABLISHED",
+        "FOLLOW @XFEARinfo FOR REAL-TIME TACTICAL UPDATES"
+    ];
+    
+    let i = 0;
+    function cycleTicker() {
+        ticker.innerText = messages[i];
+        i = (i + 1) % messages.length;
+        
+        // Reset animation to sync with text change
+        ticker.style.animation = 'none';
+        ticker.offsetHeight; // force reflow
+        ticker.style.animation = null;
+    }
+    
+    setInterval(cycleTicker, 20000); // Change news every time the animation repeats
+    cycleTicker();
 }
 
 console.log('%c [NERV] SYSTEM BOOT INITIALIZED ', logStyle);

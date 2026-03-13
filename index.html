@@ -67,6 +67,11 @@
     </header>
 
     <main class="content-wrapper">
+        <!-- NEWS TICKER -->
+        <div class="news-ticker-container glass-panel">
+            <div class="ticker-label">NEWS FLASH</div>
+            <div id="telegram-ticker" class="ticker-content">CONNECTING TO NERV UPLINK...</div>
+        </div>
 
         <!-- SECTION 1: BIOMETRIC SCAN -->
         <section id="biometrics" class="data-block glass-panel">
@@ -261,7 +266,29 @@
             </div>
         </section>
 
-        <!-- SECTION 7: TIP PILOT -->
+        <!-- SECTION 5: GITHUB TACTICAL LOG -->
+        <section id="github-activity" class="data-block glass-panel">
+            <h2 class="section-title">GITHUB CODE INTEGRITY / ТЕЛЕМЕТРИЯ КОДА</h2>
+            <div class="table-container">
+                <table class="mission-table" id="github-table">
+                    <thead>
+                        <tr>
+                            <th>OPERATION</th>
+                            <th>COMMIT HASH</th>
+                            <th>STATUS</th>
+                            <th>TIMESTAMP</th>
+                        </tr>
+                    </thead>
+                    <tbody id="github-commits">
+                        <tr>
+                            <td colspan="4" style="text-align: center;">SCANNING REPOSITORY...</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <!-- SECTION 6: TACTICAL MISSION LOG -->
         <section id="donations" class="data-block glass-panel">
             <h2 class="section-title">PILOT SUSTENANCE / ПОДДЕРЖКА</h2>
             <p style="text-align: center; color: #888; font-size: 0.8rem; margin-bottom: 20px;">SYSTEM MAINTENANCE REQUIRES RESOURCE ALLOCATION</p>

@@ -97,6 +97,45 @@ body.nerv-terminal {
     animation: animate-pulse 1.5s infinite;
 }
 
+/* News Ticker */
+.news-ticker-container {
+    display: flex;
+    align-items: center;
+    background: rgba(255, 69, 0, 0.1) !important;
+    border-color: var(--nerv-red) !important;
+    height: 40px;
+    overflow: hidden;
+    margin-bottom: -20px;
+}
+
+.ticker-label {
+    background: var(--nerv-red);
+    color: #000;
+    padding: 0 15px;
+    font-family: 'Orbitron', sans-serif;
+    font-weight: 900;
+    font-size: 0.7rem;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    white-space: nowrap;
+    z-index: 2;
+}
+
+.ticker-content {
+    flex: 1;
+    white-space: nowrap;
+    padding-left: 20px;
+    font-size: 0.85rem;
+    color: var(--nerv-orange);
+    animation: ticker-scroll 20s linear infinite;
+}
+
+@keyframes ticker-scroll {
+    from { transform: translateX(100%); }
+    to { transform: translateX(-100%); }
+}
+
 /* Content Layout */
 .content-wrapper {
     max-width: 1000px;
@@ -317,12 +356,22 @@ body.nerv-terminal {
 .mission-table td {
     padding: 12px;
     border-bottom: 1px solid #333;
-    font-size: 0.9rem;
+    font-size: 0.8rem;
+    font-family: 'JetBrains Mono', monospace;
+}
+
+.commit-hash {
+    color: var(--nerv-orange);
+    opacity: 0.7;
 }
 
 .status-ok {
     color: var(--nerv-green);
+    font-weight: bold;
 }
+
+.status-success { color: var(--nerv-green); font-weight: bold; }
+.status-sync { color: var(--nerv-orange); font-style: italic; }
 
 .status-warn {
     color: var(--nerv-red);
