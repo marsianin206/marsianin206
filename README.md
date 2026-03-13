@@ -195,26 +195,33 @@
 <div align="center">
   <table border="0">
     <tr>
-      <td align="center" width="33%">
+      <td align="center" width="25%">
         <img src="assets/images/rei_ayanami_dossier_profile_1773329275067.webp" width="280" style="border: 2px solid #3178C6; border-radius: 10px;" />
         <br/>
         <img src="https://img.shields.io/badge/REI_AYANAMI-FIRST_CHILD-3178C6?style=for-the-badge&labelColor=0d0d0d" />
         <br/>
         <sub><b>綾波 レイ • EVA-00 PILOT</b></sub>
       </td>
-      <td align="center" width="33%">
+      <td align="center" width="25%">
         <img src="assets/images/shinji_ikari_dossier_profile_1773329583132.webp" width="280" style="border: 2px solid #4b0082; border-radius: 10px;" />
         <br/>
         <img src="https://img.shields.io/badge/IKARI_SHINJI-THIRD_CHILD-4b0082?style=for-the-badge&labelColor=0d0d0d" />
         <br/>
         <sub><b>碇 シンジ • EVA-01 PILOT</b></sub>
       </td>
-      <td align="center" width="33%">
+      <td align="center" width="25%">
         <img src="assets/images/asuka_langley_dossier_profile_1773329744616.webp" width="280" style="border: 2px solid #ff4500; border-radius: 10px;" />
         <br/>
         <img src="https://img.shields.io/badge/ASUKA_LANGLEY-SECOND_CHILD-ff4500?style=for-the-badge&labelColor=0d0d0d" />
         <br/>
         <sub><b>惣流・アスカ • EVA-02 PILOT</b></sub>
+      </td>
+      <td align="center" width="25%">
+        <div style="width: 280px; height: 180px; background: repeating-linear-gradient(45deg, #0d0d0d, #0d0d0d 10px, #1a1a1a 10px, #1a1a1a 20px); border: 2px dashed #7b00ff; border-radius: 10px; display: flex; align-items: center; justify-content: center; color: #ff0000; font-weight: 900; font-family: monospace;">[CLASSIFIED]</div>
+        <br/>
+        <img src="https://img.shields.io/badge/KAWORU_NAGISA-FIFTH_CHILD-7b00ff?style=for-the-badge&labelColor=0d0d0d" />
+        <br/>
+        <sub><b>渚 カヲル • TABRIS</b></sub>
       </td>
     </tr>
   </table>

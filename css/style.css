@@ -438,6 +438,44 @@ body.nerv-terminal {
     display: block;
 }
 
+/* Redacted/Hidden Pilot Styling */
+.dossier-card.redacted {
+    background: repeating-linear-gradient(45deg, #0d0d0d, #0d0d0d 10px, #1a1a1a 10px, #1a1a1a 20px);
+    position: relative;
+    min-height: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end; /* Keep info at bottom */
+    overflow: hidden;
+}
+
+.redacted-overlay {
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(-15deg);
+    border: 3px solid #ff0000;
+    color: #ff0000;
+    padding: 10px 20px;
+    font-size: 1.5rem;
+    font-weight: 900;
+    text-shadow: 0 0 10px #ff0000;
+    z-index: 5;
+    pointer-events: none;
+    background: rgba(13,13,13,0.8);
+    animation: blink 1s infinite;
+}
+
+.dossier-card.redacted:hover .redacted-overlay {
+    animation: glitch-quick 0.2s infinite;
+}
+
+@keyframes glitch-quick {
+    0% { transform: translate(-52%, -48%) rotate(-15deg); }
+    50% { transform: translate(-48%, -52%) rotate(-16deg); }
+    100% { transform: translate(-50%, -50%) rotate(-15deg); }
+}
+
 .label {
     display: block;
     font-size: 0.7rem;
