@@ -99,6 +99,7 @@ document.addEventListener('DOMContentLoaded', () => {
         initTelegramFeed();
         initParallax();
         initSatelliteMap();
+        initPilotLicense(); // Load 2026 Credentials
     }
 });
 
@@ -844,6 +845,44 @@ function initSatelliteMap() {
         setTimeout(() => tempDot.remove(), 2000);
     }, 3000);
 }
+
+/**
+ * PILOT LICENSE: Load User Data for 2026 Credentials
+ */
+function initPilotLicense() {
+    const nameLabel = document.getElementById('license-name');
+    const photoArea = document.getElementById('user-photo');
+    const downloadBtn = document.getElementById('download-id');
+    const tg = window.Telegram?.WebApp;
+
+    if (tg?.initDataUnsafe?.user) {
+        const user = tg.initDataUnsafe.user;
+        const fullName = `${user.first_name || ''} ${user.last_name || ''}`.trim() || user.username || 'PILOT_04';
+        
+        if (nameLabel) nameLabel.innerText = fullName.toUpperCase();
+        
+        if (user.photo_url && photoArea) {
+            photoArea.innerHTML = `<img src="${user.photo_url}" style="width:100%; height:100%; object-fit:cover; filter: grayscale(1) contrast(1.2) sepia(0.5) hue-rotate(-20deg);">`;
+        }
+    }
+
+    if (downloadBtn) {
+        downloadBtn.addEventListener('click', () => {
+            // Simple ripple animation on click
+            downloadBtn.style.transform = 'scale(0.95)';
+            setTimeout(() => downloadBtn.style.transform = 'scale(1)', 100);
+            
+            if (tg) {
+                tg.showAlert('ACCESS GRANTED: SECURITY CREDENTIALS LINKED TO YOUR TG_ID. [STATUS: ENCRYPTED_2026]');
+            } else {
+                alert('ACCESS GRANTED: SECURITY CREDENTIALS LINKED TO YOUR SYSTEM. [STATUS: ENCRYPTED_2026]');
+            }
+        });
+    }
+
+    console.log('%c [NERV] PILOT LICENSE 2026 GENERATED ', 'background: #000; color: #ff6b35; border: 1px solid #ff6b35; padding: 2px;');
+}
+
 setTimeout(() => {
     console.log('%c [NERV] OS: MAGI v6.2.0-NERV ', logStyle);
     console.log('%c [NERV] CONNECTION: SECURE_UPLINK_ESTABLISHED ', successStyle);
