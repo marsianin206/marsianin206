@@ -233,12 +233,12 @@ body.nerv-terminal {
 
 /* Content Layout */
 .content-wrapper {
-    max-width: 1000px;
+    max-width: 1200px;
     margin: 40px auto;
     padding: 0 20px;
     display: flex;
     flex-direction: column;
-    gap: 40px;
+    gap: clamp(20px, 5vw, 40px);
 }
 
 .data-block {
@@ -311,7 +311,7 @@ body.nerv-terminal {
 /* MAGI Nodes */
 .magi-container {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     gap: 20px;
 }
 
@@ -344,7 +344,7 @@ body.nerv-terminal {
 /* HUD Grid */
 .hud-grid {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 20px;
 }
 
@@ -407,7 +407,7 @@ body.nerv-terminal {
 /* Dossier Grid */
 .dossier-grid {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     gap: 20px;
 }
 
@@ -438,7 +438,7 @@ body.nerv-terminal {
 /* Stats */
 .stats-grid {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 20px;
 }
 
@@ -1036,16 +1036,50 @@ body.nerv-terminal {
     box-shadow: 0 0 15px var(--nerv-green);
 }
 
-@media (max-width: 600px) {
-    .tetris-container { flex-direction: column; align-items: center; }
-    .tetris-ui { flex-direction: row; width: 100%; gap: 10px; }
-    .score-display { border-bottom: none; border-left: 2px solid var(--nerv-orange); padding: 0 10px; }
-    .magi-container, .hud-grid, .dossier-grid, .stats-grid { grid-template-columns: 1fr; }
-    .bio-scan-container { flex-direction: column; }
-    .splash-title { font-size: 1.6rem; }
-    .splash-content { padding: 30px 20px; margin: 10px; }
-    #activate-btn { font-size: 1rem; padding: 15px 30px; }
-    .content-wrapper { padding: 0 10px; gap: 25px; }
+/* --- RESPONSIVE SCALING SYSTEM --- */
+@media (max-width: 1024px) {
+    .content-wrapper { padding: 0 15px; }
+    .splash-title { font-size: 2.2rem; }
+}
+
+@media (max-width: 768px) {
+    .splash-content { width: 95%; padding: 40px 20px; }
+    .splash-title { font-size: 1.8rem; }
+    .emergency-text { font-size: 3rem; }
+    .nerv-id-card { width: 100%; max-width: 350px; height: auto; }
+    .id-body { flex-direction: column; align-items: center; text-align: center; }
+    .id-info { width: 100%; }
+    .info-row { justify-content: center; gap: 10px; }
+    
+    /* Optimize Ticker */
+    .ticker-label { font-size: 0.6rem; padding: 0 10px; }
+}
+
+@media (max-width: 480px) {
+    body { font-size: 14px; }
+    .splash-title { font-size: 1.4rem; }
+    .splash-subtitle { font-size: 0.6rem; margin-bottom: 30px; }
+    #activate-btn { font-size: 1rem; width: 100%; clip-path: none; }
+    
+    .scanner-frame { width: 100px; height: 130px; }
+    
+    .hud-title { font-size: 0.8rem; }
+    .section-title { font-size: 1rem; }
+    
+    .contact-btn { min-width: 100%; font-size: 0.8rem; padding: 12px; }
+    
+    /* Tetris scaling for small screens */
+    .tetris-container { transform: scale(0.9); transform-origin: top; }
+    
+    /* Floating Battery on mobile */
+    .terminal-status { flex-direction: column; gap: 10px; }
+}
+
+/* Landscape orientation optimization */
+@media (max-height: 500px) and (orientation: landscape) {
+    .splash-content { display: flex; flex-direction: row; align-items: center; gap: 20px; padding: 20px; }
+    .splash-logo { width: 80px; margin-bottom: 0; }
+    .scanner-container { flex-direction: row; }
 }
 
 /* EASTER EGGS */
