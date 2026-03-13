@@ -297,6 +297,16 @@
 
 <br/>
 
+<h2 align="center">☕️ TIP JAR / SUPPORT | ПОДДЕРЖКА ☕️</h2>
+<div align="center">
+  <p><i>If you enjoy my tactical systems, consider supporting EVA maintenance:</i></p>
+  <a href="https://t.me/xfearlive_bot?start=donate">
+    <img src="https://img.shields.io/badge/TIP_WITH_TELEGRAM_STARS-ffce00?style=for-the-badge&logo=telegram&logoColor=000&labelColor=222" />
+  </a>
+</div>
+
+<br/>
+
 <div align="center">
   <img src="https://komarev.com/ghpvc/?username=marsianin206&label=DATABASE+ACCESSORS&color=ff6b35&style=for-the-badge&labelColor=1a0a2e" />
 </div>
