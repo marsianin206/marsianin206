@@ -1381,6 +1381,75 @@ body.nerv-terminal {
 
 #sync-graph { width: 100%; height: 100%; }
 
+/* Heatmap System */
+.heatmap-wrapper {
+    display: flex;
+    gap: 10px;
+    margin: 20px 0;
+    overflow-x: auto;
+    padding-bottom: 10px;
+    scrollbar-width: thin;
+    scrollbar-color: var(--accent) #000;
+}
+
+.heatmap-labels {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    font-size: 0.5rem;
+    color: #555;
+    padding-top: 15px;
+}
+
+.heatmap-grid {
+    display: grid;
+    grid-auto-flow: column;
+    grid-template-columns: repeat(52, 1fr);
+    grid-template-rows: repeat(7, 1fr);
+    gap: 3px;
+    flex: 1;
+}
+
+.heatmap-grid .cell, .legend-scale .cell {
+    width: 12px;
+    height: 12px;
+    background: #111;
+    border: 1px solid rgba(255,107,53,0.05);
+    transition: all 0.2s;
+}
+
+.heatmap-grid .cell:hover {
+    border-color: #fff;
+    transform: scale(1.2);
+    z-index: 2;
+    box-shadow: 0 0 10px var(--accent);
+}
+
+.cell[data-level="1"] { background: #3d1b00 !important; }
+.cell[data-level="2"] { background: #8b4513 !important; }
+.cell[data-level="3"] { background: #ff6b35 !important; box-shadow: 0 0 5px rgba(255,107,53,0.2); }
+.cell[data-level="4"] { background: #ffce00 !important; box-shadow: 0 0 8px rgba(255,206,0,0.4); animation: cell-pulse 2s infinite; }
+
+.heatmap-legend {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 10px;
+    font-size: 0.6rem;
+    color: #888;
+    margin-bottom: 20px;
+}
+
+.legend-scale {
+    display: flex;
+    gap: 3px;
+}
+
+@keyframes cell-pulse {
+    0%, 100% { opacity: 1; filter: brightness(1); }
+    50% { opacity: 0.8; filter: brightness(1.5); }
+}
+
 .section-title, .terminal-status, .block-header h2, .hud-title, .label { color: var(--accent) !important; }
 .glass-panel, .magi-node, .hud-card, .dossier-card, .mission-table th, .nerv-mini-btn, .contact-btn { border-color: var(--accent) !important; }
 .progress-bar.orange, .nerv-mini-btn { background: var(--accent) !important; }

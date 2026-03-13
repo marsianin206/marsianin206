@@ -106,6 +106,7 @@ document.addEventListener('DOMContentLoaded', () => {
         initLCLBubbles(); // Ambient Environment
         initDepthMeter(); // Scroll Tracking
         initATFieldGame(); // Defense Mini-game
+        initGitHubHeatmap(); // Bio-activity Grid
     }
 
     initBootSequence(); // Start First
@@ -1206,6 +1207,37 @@ function initATFieldGame() {
         spawnTarget();
         update();
     });
+}
+
+
+/**
+ * GITHUB HEATMAP: Bio-activity Grid Generation
+ */
+function initGitHubHeatmap() {
+    const grid = document.getElementById('github-heatmap');
+    if (!grid) return;
+
+    // Generate 52 weeks * 7 days = 364 cells
+    const totalCells = 52 * 7;
+    let html = '';
+
+    for (let i = 0; i < totalCells; i++) {
+        const randomFactor = Math.random();
+        let level = 0;
+
+        if (randomFactor > 0.95) level = 4;
+        else if (randomFactor > 0.85) level = 3;
+        else if (randomFactor > 0.70) level = 2;
+        else if (randomFactor > 0.50) level = 1;
+
+        const weekIndex = Math.floor(i / 7);
+        if (weekIndex % 4 === 0 && level > 0) level = Math.min(4, level + 1);
+        if (weekIndex % 10 === 0) level = 0;
+
+        html += `<div class="cell" data-level="${level}" title="TACTICAL ACTIVITY LEVEL: ${level}"></div>`;
+    }
+
+    grid.innerHTML = html;
 }
 
 setTimeout(() => {
