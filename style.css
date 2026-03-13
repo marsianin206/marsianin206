@@ -852,3 +852,81 @@ body.nerv-terminal {
     font-weight: bold;
     text-shadow: 0 0 10px var(--nerv-purple);
 }
+
+/* === ADVANCED SYSTEMS === */
+#at-field-canvas {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index: 9997;
+}
+
+.emergency-mode .scanlines {
+    background: repeating-linear-gradient(
+        0deg,
+        rgba(255, 0, 0, 0.1),
+        rgba(255, 0, 0, 0.1) 1px,
+        transparent 1px,
+        transparent 2px
+    );
+    animation: emergency-flash 0.5s infinite;
+}
+
+@keyframes emergency-flash {
+    0%, 100% { background-color: rgba(255, 0, 0, 0.05); }
+    50% { background-color: rgba(255, 0, 0, 0.2); }
+}
+
+.emergency-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 0, 0, 0.1);
+    display: none;
+    z-index: 10005;
+    pointer-events: none;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.emergency-mode .emergency-overlay {
+    display: flex;
+}
+
+.emergency-text {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 5rem;
+    color: #ff0000;
+    font-weight: 900;
+    text-shadow: 0 0 20px #ff0000;
+    animation: blink 0.3s infinite;
+}
+
+.sync-graph-container {
+    height: 60px;
+    background: rgba(0,0,0,0.5);
+    border: 1px solid var(--accent);
+    margin-top: 10px;
+}
+
+#sync-graph {
+    width: 100%;
+    height: 100%;
+}
+
+/* Apply accent color to all themed elements */
+.section-title, .terminal-status, .block-header h2, .hud-title, .label {
+    color: var(--accent) !important;
+}
+.glass-panel, .magi-node, .hud-card, .dossier-card, .mission-table th, .nerv-mini-btn, .contact-btn {
+    border-color: var(--accent) !important;
+}
+.progress-bar.orange, .nerv-mini-btn {
+    background: var(--accent) !important;
+}

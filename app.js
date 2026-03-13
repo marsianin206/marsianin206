@@ -54,6 +54,8 @@ document.addEventListener('DOMContentLoaded', () => {
         handleMagiVoting();
         initTetris(); // Initialize the tactical sorting system
         initEasterEggs(); // SECRET SYSTEM ACTIVATED
+        initAdvancedSystems(); // A-T Field, Sync Graph & Emergency Mode
+        applyTimeTheme(); // Dynamic Theme based on hour
     });
 });
 
@@ -513,6 +515,117 @@ function initEasterEggs() {
 // Log connection to terminal with enhanced diagnostics
 const logStyle = 'background: #0d0d0d; color: #ff6b35; font-weight: bold; border: 1px solid #ff6b35; padding: 2px 5px;';
 const successStyle = 'background: #0d0d0d; color: #50c878; font-weight: bold; border: 1px solid #50c878; padding: 2px 5px;';
+
+/**
+ * ADVANCED SYSTEMS: A-T Field, Sync Graph, Emergency & Themes
+ */
+function initAdvancedSystems() {
+    initATField();
+    initSyncGraph();
+    startEmergencyCycle();
+}
+
+function applyTimeTheme() {
+    const hour = new Date().getHours();
+    const body = document.body;
+    body.classList.remove('theme-rei', 'theme-shinji', 'theme-asuka');
+    
+    if (hour >= 6 && hour < 18) {
+        body.classList.add('theme-rei'); // Day: Orange
+    } else if (hour >= 18 && hour < 22) {
+        body.classList.add('theme-shinji'); // Evening: Purple
+    } else {
+        body.classList.add('theme-asuka'); // Night: Red
+    }
+}
+
+function initATField() {
+    const canvas = document.getElementById('at-field-canvas');
+    const ctx = canvas.getContext('2d');
+    let points = [];
+
+    window.addEventListener('resize', () => {
+        canvas.width = window.innerWidth;
+        canvas.height = window.innerHeight;
+    });
+    window.dispatchEvent(new Event('resize'));
+
+    document.addEventListener('mousemove', (e) => {
+        points.push({ x: e.clientX, y: e.clientY, r: 10, a: 1 });
+        if (points.length > 20) points.shift();
+    });
+
+    function drawHexagon(x, y, size) {
+        ctx.beginPath();
+        for (let i = 0; i < 6; i++) {
+            ctx.lineTo(x + size * Math.cos(i * Math.PI / 3), y + size * Math.sin(i * Math.PI / 3));
+        }
+        ctx.closePath();
+        ctx.stroke();
+    }
+
+    function animate() {
+        ctx.clearRect(0, 0, canvas.width, canvas.height);
+        ctx.strokeStyle = getComputedStyle(document.body).getPropertyValue('--accent');
+        ctx.lineWidth = 2;
+
+        points.forEach((p, i) => {
+            ctx.globalAlpha = p.a;
+            drawHexagon(p.x, p.y, p.r);
+            p.r += 2;
+            p.a -= 0.05;
+            if (p.a <= 0) points.splice(i, 1);
+        });
+        requestAnimationFrame(animate);
+    }
+    animate();
+}
+
+function initSyncGraph() {
+    const canvas = document.getElementById('sync-graph');
+    const ctx = canvas.getContext('2d');
+    const dpr = window.devicePixelRatio || 1;
+    let data = new Array(50).fill(50);
+
+    function resize() {
+        const rect = canvas.parentNode.getBoundingClientRect();
+        canvas.width = rect.width * dpr;
+        canvas.height = rect.height * dpr;
+        ctx.scale(dpr, dpr);
+    }
+    window.addEventListener('resize', resize);
+    resize();
+
+    function draw() {
+        ctx.clearRect(0, 0, canvas.width, canvas.height);
+        ctx.beginPath();
+        ctx.strokeStyle = getComputedStyle(document.body).getPropertyValue('--accent');
+        ctx.lineWidth = 2;
+
+        const step = canvas.width / dpr / (data.length - 1);
+        data.forEach((val, i) => {
+            const x = i * step;
+            const y = (val / 100) * (canvas.height / dpr);
+            if (i === 0) ctx.moveTo(x, y);
+            else ctx.lineTo(x, y);
+        });
+        ctx.stroke();
+
+        data.push(40 + Math.random() * 40);
+        data.shift();
+        requestAnimationFrame(draw);
+    }
+    draw();
+}
+
+function startEmergencyCycle() {
+    setInterval(() => {
+        document.body.classList.add('emergency-mode');
+        setTimeout(() => {
+            document.body.classList.remove('emergency-mode');
+        }, 5000);
+    }, 60000); // Every minute for 5 seconds
+}
 
 console.log('%c [NERV] SYSTEM BOOT INITIALIZED ', logStyle);
 setTimeout(() => {

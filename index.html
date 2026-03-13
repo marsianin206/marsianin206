@@ -80,6 +80,9 @@
                     <p class="typing" id="auth-status">> INCOMING CONNECTION...<br>> ANALYZING BIOMETRICS...<br>> SYNC
                         RATIO: 412.35%</p>
                     <div class="access-badge">ACCESS GRANTED</div>
+                    <div class="sync-graph-container">
+                        <canvas id="sync-graph"></canvas>
+                    </div>
                 </div>
             </div>
         </section>
@@ -291,6 +294,11 @@
 
     <div id="hidden-msg"></div>
     <div class="lcl-overlay"></div>
+    <div class="emergency-overlay">
+        <div class="emergency-text">EMERGENCY</div>
+        <p style="color: #ff0000; font-family: 'Orbitron', sans-serif;">PATTERN BLUE DETECTED // SYSTEM OVERLOAD</p>
+    </div>
+    <canvas id="at-field-canvas"></canvas>
     <script src="app.js"></script>
 </body>
 
