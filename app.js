@@ -636,9 +636,22 @@ async function initGitHubSync() {
     const list = document.getElementById('github-commits');
     const repo = 'marsianin206/marsianin206';
     
+    // Simulated data for fallback (NERV Immersion)
+    const simulatedCommits = [
+        { msg: "Neural Link Stabilization Patch", hash: "e1a05af", status: "STABLE" },
+        { msg: "MAGI Connectivity Optimization", hash: "b4c2d91", status: "STABLE" },
+        { msg: "LCL Pressure Control Logic", hash: "f9e8a72", status: "STABLE" },
+        { msg: "A-T Field Generator Calibration", hash: "d3b4c5e", status: "STABLE" },
+        { msg: "Human Instrumentality Core v6.0", hash: "a1b2c3d", status: "STABLE" }
+    ];
+
     try {
         console.log('[NERV] INITIATING GITHUB UPLINK...');
-        const response = await fetch(`https://api.github.com/repos/${repo}/commits?per_page=5`);
+        const response = await fetch(`https://api.github.com/repos/${repo}/commits?per_page=5`, {
+            method: 'GET',
+            mode: 'cors',
+            headers: { 'Accept': 'application/vnd.github.v3+json' }
+        });
         
         if (!response.ok) {
             throw new Error(`INTERNAL_STATUS_${response.status}`);
@@ -646,10 +659,6 @@ async function initGitHubSync() {
 
         const commits = await response.json();
         
-        if (!Array.isArray(commits)) {
-            throw new Error('TELEMETRY_DATA_INVALID');
-        }
-
         list.innerHTML = '';
         commits.forEach(item => {
             const date = new Date(item.commit.author.date).toLocaleDateString();
@@ -668,19 +677,25 @@ async function initGitHubSync() {
         
         console.log('%c [NERV] GITHUB TELEMETRY: SYNC COMPLETE ', 'background: #000; color: #50c878; border: 1px solid #50c878; padding: 2px;');
     } catch (e) {
-        console.warn('[NERV] GITHUB DIAGNOSTICS:', e.message);
+        console.warn('[NERV] GITHUB UPLINK FAILED. ACTIVATING SIMULATED TACTICAL DATA.');
         
-        let errorMsg = 'CONNECTION_ERROR';
-        if (e.message.includes('403')) errorMsg = 'RATE_LIMIT_EXCEEDED';
-        else if (e.message.includes('404')) errorMsg = 'PRIVATE_REPO_OR_INVALID_NAME';
-        else if (e.message.includes('Failed to fetch')) errorMsg = 'NETWORK_BLOCKED_OR_OFFLINE';
-        
-        list.innerHTML = `<tr><td colspan="4" style="color: #ff4500;">[ERR] ${errorMsg} <br> <span style="font-size: 0.6rem; opacity: 0.6;">System Log: ${e.message}</span></td></tr>`;
-        
-        // Auto-retry once after 10 seconds if it's a generic network error
-        if (errorMsg === 'CONNECTION_ERROR' || errorMsg === 'NETWORK_BLOCKED_OR_OFFLINE') {
-            setTimeout(initGitHubSync, 10000);
-        }
+        // Fallback to simulated data to keep the UI looking cool
+        list.innerHTML = '';
+        simulatedCommits.forEach(item => {
+            const tr = document.createElement('tr');
+            tr.innerHTML = `
+                <td style="color: #ff6b35;">> ${item.msg.toUpperCase()} (SIM)</td>
+                <td class="commit-hash">[${item.hash}]</td>
+                <td style="color: #ff4500;">ENCRYPTED</td>
+                <td>--.--.--</td>
+            `;
+            list.appendChild(tr);
+        });
+
+        // Add a small warning in the footer of the table
+        const warningTr = document.createElement('tr');
+        warningTr.innerHTML = `<td colspan="4" style="color: #ff4500; font-size: 0.7rem; text-align: center;">SIGNAL JAMMING DETECTED: SHOWING CACHED TACTICAL DATA</td>`;
+        list.appendChild(warningTr);
     }
 }
 
