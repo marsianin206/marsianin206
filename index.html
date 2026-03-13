@@ -45,6 +45,19 @@
     <!-- Custom Cursor -->
     <div id="nerv-cursor"></div>
 
+    <!-- DEPTH METER -->
+    <div id="depth-meter">
+        <div class="meter-track">
+            <div id="meter-pointer"></div>
+        </div>
+        <div class="meter-labels">
+            <div class="m-label" style="top: 0%">SURFACE</div>
+            <div class="m-label" style="top: 50%">GEOFRONT</div>
+            <div class="m-label" style="top: 100%">TERMINAL DOGMA</div>
+        </div>
+        <div id="depth-value">0000m</div>
+    </div>
+
     <!-- Splash Screen (Biometric Scan) -->
     <div id="splash-screen">
         <div class="scrolling-tapes">
@@ -197,7 +210,19 @@
             </div>
         </div>
 
-        <!-- SECTION 4: PILOT DOSSIERS -->
+            <!-- A-T FIELD DEFENSE MINI-GAME -->
+            <div class="hud-card orange-glow at-field-game">
+                <div class="hud-title">A-T FIELD INTEGRITY</div>
+                <div class="game-container">
+                    <canvas id="at-game-canvas"></canvas>
+                    <div id="game-overlay">
+                        <button id="start-at-game" class="nerv-mini-btn">INITIALIZE</button>
+                    </div>
+                </div>
+                <div class="integrity-status">INTEGRITY: <span id="at-integrity">100%</span></div>
+            </div>
+
+            <!-- SECTION 4: PILOT DOSSIERS -->
         <section id="dossiers" class="data-block">
             <h2 class="section-title">CLASSIFIED PILOT DATABASE</h2>
             <div class="dossier-grid">

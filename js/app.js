@@ -104,6 +104,8 @@ document.addEventListener('DOMContentLoaded', () => {
         initAngelRadar(); // Search for Angels
         initMusicPlayer(); // Advanced SDAT
         initLCLBubbles(); // Ambient Environment
+        initDepthMeter(); // Scroll Tracking
+        initATFieldGame(); // Defense Mini-game
     }
 
     initBootSequence(); // Start First
@@ -1089,6 +1091,121 @@ function initMusicPlayer() {
             trackInfo.innerText = `TRACK_0${currentTrack+1}: ${playlist[currentTrack].name}`;
         });
     }
+}
+
+/**
+ * DEPTH METER: Scroll-based tracking
+ */
+function initDepthMeter() {
+    const pointer = document.getElementById('meter-pointer');
+    const value = document.getElementById('depth-value');
+    const maxDepth = 1500; // max meters
+
+    window.addEventListener('scroll', () => {
+        const scrollPercent = (window.scrollY / (document.documentElement.scrollHeight - window.innerHeight)) * 100;
+        const currentDepth = Math.round((scrollPercent / 100) * maxDepth);
+        
+        if (pointer) pointer.style.top = `${scrollPercent}%`;
+        if (value) value.innerText = `${currentDepth.toString().padStart(4, '0')}m`;
+    });
+}
+
+/**
+ * A-T FIELD DEFENSE: Clicker game
+ */
+function initATFieldGame() {
+    const canvas = document.getElementById('at-game-canvas');
+    if (!canvas) return;
+    const ctx = canvas.getContext('2d');
+    const startBtn = document.getElementById('start-at-game');
+    const overlay = document.getElementById('game-overlay');
+    const integrityLabel = document.getElementById('at-integrity');
+    
+    let integrity = 100;
+    let targets = [];
+    let gameActive = false;
+
+    function spawnTarget() {
+        if (!gameActive) return;
+        targets.push({
+            x: Math.random() * (canvas.width - 20) + 10,
+            y: Math.random() * (canvas.height - 20) + 10,
+            r: 0,
+            maxR: 15,
+            speed: 0.2 + (Math.random() * 0.3)
+        });
+        setTimeout(spawnTarget, 1000 - (100 - integrity) * 5);
+    }
+
+    function update() {
+        if (!gameActive) return;
+        ctx.clearRect(0, 0, canvas.width, canvas.height);
+        
+        ctx.strokeStyle = 'rgba(255, 107, 53, 0.2)';
+        ctx.beginPath();
+        for(let i=0; i<canvas.width; i+=20) { ctx.moveTo(i, 0); ctx.lineTo(i, canvas.height); }
+        for(let i=0; i<canvas.height; i+=20) { ctx.moveTo(0, i); ctx.lineTo(canvas.width, i); }
+        ctx.stroke();
+
+        targets.forEach((t, i) => {
+            t.r += t.speed;
+            
+            // Draw Target (Angel Core)
+            ctx.beginPath();
+            ctx.arc(t.x, t.y, t.r, 0, Math.PI * 2);
+            ctx.strokeStyle = '#ff0000';
+            ctx.stroke();
+            
+            if (t.r > t.maxR) {
+                targets.splice(i, 1);
+                integrity -= 5;
+                updateIntegrity();
+            }
+        });
+
+        if (integrity <= 0) endGame();
+        else requestAnimationFrame(update);
+    }
+
+    function updateIntegrity() {
+        integrity = Math.max(0, integrity);
+        integrityLabel.innerText = integrity + '%';
+        if (integrity < 30) integrityLabel.style.color = '#ff0000';
+        else if (integrity < 60) integrityLabel.style.color = '#ffce00';
+    }
+
+    function endGame() {
+        gameActive = false;
+        overlay.style.display = 'block';
+        startBtn.innerText = 'REBOOT SYSTEM';
+        alert('CRITICAL FAILURE: A-T FIELD COLLAPSED');
+    }
+
+    canvas.addEventListener('mousedown', (e) => {
+        if (!gameActive) return;
+        const rect = canvas.getBoundingClientRect();
+        const mouseX = e.clientX - rect.left;
+        const mouseY = e.clientY - rect.top;
+
+        targets.forEach((t, i) => {
+            const dist = Math.sqrt((mouseX - t.x)**2 + (mouseY - t.y)**2);
+            if (dist < t.r + 10) {
+                targets.splice(i, 1);
+                integrity = Math.min(100, integrity + 1);
+                updateIntegrity();
+            }
+        });
+    });
+
+    startBtn.addEventListener('click', () => {
+        integrity = 100;
+        targets = [];
+        gameActive = true;
+        overlay.style.display = 'none';
+        updateIntegrity();
+        spawnTarget();
+        update();
+    });
 }
 
 setTimeout(() => {
