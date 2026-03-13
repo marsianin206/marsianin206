@@ -2,4 +2,4 @@ User-agent: *
 Allow: /
 Disallow: /snake
 
-Sitemap: https://marsianin206.vercel.app/sitemap.xml
+Sitemap: https://marsianin206-d3sq.vercel.app/sitemap.xml

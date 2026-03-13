@@ -10,7 +10,7 @@
 </div>
 
 <div align="center">
-  <a href="https://marsianin206.vercel.app">
+  <a href="https://marsianin206-d3sq.vercel.app">
     <img src="https://img.shields.io/badge/NERV_CENTRAL_COMMAND-ENTER_TERMINAL-ff6b35?style=for-the-badge&logo=vercel&logoColor=white&labelColor=0d0d0d" />
   </a>
 </div>
