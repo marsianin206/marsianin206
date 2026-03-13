@@ -152,6 +152,38 @@
             </div>
         </section>
 
+        <!-- SECTION 4.5: TETRIS SYSTEM -->
+        <section id="tactical-sort" class="data-block glass-panel">
+            <h2 class="section-title">TACTICAL DATA SORTING / ТЕТРИС</h2>
+            <div class="tetris-wrapper">
+                <div class="tetris-container">
+                    <canvas id="tetris-canvas" width="240" height="400"></canvas>
+                    <div class="tetris-ui">
+                        <div class="score-display">
+                            <span class="label">SCORE</span>
+                            <span id="score">0000</span>
+                        </div>
+                        <div class="score-display">
+                            <span class="label">SYNC</span>
+                            <span id="tetris-sync">10.0%</span>
+                        </div>
+                        <button id="start-tetris" class="nerv-mini-btn">START SORT</button>
+                    </div>
+                </div>
+                <!-- ON-SCREEN CONTROLS -->
+                <div class="tactical-controls">
+                    <div class="control-row">
+                        <button class="ctrl-btn" id="ctrl-rot"><span>ROTATE</span></button>
+                    </div>
+                    <div class="control-row">
+                        <button class="ctrl-btn" id="ctrl-left"><span>L</span></button>
+                        <button class="ctrl-btn" id="ctrl-down"><span>D</span></button>
+                        <button class="ctrl-btn" id="ctrl-right"><span>R</span></button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
         <!-- SECTION 5: STATS -->
         <section id="stats" class="data-block stats-panel">
             <div class="stats-grid">

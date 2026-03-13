@@ -559,6 +559,135 @@ body.nerv-terminal {
     .content-wrapper { padding: 0 10px; gap: 25px; }
 }
 
+/* === TETRIS SYSTEM === */
+.tetris-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding: 10px;
+}
+
+.tetris-container {
+    display: flex;
+    gap: 20px;
+    background: rgba(0, 0, 0, 0.8);
+    border: 3px solid var(--nerv-orange);
+    padding: 10px;
+    box-shadow: 0 0 20px rgba(255, 107, 53, 0.2);
+    position: relative;
+}
+
+#tetris-canvas {
+    background: #050505;
+    border: 1px solid #333;
+    display: block;
+}
+
+.tetris-ui {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-width: 120px;
+}
+
+.score-display {
+    border-bottom: 2px solid var(--nerv-orange);
+    padding: 10px 0;
+    text-align: right;
+}
+
+.score-display .label {
+    display: block;
+    font-size: 0.6rem;
+    color: var(--nerv-orange);
+}
+
+.score-display span:not(.label) {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 1.5rem;
+    color: var(--nerv-orange);
+}
+
+.nerv-mini-btn {
+    background: var(--nerv-orange);
+    border: none;
+    color: #000;
+    padding: 10px;
+    font-family: 'Orbitron', sans-serif;
+    font-weight: 900;
+    font-size: 0.8rem;
+    cursor: pointer;
+    clip-path: polygon(10% 0, 100% 0, 90% 100%, 0% 100%);
+    transition: all 0.2s;
+    margin-top: auto;
+}
+
+.nerv-mini-btn:hover {
+    background: #fff;
+}
+
+/* Tactical Controls */
+.tactical-controls {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+    max-width: 300px;
+}
+
+.control-row {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.ctrl-btn {
+    background: transparent;
+    border: 2px solid #555;
+    color: #888;
+    padding: 15px;
+    min-width: 70px;
+    font-family: 'Orbitron', sans-serif;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.1s;
+    position: relative;
+    user-select: none;
+    touch-action: manipulation;
+}
+
+.ctrl-btn:active {
+    background: var(--nerv-orange);
+    color: #000;
+    border-color: var(--nerv-orange);
+    box-shadow: 0 0 15px var(--nerv-orange);
+}
+
+#ctrl-rot {
+    width: 100%;
+    border-color: var(--nerv-green);
+    color: var(--nerv-green);
+}
+
+#ctrl-rot:active {
+    background: var(--nerv-green);
+    box-shadow: 0 0 15px var(--nerv-green);
+}
+
+@media (max-width: 600px) {
+    .tetris-container {
+        flex-direction: column;
+        align-items: center;
+    }
+    .tetris-ui {
+        flex-direction: row;
+        width: 100%;
+        gap: 10px;
+    }
+    .score-display { border-bottom: none; border-left: 2px solid var(--nerv-orange); padding: 0 10px; }
+}
+
 /* === Contact Buttons === */
 .contact-grid {
     display: flex;
