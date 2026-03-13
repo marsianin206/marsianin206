@@ -1786,3 +1786,125 @@ body.nerv-terminal {
     text-transform: uppercase;
     text-shadow: 0 0 10px rgba(255, 107, 53, 0.5);
 }
+
+/* --- EASTER EGG STYLES --- */
+
+#hidden-msg {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 10000;
+    pointer-events: none;
+    text-align: center;
+    width: 90%;
+    display: none;
+    background: rgba(0,0,0,0.9);
+    padding: 40px;
+    border: 4px double var(--nerv-orange);
+    box-shadow: 0 0 50px rgba(255, 107, 53, 0.5);
+}
+
+.glitch-text {
+    font-family: 'Orbitron', sans-serif;
+    font-size: clamp(1.5rem, 5vw, 3rem);
+    color: var(--nerv-orange);
+    text-transform: uppercase;
+    animation: glitch 0.5s infinite;
+    position: relative;
+}
+
+@keyframes glitch {
+    0% { transform: translate(0); text-shadow: -2px 0 red, 2px 0 blue; }
+    25% { transform: translate(-2px, 2px); text-shadow: 2px 0 red, -2px 0 blue; }
+    50% { transform: translate(2px, -2px); text-shadow: -2px 0 blue, 2px 0 red; }
+    75% { transform: translate(-2px, -2px); text-shadow: 2px 0 blue, -2px 0 red; }
+    100% { transform: translate(0); }
+}
+
+.penpen-walk {
+    position: fixed;
+    bottom: 0;
+    right: -200px;
+    height: 100px;
+    z-index: 9997;
+    transition: transform 6s linear;
+    pointer-events: none;
+}
+
+.berserk-mode {
+    animation: screen-shake 0.1s infinite;
+    filter: sepia(1) saturate(5) hue-rotate(-50deg) contrast(1.5);
+}
+
+@keyframes screen-shake {
+    0% { transform: translate(0,0); }
+    25% { transform: translate(2px,2px); }
+    50% { transform: translate(-2px,2px); }
+    75% { transform: translate(2px,-2px); }
+    100% { transform: translate(-2px,-2px); }
+}
+
+.secret-data {
+    color: #ff0000 !important;
+    text-shadow: 0 0 20px #ff0000;
+    animation: blink 0.2s infinite;
+}
+
+@keyframes blink {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0; }
+}
+
+.lcl-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 107, 53, 0.15); /* Orange liquid color */
+    pointer-events: none;
+    z-index: 9995;
+    display: none;
+    mix-blend-mode: color-burn;
+}
+
+.lcl-active .lcl-overlay { display: block; }
+.lcl-active { filter: contrast(1.1) saturate(1.2); }
+
+.emergency-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 0, 0, 0.05);
+    border: 10px solid #ff0000;
+    pointer-events: none;
+    z-index: 11000;
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    animation: border-flash 1s infinite;
+}
+
+.emergency-mode .emergency-overlay { display: flex; }
+
+.emergency-text {
+    font-size: 5rem;
+    font-weight: 900;
+    color: #ff0000;
+    text-shadow: 0 0 20px #ff0000;
+    font-family: 'Orbitron', sans-serif;
+    animation: blink 0.5s infinite;
+}
+
+@keyframes border-flash {
+    0%, 100% { border-color: #ff0000; box-shadow: inset 0 0 50px #ff0000; }
+    50% { border-color: transparent; box-shadow: inset 0 0 10px transparent; }
+}
+
+body.emergency-mode {
+    animation: screen-shake 0.2s infinite;
+}

@@ -507,6 +507,14 @@ function initEasterEggs() {
             setTimeout(() => { penpen.style.transform = 'translateX(-150vw)'; }, 100);
             setTimeout(() => { penpen.remove(); }, 6000);
         });
+
+        const footerText = footer.querySelector('.footer-overlay');
+        if (footerText) {
+            footerText.addEventListener('dblclick', (e) => {
+                e.stopPropagation(); // Prevent trigger pen-pen twice on dblclick
+                showMsg("NERV: CODE 707 - INSTRUMENTALITY PROJECT INITIATED", 5000);
+            });
+        }
     }
 
     // 6. LCL MODE (Double click on "LCL PRESSURE" card)
