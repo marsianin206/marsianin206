@@ -17,12 +17,14 @@ document.addEventListener('DOMContentLoaded', () => {
     // Telegram Stars Payment Integration
     if (starBtn && tg) {
         starBtn.addEventListener('click', () => {
-            // Note: In a real production app, you'd call your backend here
-            // to create an invoice. For now, we'll show the UI/Alert.
-            tg.showAlert('RESOURCE ALLOCATION REQUESTED: Please use @xfearlive_bot to complete the Star transfer. All contributions go towards EVA-01 maintenance.');
+            // Direct link to the bot's donation command
+            const donationUrl = 'https://t.me/xfearlive_bot?start=donate';
             
-            // If you have a specific link for stars or a bot command:
-            // tg.openTelegramLink('https://t.me/xfearlive_bot?start=donate');
+            // Log for debug
+            console.log('%c [NERV] OPENING DONATION UPLINK ', 'background: #ffce00; color: #000; font-weight: bold;');
+            
+            // Open the link inside Telegram
+            tg.openTelegramLink(donationUrl);
         });
     }
 
