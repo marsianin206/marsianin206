@@ -5,8 +5,10 @@ Welcome to the **Human Instrumentality Project** technical documentation. This w
 ## 🗂️ Navigation
 - [[Operational Protocols]] - Learn how to interact with the terminal.
 - [[Technical Specifications]] - Deep dive into the stack and features.
+- [[Project Architecture]] - Detailed file structure and layout.
+- [[Design System]] - Visual identity, colors, and fonts.
+- [[Angel Database]] - Information on the identified targets.
 - [[Pilot Database]] - Status of current EVA pilots.
-- [[Angel Tracking]] - Information on the Tactical Globe system.
 
 ## 🛡️ Security Clearance
 Access to this data is restricted to personnel with **Level A** clearance or higher. Unauthorized access will result in immediate detention by the Second Section.
