@@ -422,6 +422,20 @@ function initTetris() {
     document.getElementById('ctrl-right').addEventListener('click', () => playerMove(1));
     document.getElementById('ctrl-down').addEventListener('click', () => playerDrop());
     document.getElementById('ctrl-rot').addEventListener('click', () => playerRotate(1));
+    
+    // Restart button handler
+    document.getElementById('ctrl-restart').addEventListener('click', () => {
+        // Reset arena
+        arena.forEach(row => row.fill(0));
+        // Reset player score
+        player.score = 0;
+        // Reset player position
+        playerReset();
+        // Update score display
+        updateScore();
+        // Show start button
+        startBtn.style.display = 'block';
+    });
 
     startBtn.addEventListener('click', () => {
         playerReset();
